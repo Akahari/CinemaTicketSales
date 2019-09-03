@@ -23,7 +23,7 @@ public class HallService {
 
 //add hall
     public void addHall(Hall hall) {
-        if(!hall.getTheaterId().equals(0)) {
+        if(hall.getTheaterId() != null) {
             Theater theater = theaterRepository.findById(hall.getTheaterId());
             theater.addHallId(hall.getId());
             theaterRepository.save(theater);
@@ -34,7 +34,7 @@ public class HallService {
 //remove hall
     public void removeHall(Integer id){
         Hall hall = hallRepository.findById(id);
-        if(!hall.getTheaterId().equals(0)) {
+        if(hall.getTheaterId() != 0) {
             Theater theater = theaterRepository.findById(hall.getTheaterId());
             theater.removeHallId(id);
             theaterRepository.save(theater);
@@ -93,14 +93,14 @@ public class HallService {
     public Iterable<Hall> findByScreeningId(Integer screeningId) { return hallRepository.findByScreeningId(screeningId); }
     public Iterable<Hall> findByTheaterId(Integer theaterId) {return hallRepository.findByTheaterId(theaterId); }
 
-//edit
+//edit (outdated, use update instead)
     //edit theater Id
     public void editTheaterId(Integer id, Integer theaterId) {
         Hall n = hallRepository.findById(id);
         n.setTheaterId(theaterId);
         hallRepository.save(n);
     }
-    //edit seat counts
+    //edit number of seats
     public void editRows(Integer id, int rows) {
         Hall n = hallRepository.findById(id);
         n.setRows(rows);

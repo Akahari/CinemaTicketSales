@@ -6,7 +6,7 @@ public class Seat implements Serializable {
     private int row;
     private int seat;
     //private double price;
-    private TicketType ticketType;
+    private TicketType ticketType = TicketType.normal;
 
 // <basic getters&setters>
     public int getRow() {
@@ -16,9 +16,7 @@ public class Seat implements Serializable {
         this.row = row;
     }
 
-    public int getSeat() {
-        return seat;
-    }
+    public int getSeat() {return seat;}
     public void setSeat(int seat) {
         this.seat = seat;
     }

@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @RestController
-@RequestMapping("MovieTheaters/api/movie")
+@RequestMapping("/api/movie")
 public class MovieController {
     @Autowired
     private MovieService movieService;
@@ -27,7 +27,7 @@ public class MovieController {
     }
 
 //remove movie
-    @PostMapping(path="/{id}/remove")
+    @PostMapping(path="/remove/{id}")
     public @ResponseBody String removeMovie (@PathVariable("id") Integer id) {
         movieService.removeMovie(id);
         return "Removed movie";
@@ -73,34 +73,34 @@ public class MovieController {
 
 //add
     //add directors
-    @PostMapping(path="/{id}/director/add")
+    @PostMapping(path="/director/add/{id}")
     public @ResponseBody String addDirector(@PathVariable("id") Integer id, @RequestBody String director){
         movieService.addDirector(id, director);
         return "Director added";
     }
-    @PostMapping(path="/{id}/directors/add")
+    @PostMapping(path="/directors/add/{id}")
     public @ResponseBody String addDirectors(@PathVariable("id") Integer id, @RequestBody Set<String> directors){
         movieService.addDirectors(id, directors);
         return "Directors added";
     }
     //add cast
-    @PostMapping(path="/{id}/cast/add")
+    @PostMapping(path="/cast/add/{id}")
     public @ResponseBody String addCast(@PathVariable("id") Integer id, @RequestBody String cast){
         movieService.addCast(id, cast);
         return "Cast added";
     }
-    @PostMapping(path="/{id}/casts/add")
+    @PostMapping(path="/casts/add/{id}")
     public @ResponseBody String addCasts(@PathVariable("id") Integer id, @RequestBody Set<String> casts){
         movieService.addCasts(id, casts);
         return "Casts added";
     }
     //add tags
-    @PostMapping(path="/{id}/tag/add")
+    @PostMapping(path="/tag/add/{id}")
     public @ResponseBody String addTag(@PathVariable("id") Integer id, @RequestBody String tag){
         movieService.addTag(id, tag);
         return "Tag added";
     }
-    @PostMapping(path="/{id}/tags/add")
+    @PostMapping(path="/tags/add/{id}")
     public @ResponseBody String addTags(@PathVariable("id") Integer id, @RequestBody Set<String> tags){
         movieService.addTags(id, tags);
         return "Tags added";
@@ -108,34 +108,34 @@ public class MovieController {
 
 //remove
     //remove directors
-    @PostMapping(path="/{id}/director/remove")
+    @PostMapping(path="/director/remove/{id}")
     public @ResponseBody String removeDirector(@PathVariable("id") Integer id, @RequestBody String director){
         movieService.removeDirector(id, director);
         return "Director removed";
     }
-    @PostMapping(path="/{id}/directors/remove")
+    @PostMapping(path="/directors/remove/{id}")
     public @ResponseBody String removeDirectors(@PathVariable("id") Integer id, @RequestBody Set<String> directors){
         movieService.removeDirectors(id, directors);
         return "Directors removed";
     }
     //remove cast
-    @PostMapping(path="/{id}/cast/remove")
+    @PostMapping(path="/cast/remove/{id}")
     public @ResponseBody String removeCast(@PathVariable("id") Integer id, @RequestBody String cast){
         movieService.removeCast(id, cast);
         return "Cast removed";
     }
-    @PostMapping(path="/{id}/casts/remove")
+    @PostMapping(path="/casts/remove/{id}")
     public @ResponseBody String removeCasts(@PathVariable("id") Integer id, @RequestBody Set<String> casts){
         movieService.removeCasts(id, casts);
         return "Casts removed";
     }
     //remove tags
-    @PostMapping(path="/{id}/tag/remove")
+    @PostMapping(path="/tag/remove/{id}")
     public @ResponseBody String removedTag(@PathVariable("id") Integer id, @RequestBody String tag){
         movieService.removeTag(id, tag);
         return "Tag removed";
     }
-    @PostMapping(path="/{id}/tags/remove")
+    @PostMapping(path="/tags/remove/{id}")
     public @ResponseBody String removeTags(@PathVariable("id") Integer id, @RequestBody Set<String> tags){
         movieService.removeTags(id, tags);
         return "Tag removed";

@@ -1,5 +1,7 @@
 package pl.edu.agh.ticketsales.domain;
 
+import javafx.util.Pair;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -13,10 +15,10 @@ public class Booking implements Serializable {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
 
-    private Integer hallId = 0;        //not needed directly
-    private Integer theaterId = 0;        //not needed directly
-    private Integer movieId = 0;        //not needed directly
-    private Integer screeningId = 0;
+    private Integer hallId;             //set by screeningId
+    private Integer theaterId;          //set by screeningId
+    private Integer movieId;            //set by screeningId
+    private Integer screeningId;
 
     private String firstName;
     private String lastName;
@@ -34,16 +36,15 @@ public class Booking implements Serializable {
     public String getLastName() {return lastName;}
     public void setLastName(String lastName) {this.lastName = lastName;}
 
-    public ArrayList<String> getNames() {
-        ArrayList<String> names = new ArrayList<String>();
-        names.add(this.firstName);
-        names.add(this.lastName);
+    public Pair<String,String> getNames() {
+        Pair<String,String> names = new Pair<String,String>(this.lastName,this.firstName);
         return names;
     }
-    public void setNames(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+
+//    public void setNames(String firstName, String lastName){
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//    }
 
     public Set<Seat> getSeats() {return seats;}
     public void setSeats(Set<Seat> seats) {this.seats = seats;}

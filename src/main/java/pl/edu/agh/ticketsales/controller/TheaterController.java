@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @RestController
-@RequestMapping("MovieTheaters/api/theater")
+@RequestMapping("/api/theater")
 public class TheaterController {
     @Autowired
     private TheaterService theaterService;
@@ -25,7 +25,7 @@ public class TheaterController {
     }
 
     //remove theater
-    @PostMapping(path="/{id}/remove")
+    @PostMapping(path="/remove/{id}")
     public @ResponseBody String removeTheater (@PathVariable("id") Integer id) {
         theaterService.removeTheater(id);
         return "removed theater";
@@ -53,26 +53,26 @@ public class TheaterController {
     public @ResponseBody Iterable<Theater> findByName(@RequestBody String name) {return theaterService.findByName(name);}
 
 //add IDs
-    @PostMapping(path="/{id}/hall/addId")
+    @PostMapping(path="/hall/addId/{id}")
     public @ResponseBody String addHallId(@PathVariable("id") Integer id, @RequestBody Integer hallId){
         theaterService.addHallId(id, hallId);
         return "Hall added";
     }
-    @PostMapping(path="/{id}/hall/addIds")
+    @PostMapping(path="/hall/addIds/{id}")
     public @ResponseBody String addHallIds(@PathVariable("id") Integer id, @RequestBody Set<Integer> hallIds){
         theaterService.addHallIds(id, hallIds);
         return "Halls added";
     }
 
 //remove IDs
-    @PostMapping(path="/{id}/hall/removeId")
+    @PostMapping(path="/hall/removeId/{id}")
     public @ResponseBody String removeHallId(@PathVariable("id") Integer id, @RequestBody Integer hallId){
         theaterService.removeHallId(id, hallId);
         return "Hall removed";
     }
 
     //get IDs (retired, can just find by id and retrieve from there)
-    @GetMapping(path="/{id}/hall/getIds")
+    @GetMapping(path="/hall/getIds/{id}")
     public @ResponseBody Set<Integer> getHallIds(@PathVariable("id") Integer id) {
         Theater n = theaterService.findById(id);
         return n.getHallIds();

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 @RestController
-@RequestMapping("MovieTheaters/api/screening")
+@RequestMapping("/api/screening")
 public class ScreeningController {
     @Autowired
     private ScreeningService screeningService;
@@ -30,6 +30,7 @@ public class ScreeningController {
     @PostMapping(path="/add")
     public @ResponseBody String addScreening (@RequestBody Quasi_screening quasi_screening) {
         Date startDate = new Date();
+        boolean success;
         if(quasi_screening.getStartDateString() != null){
 
         System.out.println(startDate);
@@ -39,19 +40,16 @@ public class ScreeningController {
         } else if(quasi_screening.getStartDate() != null){
             startDate = quasi_screening.getStartDate();
         }
-        Movie movie = movieService.findById(quasi_screening.getMovieId());
-        Hall hall = hallService.findById(quasi_screening.getHallId());
-        Screening screening = new Screening();
-        screening.setMovieId(movie);
-        screening.setHallId(hall);
-        screening.setStartDate(startDate);
-
-        screeningService.addScreening(screening);
-        return "Saved screening";
+        success = screeningService.addScreening(quasi_screening.getHallId(), quasi_screening.getMovieId(), startDate);
+        if(success){
+            return "Saved screening";
+        } else {
+            return "Couldn't save screening";
+        }
     }
 
 //remove screening
-    @PostMapping(path="/{id}/remove")
+    @PostMapping(path="/remove/{id}")
     public @ResponseBody String removeScreening (@PathVariable("id") Integer id) {
         screeningService.removeScreening(id);
         return "Removed screening";
@@ -65,41 +63,37 @@ public class ScreeningController {
     }
 
 //assign to screening (check timetable for collisions)
-    @PostMapping(path="/{id}/assignHall/{hallId}")
+    @PostMapping(path="/assignHall/{id}/{hallId}")
     public @ResponseBody String assignHall(@PathVariable("id") Integer id, @PathVariable("hallId") Integer hallId){
         screeningService.assignHall(id, hallId);
         return "Assigned to hall";
     }
 
 //assign movie
-@PostMapping(path="/{id}/assignMovie/{movie}")
+@PostMapping(path="/assignMovie/{id}/{movieId}")
     public @ResponseBody String assignMovie(@PathVariable("id") Integer id, @PathVariable("movieId") Integer movieId){
         screeningService.assignMovie(id, movieId);
         return "Assigned movie";
     }
 
 //assign screening date
-@PostMapping(path="/{id}/assignDate")
+@PostMapping(path="/assignDate/{id}")
     public @ResponseBody String assignDate(@PathVariable("id") Integer id, @RequestBody Date startDate){
         screeningService.assignStartDate(id, startDate);
         return "Assigned date";
     }
 
 //find
-
     @GetMapping(path="/all")
     public @ResponseBody Iterable<Screening> getAll(Integer id) { return screeningService.getAll(); }
     @GetMapping(path="/find/{id}")
     public @ResponseBody Screening findById(@PathVariable("id") Integer id) { return screeningService.findById(id); }
-    @GetMapping(path="/find/{theaterId}")
+    @GetMapping(path="/find/theater/{theaterId}")
     public @ResponseBody Iterable<Screening> findByTheaterId(@PathVariable("theaterId") Integer theaterId) { return screeningService.findByTheaterId(theaterId); }
-    @GetMapping(path="/find/{hallId}")
+    @GetMapping(path="/find/hall/{hallId}")
     public @ResponseBody Iterable<Screening> findByHallId(@PathVariable("hallId") Integer hallId) { return screeningService.findByHallId(hallId); }
-    @GetMapping(path="/find/{movieId}")
+    @GetMapping(path="/find/movie/{movieId}")
     public @ResponseBody Iterable<Screening> findByMovieId(@PathVariable("movieId") Integer movieId) { return screeningService.findByMovieId(movieId); }
-    @GetMapping(path="/find/{bookingId}")
+    @GetMapping(path="/find/booking/{bookingId}")
     public @ResponseBody Iterable<Screening> findByBookingId(@PathVariable("bookingId") Integer bookingId) { return screeningService.findByBookingId(bookingId); }
-
-
-
 }

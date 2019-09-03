@@ -25,23 +25,46 @@ public class ScreeningService {
     private MovieRepository movieRepository;
 
 //add screening
-    public void addScreening(Screening screening){
-        //maybe some pre-processing, remove any artifacts
-        screeningRepository.save(screening);
+    public boolean addScreening(Integer hallId, Integer movieId, Date startDate) {
+        boolean success = true;
+        Movie movie = movieRepository.findById(movieId);
+        Hall hall = hallRepository.findById(hallId);
+        Screening screening = new Screening();
+        screening.setMovieId(movie);
+        screening.setHallId(hall);
+
+        Set<Integer> bookedScreeningIds = hall.getScreeningId();
+        for(Integer screeningId : bookedScreeningIds){
+            Screening tempScreening = screeningRepository.findById(screeningId);
+            Date tempStartDate = tempScreening.getStartDate();
+            Date tempEndDate = tempScreening.getEndDate();
+            Date endDate =  DateUtils.addMinutes(startDate, screening.getDuration());
+            if( (startDate.compareTo(tempStartDate) >= 0  && startDate.compareTo(tempEndDate) <= 0) || (endDate.compareTo(tempStartDate) >= 0  && endDate.compareTo(tempEndDate) <= 0)  ) {
+                //that means the screening I want to add clashes with already scheduled screening
+                success = false;
+            }
+        }
+        if(success) {
+            screening.setStartDate(startDate);
+            screeningRepository.save(screening);
+            hall.addScreeningId(screening);
+            hallRepository.save(hall);
+        }
+        return success;
     }
 
 //remove screening
     public void removeScreening(Integer id) {
         //maybe some pre-processing, remove any artifacts
+        //also needs to be removed from hall timetable
         screeningRepository.delete(id);
     }
 
 //update screening
     public void updateScreening(Integer id, Screening screening){
-        //something I might have not foreseen
         Screening n = screeningRepository.findById(id);
         if(screening.getStartDate() != null && n.getStartDate() != screening.getStartDate()) {  //situation = rescheduling a screening
-            //possibly reschedule all the bookings?
+            //possibly reschedule all the bookings of this screening too?
             n.setStartDate(screening.getStartDate());
         }
         if(screening.getHallId() != null && !n.getHallId().equals(screening.getHallId())) {     //situation = moving screening to another hall
@@ -60,7 +83,6 @@ public class ScreeningService {
 
 //assign to hall (check timetable for collisions)
     public String assignHall(Integer id, Integer hallId) {
-        //something I haven't foreseen might go here
         Hall hall = hallRepository.findById(hallId);
         Screening screening = screeningRepository.findById(id);
         boolean success = true;
@@ -74,7 +96,7 @@ public class ScreeningService {
                 Date tempEndDate = tempScreening.getEndDate();
                 Date startDate = screening.getStartDate();
                 Date endDate = screening.getEndDate();
-                if( (startDate.compareTo(tempStartDate) > 0  && startDate.compareTo(tempEndDate) < 0) || (endDate.compareTo(tempStartDate) > 0  && endDate.compareTo(tempEndDate) < 0)  ) {
+                if( (startDate.compareTo(tempStartDate) >= 0  && startDate.compareTo(tempEndDate) <= 0) || (endDate.compareTo(tempStartDate) >= 0  && endDate.compareTo(tempEndDate) <= 0)  ) {
                     //that means the screening I want to add clashes with already scheduled screening
                     success = false;
                 }
@@ -106,7 +128,7 @@ public class ScreeningService {
                 Date tempEndDate = tempScreening.getEndDate();
                 Date startDate = screening.getStartDate();
                 Date endDate = DateUtils.addMinutes(startDate, movie.getDuration());
-                if( (startDate.compareTo(tempStartDate) > 0  && startDate.compareTo(tempEndDate) < 0) || (endDate.compareTo(tempStartDate) > 0  && endDate.compareTo(tempEndDate) < 0)  ) {
+                if( (startDate.compareTo(tempStartDate) >= 0  && startDate.compareTo(tempEndDate) <= 0) || (endDate.compareTo(tempStartDate) >= 0  && endDate.compareTo(tempEndDate) <= 0)  ) {
                     //that means the screening I want to add clashes with already scheduled screening
                     success = false;
                 }
@@ -129,7 +151,7 @@ public class ScreeningService {
     }
 
 //assign screening date
-    public String assignStartDate(Integer id, Date startDate){
+    public boolean assignStartDate(Integer id, Date startDate){
         Screening screening = screeningRepository.findById(id);
         boolean success = true;
 
@@ -142,7 +164,7 @@ public class ScreeningService {
                 Date tempStartDate = tempScreening.getStartDate();
                 Date tempEndDate = tempScreening.getEndDate();
                 Date endDate =  DateUtils.addMinutes(startDate, screening.getDuration());
-                if( (startDate.compareTo(tempStartDate) > 0  && startDate.compareTo(tempEndDate) < 0) || (endDate.compareTo(tempStartDate) > 0  && endDate.compareTo(tempEndDate) < 0)  ) {
+                if( (startDate.compareTo(tempStartDate) >= 0  && startDate.compareTo(tempEndDate) <= 0) || (endDate.compareTo(tempStartDate) >= 0  && endDate.compareTo(tempEndDate) <= 0)  ) {
                     //that means the screening I want to add clashes with already scheduled screening
                     success = false;
                 }
@@ -153,15 +175,16 @@ public class ScreeningService {
                 screening.setStartDate(startDate);
                 hallRepository.save(hall);
                 screeningRepository.save(screening);
-                return "Successfully scheduled screening";
+                //return "Successfully scheduled screening";
             } else {
-                return "Failed due to schedule collision";
+                //return "Failed due to schedule collision";
             }
         } else {
             screening.setStartDate(startDate);
             screeningRepository.save(screening);
-            return "Successfully scheduled screening";
+            //return "Successfully scheduled screening";
         }
+        return success;
     }
 
     //find

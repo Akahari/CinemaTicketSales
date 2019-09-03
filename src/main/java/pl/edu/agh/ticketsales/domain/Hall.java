@@ -16,10 +16,10 @@ public class Hall implements Serializable {
     private Integer id;
 
     private String name;
-    private int rows = 0;
-    private int rowLength = 0;
+    private int rows;
+    private int rowLength;
 
-    private Integer theaterId = 0;
+    private Integer theaterId;
     @ElementCollection(targetClass=Integer.class)
     private Set<Integer> screeningId = new HashSet<>();
 
