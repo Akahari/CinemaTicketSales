@@ -35357,8 +35357,9 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35381,9 +35382,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var styles = {
   container: {
     height: '100%'
+  },
+  link: {
+    flex: 1,
+    margin: 10
   }
 };
 
@@ -35407,6 +35413,7 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       halls: [],
+      hallScreeningIds: [],
       error: null
     });
 
@@ -35418,7 +35425,7 @@ function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/hall/all').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2__["get"]('/hall/all').then(function (response) {
         console.log(response);
 
         _this2.setState({
@@ -35431,6 +35438,9 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
+      axios__WEBPACK_IMPORTED_MODULE_2__["defaults"].headers.post['Content-Type'] = 'application/json';
+      axios__WEBPACK_IMPORTED_MODULE_2__["defaults"].headers.post['Accept'] = 'application/json';
+      axios__WEBPACK_IMPORTED_MODULE_2__["defaults"].baseURL = 'http://localhost:8080/api';
     }
   }, {
     key: "render",
@@ -35443,8 +35453,11 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rows), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.screening));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater Id"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rows), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          to: "/movies",
+          style: styles.link
+        }, hall.screeningId.join(", "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.theaterId));
       }))));
     }
   }]);
@@ -35622,6 +35635,9 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
+      axios__WEBPACK_IMPORTED_MODULE_1__["defaults"].headers.post['Content-Type'] = 'application/json';
+      axios__WEBPACK_IMPORTED_MODULE_1__["defaults"].headers.post['Accept'] = 'application/json';
+      axios__WEBPACK_IMPORTED_MODULE_1__["defaults"].baseURL = 'http://localhost:8080/api';
     }
   }, {
     key: "render",
@@ -35634,8 +35650,8 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags")), this.state.movies.map(function (movie) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags")), this.state.movies.map(function (movie) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags));
       }))));
     }
   }]);
@@ -35732,6 +35748,9 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
+      axios__WEBPACK_IMPORTED_MODULE_1__["defaults"].headers.post['Content-Type'] = 'application/json';
+      axios__WEBPACK_IMPORTED_MODULE_1__["defaults"].headers.post['Accept'] = 'application/json';
+      axios__WEBPACK_IMPORTED_MODULE_1__["defaults"].baseURL = 'http://localhost:8080/api';
     }
   }, {
     key: "render",

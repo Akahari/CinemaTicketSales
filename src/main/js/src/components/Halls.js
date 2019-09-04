@@ -1,15 +1,21 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import * as axios from 'axios';
 
 const styles = {
     container: {
         height: '100%'
+    },
+    link: {
+        flex: 1,
+        margin: 10
     }
 };
 
 class Halls extends React.Component {
     state = {
         halls: [],
+        hallScreeningIds: [],
         error: null
     };
 
@@ -23,6 +29,9 @@ class Halls extends React.Component {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
+        axios.defaults.headers.post['Content-Type'] = 'application/json';
+        axios.defaults.headers.post['Accept'] = 'application/json';
+        axios.defaults.baseURL = 'http://localhost:8080/api';
     }
 
     render() {
@@ -43,6 +52,7 @@ class Halls extends React.Component {
                         <th>Rows</th>
                         <th>Row length</th>
                         <th>Screening Ids</th>
+                        <th>Theater Id</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -53,7 +63,8 @@ class Halls extends React.Component {
                                 <td>{hall.name}</td>
                                 <td>{hall.rows}</td>
                                 <td>{hall.rowLength}</td>
-                                <td>{hall.screening}</td>
+                                <td><Link to="/movies" style={styles.link}>{hall.screeningId.join(", ")}</Link></td>
+                                <td>{hall.theaterId}</td>
                             </tr>
                         ))
                     }

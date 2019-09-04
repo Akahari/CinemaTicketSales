@@ -23,6 +23,9 @@ class Screenings extends React.Component {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
+        axios.defaults.headers.post['Content-Type'] = 'application/json';
+        axios.defaults.headers.post['Accept'] = 'application/json';
+        axios.defaults.baseURL = 'http://localhost:8080/api';
     }
 
     render() {

@@ -23,6 +23,9 @@ class Movies extends React.Component {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
+        axios.defaults.headers.post['Content-Type'] = 'application/json';
+        axios.defaults.headers.post['Accept'] = 'application/json';
+        axios.defaults.baseURL = 'http://localhost:8080/api';
     }
 
     render() {
@@ -41,6 +44,8 @@ class Movies extends React.Component {
                         <th>Title</th>
                         <th>Duration</th>
                         <th>Description</th>
+                        <th>Cast</th>
+                        <th>Directors</th>
                         <th>Tags</th>
                     </tr>
                     {
@@ -49,7 +54,9 @@ class Movies extends React.Component {
                                 <td>{movie.title}</td>
                                 <td>{movie.duration}</td>
                                 <td>{movie.description}</td>
-                                <td></td>
+                                <td>{movie.cast}</td>
+                                <td>{movie.directors}</td>
+                                <td>{movie.tags}</td>
                             </tr>
                         ))
                     }

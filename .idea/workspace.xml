@@ -2,48 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e1dd256-ff7b-49b2-b17c-a86c2a4e23f9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/BookingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/Quasi_booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/Halls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/Movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/Screenings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketSales.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TicketSales.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HallController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/TheaterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/TheaterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Hall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Hall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Screening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Screening.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/HallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/HallService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/HallController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/HallController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/MovieController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/ScreeningController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/ScreeningController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/TheaterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/TheaterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Hall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Hall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Screening.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Screening.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/domain/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/HallService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/HallService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/ScreeningService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/ScreeningService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/Halls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/Halls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/Movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/Screenings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/Screenings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/built/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/built/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/built/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/built/bundle.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,64 +28,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#assignHall#0;class#ScreeningService#0" />
-                <element signature="method#assignMovie#0;class#ScreeningService#0" />
-                <element signature="method#assignStartDate#0;class#ScreeningService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Screening.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="116" column="88" selection-start-line="116" selection-start-column="88" selection-end-line="116" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setHallId#0;class#Screening#0" />
-                <element signature="method#setMovieId#0;class#Screening#0" />
-                <element signature="method#setStartDate#0;class#Screening#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Halls.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/TheaterController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="52" column="49" selection-start-line="41" selection-start-column="7" selection-end-line="52" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#addTheater#0;class#TheaterController#0" />
-                <element signature="method#removeTheater#0;class#TheaterController#0" />
-                <element signature="method#updateTheater#0;class#TheaterController#0" />
-                <element signature="method#addHallId#0;class#TheaterController#0" />
-                <element signature="method#addHallIds#0;class#TheaterController#0" />
-                <element signature="method#removeHallId#0;class#TheaterController#0" />
-                <element signature="method#getHallIds#0;class#TheaterController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -132,77 +40,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="method#addMovie#0;class#MovieController#0" />
+                <element signature="method#removeMovie#0;class#MovieController#0" />
+                <element signature="method#updateMovie#0;class#MovieController#0" />
+                <element signature="method#addDirector#0;class#MovieController#0" />
+                <element signature="method#addDirectors#0;class#MovieController#0" />
+                <element signature="method#addCast#0;class#MovieController#0" />
+                <element signature="method#addCasts#0;class#MovieController#0" />
+                <element signature="method#addTag#0;class#MovieController#0" />
+                <element signature="method#addTags#0;class#MovieController#0" />
+                <element signature="method#removeDirector#0;class#MovieController#0" />
+                <element signature="method#removeDirectors#0;class#MovieController#0" />
+                <element signature="method#removeCast#0;class#MovieController#0" />
+                <element signature="method#removeCasts#0;class#MovieController#0" />
+                <element signature="method#removedTag#0;class#MovieController#0" />
+                <element signature="method#removeTags#0;class#MovieController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/js/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="34" column="66" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/js/src/components/HomePage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="38" lean-forward="true" selection-start-column="26" selection-end-line="1" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Halls.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Movies.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state relative-caret-position="221">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/HallService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Screenings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#updateHall#0;class#HallService#0" />
-                <element signature="method#assignToTheater#0;class#HallService#0" />
-                <element signature="method#editTheaterId#0;class#HallService#0" />
-                <element signature="method#editRows#0;class#HallService#0" />
-                <element signature="method#editRowsLength#0;class#HallService#0" />
-                <element signature="method#editName#0;class#HallService#0" />
-                <marker date="1567504333350" expanded="true" signature="3354:3740" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/TheaterService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="76" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#updateTheater#0;class#TheaterService#0" />
-                <element signature="method#addHallId#0;class#TheaterService#0" />
-                <element signature="method#addHallIds#0;class#TheaterService#0" />
-                <element signature="method#removeHallId#0;class#TheaterService#0" />
-                <marker date="1567150524420" expanded="false" signature="1037:1398" ph="..." />
-                <marker date="1567150524420" expanded="true" signature="1413:1752" ph="..." />
-                <marker date="1567150524420" expanded="true" signature="1770:1941" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/MovieService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#updateMovie#0;class#MovieService#0" />
-                <element signature="e#2166#2456#1" />
-                <element signature="method#findByCastSet#0;class#MovieService#0" />
-                <element signature="e#2991#3276#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/BookingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="162" column="55" selection-start-line="162" selection-start-column="55" selection-end-line="162" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#findByBothNames#0;class#BookingService#0" />
-              </folding>
+            <state relative-caret-position="-83">
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -241,6 +144,7 @@
       <find>rows</find>
       <find>theaterId</find>
       <find>screening</find>
+      <find>vars</find>
     </findStrings>
     <replaceStrings>
       <replace>ShoppingList</replace>
@@ -296,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/TheaterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HallController.java" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/Screenings.js" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Screening.java" />
@@ -307,6 +210,7 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/BookingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Hall.java" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/Movies.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/Screenings.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/Halls.js" />
       </list>
     </option>
@@ -354,7 +258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,92 +277,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ticketsales" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ticketsales" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ticketsales" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ticketsales" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -626,7 +449,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15951742" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17292225" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -636,13 +459,13 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.3266399" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.3266399" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2834891" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2824632" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021482" side_tool="true" weight="0.45766345" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32502595" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -654,7 +477,7 @@
       <window_info anchor="right" id="Properties" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32975295" />
-      <window_info active="true" anchor="right" id="Maven" order="9" visible="true" weight="0.22788204" />
+      <window_info anchor="right" id="Maven" order="9" visible="true" weight="0.14678285" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24396783" />
@@ -852,31 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="137" column="35" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addMovie#0;class#MovieController#0" />
-            <element signature="method#removeMovie#0;class#MovieController#0" />
-            <element signature="method#updateMovie#0;class#MovieController#0" />
-            <element signature="method#addDirector#0;class#MovieController#0" />
-            <element signature="method#addDirectors#0;class#MovieController#0" />
-            <element signature="method#addCast#0;class#MovieController#0" />
-            <element signature="method#addCasts#0;class#MovieController#0" />
-            <element signature="method#addTag#0;class#MovieController#0" />
-            <element signature="method#addTags#0;class#MovieController#0" />
-            <element signature="method#removeDirector#0;class#MovieController#0" />
-            <element signature="method#removeDirectors#0;class#MovieController#0" />
-            <element signature="method#removeCast#0;class#MovieController#0" />
-            <element signature="method#removeCasts#0;class#MovieController#0" />
-            <element signature="method#removedTag#0;class#MovieController#0" />
-            <element signature="method#removeTags#0;class#MovieController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HallController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -911,27 +709,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/HomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Screenings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1069,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Movies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/HallService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -1137,7 +907,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/TheaterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
+        <state relative-caret-position="421">
           <caret line="52" column="49" selection-start-line="41" selection-start-column="7" selection-end-line="52" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1162,10 +932,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="method#addMovie#0;class#MovieController#0" />
+            <element signature="method#removeMovie#0;class#MovieController#0" />
+            <element signature="method#updateMovie#0;class#MovieController#0" />
+            <element signature="method#addDirector#0;class#MovieController#0" />
+            <element signature="method#addDirectors#0;class#MovieController#0" />
+            <element signature="method#addCast#0;class#MovieController#0" />
+            <element signature="method#addCasts#0;class#MovieController#0" />
+            <element signature="method#addTag#0;class#MovieController#0" />
+            <element signature="method#addTags#0;class#MovieController#0" />
+            <element signature="method#removeDirector#0;class#MovieController#0" />
+            <element signature="method#removeDirectors#0;class#MovieController#0" />
+            <element signature="method#removeCast#0;class#MovieController#0" />
+            <element signature="method#removeCasts#0;class#MovieController#0" />
+            <element signature="method#removedTag#0;class#MovieController#0" />
+            <element signature="method#removeTags#0;class#MovieController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Screenings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Movies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="66" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/HomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" lean-forward="true" selection-start-column="26" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Halls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="54" column="57" lean-forward="true" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
