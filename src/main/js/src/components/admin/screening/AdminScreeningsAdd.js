@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import {withRouter} from "react-router-dom";
 import {Link} from 'react-router-dom';
+import * as axios from 'axios';
 
 const styles = {
     paper: {
@@ -23,20 +24,31 @@ const styles = {
     }
 };
 
-class AdminMovies extends React.Component {
+class AdminScreenings extends React.Component {
     state = {
-        title: '',
-        description: '',
-        duration: 0,
-        tags: [],
-        cast: [],
-        directors: [],
+        startDate: '',
+        theaterId: 0,
+        hallId: 0,
+        movieId: 0,
         error: null
     };
     send = () => {
         const {history} = this.props;
         console.log(this.state);
-        history.push('/admin');
+        // send a POST request
+        axios.post('/screening/add', {
+            startDate: this.state.startDate,
+            theaterId: parseInt(this.state.theaterId,10),
+            hallId: parseInt(this.state.hallId,10),
+            movieId: parseInt(this.state.movieId,10)
+        })
+        .then((response) =>{
+            console.log(response);
+            const {history} = this.props;
+            history.push('/admin/screenings');
+        }, (error) => {
+            console.log(error);
+        });
     };
 
     render() {
@@ -56,7 +68,7 @@ class AdminMovies extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new hall
+                        Add new screening
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -64,66 +76,44 @@ class AdminMovies extends React.Component {
                             margin="normal"
                             required
                             fullWidth
-                            id="title"
-                            label="Movie title"
-                            name="title"
+                            id="startDate"
+                            label="Screening start date"
+                            name="startDate"
                             autoFocus
-                            onChange={(event) => this.setState({title: event.target.value})}
+                            onChange={(event) => this.setState({startDate: event.target.value})}
                         />
                         <TextField
                             variant="outlined"
                             margin="normal"
                             required
                             fullWidth
-                            id="description"
-                            label="Movie description"
-                            name="description"
+                            id="theaterId"
+                            label="Screening theater Id"
+                            name="theaterId"
                             autoFocus
-                            onChange={(event) => this.setState({description: event.target.value})}
+                            onChange={(event) => this.setState({theaterId: event.target.value})}
                         />
                         <TextField
                             variant="outlined"
                             margin="normal"
                             required
                             fullWidth
-                            id="duration"
-                            label="Movie duration"
-                            name="duration"
+                            id="hallId"
+                            label="Screening hall Id"
+                            name="hallId"
                             autoFocus
-                            onChange={(event) => this.setState({duration: event.target.value})}
+                            onChange={(event) => this.setState({hallId: event.target.value})}
                         />
                         <TextField
                             variant="outlined"
                             margin="normal"
                             required
                             fullWidth
-                            id="tags"
-                            label="Movie tags"
-                            name="tags"
+                            id="movieId"
+                            label="Screening movie Id"
+                            name="movieId"
                             autoFocus
-                            onChange={(event) => this.setState({tags: event.target.value})}
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="cast"
-                            label="Movie cast"
-                            name="cast"
-                            autoFocus
-                            onChange={(event) => this.setState({cast: event.target.value})}
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="directors"
-                            label="Movie directors"
-                            name="directors"
-                            autoFocus
-                            onChange={(event) => this.setState({directors: event.target.value})}
+                            onChange={(event) => this.setState({movieId: event.target.value})}
                         />
                         <Button
                             fullWidth
@@ -140,4 +130,4 @@ class AdminMovies extends React.Component {
     }
 }
 
-export default AdminMovies;
+export default AdminScreenings;

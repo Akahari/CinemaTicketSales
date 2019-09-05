@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import {withRouter} from "react-router-dom";
 import {Link} from 'react-router-dom';
+import * as axios from 'axios';
 
 const styles = {
     paper: {
@@ -34,14 +35,17 @@ class AdminTheaters extends React.Component {
         const {history} = this.props;
         console.log(this.state);
         // send a POST request
-        axios({
-            method: 'post',
-            url: '/theater/add',
-            data: {
-                "name": "Theater 8",
-                "city": "City 8",
-                "address": "Address 8"
-            }
+        axios.post('/theater/add', {
+            name: this.state.name,
+            city: this.state.city,
+            address: this.state.address
+        })
+        .then((response) =>{
+            console.log(response);
+            const {history} = this.props;
+            history.push('/admin/theaters');
+        }, (error) => {
+            console.log(error);
         });
     };
 

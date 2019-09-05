@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import {withRouter} from "react-router-dom";
 import {Link} from 'react-router-dom';
+import * as axios from 'axios';
 
 const styles = {
     paper: {
@@ -23,7 +24,7 @@ const styles = {
     }
 };
 
-class AdminHalls extends React.Component {
+class AdminHallsAdd extends React.Component {
     state = {
         theaterId: 0,
         name: '',
@@ -34,7 +35,20 @@ class AdminHalls extends React.Component {
     send = () => {
         const {history} = this.props;
         console.log(this.state);
-        history.push('/admin');
+        // send a POST request
+        axios.post('/hall/add', {
+            theaterId: parseInt(this.state.theaterId,10),
+            name: this.state.name,
+            rows: parseInt(this.state.rows,10),
+            rowLength: parseInt(this.state.rowLength,10)
+        })
+        .then((response) =>{
+            console.log(response);
+            const {history} = this.props;
+            history.push('/admin/halls');
+        }, (error) => {
+            console.log(error);
+        });
     };
 
     render() {
@@ -116,4 +130,4 @@ class AdminHalls extends React.Component {
     }
 }
 
-export default AdminHalls;
+export default AdminHallsAdd;
