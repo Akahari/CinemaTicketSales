@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 import pl.edu.agh.ticketsales.domain.Movie;
 import pl.edu.agh.ticketsales.repository.MovieRepository;
-
 import java.util.*;
 
 @Service

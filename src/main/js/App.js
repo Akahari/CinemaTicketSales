@@ -4,8 +4,16 @@ import * as axios from 'axios';
 import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom';
 import Screenings from './src/components/Screenings';
 import Halls from './src/components/Halls';
+import Theaters from './src/components/Theaters';
 import HomePage from './src/components/HomePage';
 import Movies from './src/components/Movies';
+import MovieDetails from './src/components/MovieDetails';
+import LoginPage from './src/components/LoginPage';
+import AdminHomePage from './src/components/admin/AdminHomePage';
+import AdminHalls from './src/components/admin/AdminHalls';
+import AdminMovies from './src/components/admin/AdminMovies';
+import AdminScreenings from './src/components/admin/AdminScreenings';
+import AdminTheaters from './src/components/admin/AdminTheaters';
 
 const styles = {
     grid: {
@@ -14,7 +22,8 @@ const styles = {
         height: '100%'
     },
     container: {
-        height: '100%'
+        height: '100%',
+        backgroundColor: 'white'
     }
 };
 
@@ -32,9 +41,17 @@ class App extends React.Component {
                 <Router>
                     <div style={styles.container}>
                         <Route exact path="/" component={HomePage}/>
-                        <Route path="/movies" component={Movies}/>
+                        <Route exact path="/login" component={LoginPage}/>
+                        <Route exact path="/admin" component={AdminHomePage}/>
+                        <Route exact path="/movies" component={Movies}/>
+                        <Route path="/movies/:movieId" component={MovieDetails}/>
                         <Route path="/halls" component={Halls}/>
                         <Route path="/screenings" component={Screenings}/>
+                        <Route path="/theaters" component={Theaters}/>
+                        <Route exact path="/admin/theaters" component={AdminTheaters}/>
+                        <Route exact path="/admin/movies" component={AdminMovies}/>
+                        <Route exact path="/admin/halls" component={AdminHalls}/>
+                        <Route exact path="/admin/screenings" component={AdminScreenings}/>
                         <Route component={() => <Redirect to="/"/>}/>
                     </div>
                 </Router>

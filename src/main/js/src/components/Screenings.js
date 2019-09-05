@@ -1,9 +1,14 @@
 import React from 'react';
 import * as axios from 'axios';
+import {Link} from 'react-router-dom';
 
 const styles = {
     container: {
         height: '100%'
+    },
+    link: {
+        flex: 1,
+        margin: 10
     }
 };
 
@@ -23,9 +28,6 @@ class Screenings extends React.Component {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
-        axios.defaults.headers.post['Content-Type'] = 'application/json';
-        axios.defaults.headers.post['Accept'] = 'application/json';
-        axios.defaults.baseURL = 'http://localhost:8080/api';
     }
 
     render() {
@@ -38,6 +40,7 @@ class Screenings extends React.Component {
         }
         return (
             <div style={styles.container}>
+                <Link to={"/"} style={styles.link}>Exit</Link>
                 <table>
                     <tbody>
                     <tr>

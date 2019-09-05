@@ -8,7 +8,6 @@ import org.apache.commons.lang.time.DateUtils;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.*;
-import java.lang.Math.*;
 
 
 @Entity
@@ -20,7 +19,7 @@ public class Screening implements Serializable {
     private Integer id;
 
     private boolean[] seatsStatus;
-    private int rows;
+    private int rowsNumber;
     private int rowLength;
     private Date startDate;
 
@@ -47,11 +46,11 @@ public class Screening implements Serializable {
         this.theaterId = hall.getTheaterId();
         if(seatsStatus != null && Arrays.asList(seatsStatus).contains(true)){
             int oldRowLength = this.rowLength;
-            int rows = Math.min(this.rows, hall.getRows());
+            int rows = Math.min(this.rowsNumber, hall.getRows());
             int rowLength = Math.min(this.rowLength, hall.getRowLength());
             boolean[] tempSeats = this.seatsStatus;   //keep old data
             this.seatsStatus = new boolean[hall.getRows() * hall.getRowLength()];    //create clean array
-            //iterate over rows and row lengths to keep as much of old data as possible
+            //iterate over rowsNumber and row lengths to keep as much of old data as possible
             for(int i= 0; i < rows; i++){
                 for(int j =0; j < rowLength; j++){
                     this.seatsStatus[i*rowLength + j] = tempSeats[i*oldRowLength + j];
@@ -60,7 +59,7 @@ public class Screening implements Serializable {
             //this will only salvage the problem with displaying taken seats, but if hall got downsized it won't fix problem with people who booked removed seats
             //this situation should never happen irl anyway
         } else {
-            this.rows = hall.getRows();
+            this.rowsNumber = hall.getRows();
             this.rowLength = hall.getRowLength();
             this.seatsStatus = new boolean[hall.getRows() * hall.getRowLength()];
         }
@@ -84,11 +83,11 @@ public class Screening implements Serializable {
     }
 
     public int getRows() {
-        return rows;
+        return rowsNumber;
     }
 
     public void setRows(int rows) {
-        this.rows = rows;
+        this.rowsNumber = rows;
     }
 
     public int getRowLength() {

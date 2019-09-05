@@ -1,5 +1,4 @@
 import React from 'react';
-import * as axios from 'axios';
 import {Link} from 'react-router-dom';
 
 const styles = {
@@ -12,22 +11,25 @@ const styles = {
     }
 };
 
-class Movies extends React.Component {
+class Theaters extends React.Component {
     state = {
-        movies: [],
+        theaters: [],
         error: null
     };
 
     componentDidMount() {
-        axios.get('/movie/all').then(
+        axios.get('/theater/all').then(
             response => {
                 console.log(response);
-                this.setState({movies: response.data});
+                this.setState({theaters: response.data});
             },
             error => {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
+            console.log('Hello World :)');
+            console.log(this.state);
+            console.log('Hello World2 :)');
     }
 
     render() {
@@ -38,30 +40,28 @@ class Movies extends React.Component {
                 </div>
             )
         }
+        console.log(this.state);
+        console.log('Hello World3 :)');
         return (
             <div style={styles.container}>
                 <Link to={"/"} style={styles.link}>Exit</Link>
                 <table>
                     <tbody>
                     <tr>
-                        <th>Title</th>
-                        <th>Duration</th>
-                        <th>Description</th>
-                        <th>Cast</th>
-                        <th>Directors</th>
-                        <th>Tags</th>
-                        <th>Link</th>
+                        <th>Theater id</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Address</th>
+                        <th>Hall ids</th>
                     </tr>
                     {
-                        this.state.movies.map(movie => (
+                        this.state.theaters.map(theater => (
                             <tr>
-                                <td>{movie.title}</td>
-                                <td>{movie.duration}</td>
-                                <td>{movie.description}</td>
-                                <td>{movie.cast}</td>
-                                <td>{movie.directors}</td>
-                                <td>{movie.tags}</td>
-                                <td><Link to={`/movies/${movie.id}`}>Open</Link></td>
+                                <td>{theater.id}</td>
+                                <td>{theater.name}</td>
+                                <td>{theater.city}</td>
+                                <td>{theater.address}</td>
+                                <td>{theater.hallIds}</td>
                             </tr>
                         ))
                     }
@@ -72,4 +72,4 @@ class Movies extends React.Component {
     }
 }
 
-export default Movies;
+export default Theaters;

@@ -9,7 +9,9 @@ import pl.edu.agh.ticketsales.repository.HallRepository;
 import pl.edu.agh.ticketsales.repository.ScreeningRepository;
 import pl.edu.agh.ticketsales.repository.TheaterRepository;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Set;
 
 @Service

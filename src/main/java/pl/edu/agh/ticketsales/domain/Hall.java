@@ -16,7 +16,7 @@ public class Hall implements Serializable {
     private Integer id;
 
     private String name;
-    private int rows;
+    private int rowsNumber;
     private int rowLength;
 
     private Integer theaterId;
@@ -36,8 +36,8 @@ public class Hall implements Serializable {
     public String getName() { return name;}
     public void setName(String name) { this.name = name;}
 
-    public int getRows() {return rows;}
-    public void setRows(int rows) {this.rows = rows;}
+    public int getRows() {return rowsNumber;}
+    public void setRows(int rows) {this.rowsNumber = rows;}
 
     public int getRowLength() { return rowLength;}
     public void setRowLength(int rowLength) {this.rowLength = rowLength;}

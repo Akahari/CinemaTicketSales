@@ -13,6 +13,7 @@ public interface ScreeningRepository extends CrudRepository<Screening, Integer> 
     public Iterable<Screening> findByHallId(Integer hallId);
     public Iterable<Screening> findByMovieId(Integer movieId);
     public Iterable<Screening> findByBookingId(Integer bookingId);
+    public Screening findOneByBookingId(Integer bookingId);
     //public Iterable<Screening> findByStartDate(Date startDate);
 
 }
