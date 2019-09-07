@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pl.edu.agh.ticketsales.domain.Movie;
 import pl.edu.agh.ticketsales.service.MovieService;
+import pl.edu.agh.ticketsales.util.MovieString;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -16,7 +17,8 @@ public class MovieController {
 
 //add new movie
     @PostMapping(path="/add")
-    public @ResponseBody String addMovie (@RequestBody Movie movie) {
+    public @ResponseBody String addMovie (@RequestBody Movie movie) {   //at least temporarily input is all strings, untill I figure our how to parse variables on the JS side
+        //Movie movie = movieString.parseToMovie();
         System.out.println(movie.getTags());
         Set<String> blankArrayList = new HashSet<String>();
         if(movie.getCast() == null) movie.setCast(blankArrayList);

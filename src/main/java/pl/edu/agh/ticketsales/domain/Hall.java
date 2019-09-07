@@ -36,8 +36,8 @@ public class Hall implements Serializable {
     public String getName() { return name;}
     public void setName(String name) { this.name = name;}
 
-    public int getRows() {return rowsNumber;}
-    public void setRows(int rows) {this.rowsNumber = rows;}
+    public int getRowsNumber() {return rowsNumber;}
+    public void setRowsNumber(int rowsNumber) {this.rowsNumber = rowsNumber;}
 
     public int getRowLength() { return rowLength;}
     public void setRowLength(int rowLength) {this.rowLength = rowLength;}

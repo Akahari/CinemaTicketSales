@@ -18,6 +18,7 @@ public class TheaterController {
     //add new theater
     @PostMapping(path="/add")
     public @ResponseBody String addTheater (@RequestBody Theater theater) {
+
         Set<Integer> blankSet = new HashSet<>();
         if(theater.getHallIds()== null) theater.setHallIds(blankSet);
         theaterService.addTheater(theater);

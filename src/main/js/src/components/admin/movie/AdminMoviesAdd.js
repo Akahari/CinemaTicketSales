@@ -72,7 +72,7 @@ class AdminMovies extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new hall
+                        Add new movie
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -106,7 +106,7 @@ class AdminMovies extends React.Component {
                             label="Movie duration"
                             name="duration"
                             autoFocus
-                            onChange={(event) => this.setState({duration: event.target.value})}
+                            onChange={(event) => this.setState({duration: parseInt(event.target.value, 10)})}
                         />
                         <TextField
                             variant="outlined"
@@ -117,7 +117,7 @@ class AdminMovies extends React.Component {
                             label="Movie tags"
                             name="tags"
                             autoFocus
-                            onChange={(event) => this.setState({tags: event.target.value})}
+                            onChange={(event) => this.setState({tags: event.target.value.split(";")})}
                         />
                         <TextField
                             variant="outlined"
@@ -128,7 +128,7 @@ class AdminMovies extends React.Component {
                             label="Movie cast"
                             name="cast"
                             autoFocus
-                            onChange={(event) => this.setState({cast: event.target.value})}
+                            onChange={(event) => this.setState({cast: event.target.value.split(";")})}
                         />
                         <TextField
                             variant="outlined"
@@ -139,7 +139,7 @@ class AdminMovies extends React.Component {
                             label="Movie directors"
                             name="directors"
                             autoFocus
-                            onChange={(event) => this.setState({directors: event.target.value})}
+                            onChange={(event) => this.setState({directors: event.target.value.split(";")})}
                         />
                         <Button
                             fullWidth

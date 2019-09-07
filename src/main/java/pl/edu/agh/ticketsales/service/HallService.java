@@ -30,6 +30,7 @@ public class HallService {
             theater.addHallId(hall.getId());
             theaterRepository.save(theater);
         }
+        System.out.println(hall.getRowsNumber());
         hallRepository.save(hall);
     }
 
@@ -49,8 +50,8 @@ public class HallService {
         Hall n = hallRepository.findById(id);
         boolean seatsChanged = false;
         if(!n.getName().equals(hall.getName()) && hall.getName() != null) n.setName(hall.getName());
-        if(n.getRows() != hall.getRows() && hall.getRows() != 0) {
-            n.setRows(hall.getRows());
+        if(n.getRowsNumber() != hall.getRowsNumber() && hall.getRowsNumber() != 0) {
+            n.setRowsNumber(hall.getRowsNumber());
             seatsChanged = true;
         }
         if(n.getRowLength() != hall.getRowLength() && hall.getRowLength() != 0) {
@@ -105,7 +106,7 @@ public class HallService {
     //edit number of seats
     public void editRows(Integer id, int rows) {
         Hall n = hallRepository.findById(id);
-        n.setRows(rows);
+        n.setRowsNumber(rows);
         hallRepository.save(n);
     }
     public void editRowsLength(Integer id, int rowLength) {

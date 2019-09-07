@@ -22,8 +22,7 @@ class AdminMovies extends React.Component {
             <div style={styles.container}>
                 <p>Welcome to admin view</p>
                 <Link to={"/admin/movies/add"} style={styles.link}>Add</Link>
-                <Link to={"/"} style={styles.link}>Remove</Link>
-                <Link to={"/"} style={styles.link}>Edit</Link>
+                <Link to={"/admin/movies/edit"} style={styles.link}>Edit/Remove</Link>
                 <Link to={"/admin"} style={styles.link}>Back</Link>
             </div>
         );

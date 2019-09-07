@@ -46,10 +46,10 @@ public class Screening implements Serializable {
         this.theaterId = hall.getTheaterId();
         if(seatsStatus != null && Arrays.asList(seatsStatus).contains(true)){
             int oldRowLength = this.rowLength;
-            int rows = Math.min(this.rowsNumber, hall.getRows());
+            int rows = Math.min(this.rowsNumber, hall.getRowsNumber());
             int rowLength = Math.min(this.rowLength, hall.getRowLength());
             boolean[] tempSeats = this.seatsStatus;   //keep old data
-            this.seatsStatus = new boolean[hall.getRows() * hall.getRowLength()];    //create clean array
+            this.seatsStatus = new boolean[hall.getRowsNumber() * hall.getRowLength()];    //create clean array
             //iterate over rowsNumber and row lengths to keep as much of old data as possible
             for(int i= 0; i < rows; i++){
                 for(int j =0; j < rowLength; j++){
@@ -59,9 +59,9 @@ public class Screening implements Serializable {
             //this will only salvage the problem with displaying taken seats, but if hall got downsized it won't fix problem with people who booked removed seats
             //this situation should never happen irl anyway
         } else {
-            this.rowsNumber = hall.getRows();
+            this.rowsNumber = hall.getRowsNumber();
             this.rowLength = hall.getRowLength();
-            this.seatsStatus = new boolean[hall.getRows() * hall.getRowLength()];
+            this.seatsStatus = new boolean[hall.getRowsNumber() * hall.getRowLength()];
         }
     }
 

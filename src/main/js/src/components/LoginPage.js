@@ -33,6 +33,7 @@ class LoginPage extends React.Component {
             history.push('/');
         }
     };
+
     render() {
         return (
             <Container component="main" maxWidth="xs">

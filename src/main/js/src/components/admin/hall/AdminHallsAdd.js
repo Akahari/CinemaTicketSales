@@ -28,7 +28,7 @@ class AdminHallsAdd extends React.Component {
     state = {
         theaterId: 0,
         name: '',
-        rows: 0,
+        rowsNumber: 0,
         rowLength: 0,
         error: null
     };
@@ -39,7 +39,7 @@ class AdminHallsAdd extends React.Component {
         axios.post('/hall/add', {
             theaterId: parseInt(this.state.theaterId,10),
             name: this.state.name,
-            rows: parseInt(this.state.rows,10),
+            rowsNumber: parseInt(this.state.rowsNumber,10),
             rowLength: parseInt(this.state.rowLength,10)
         })
         .then((response) =>{
@@ -80,7 +80,7 @@ class AdminHallsAdd extends React.Component {
                             label="Hall theater Id"
                             name="theaterId"
                             autoFocus
-                            onChange={(event) => this.setState({theaterId: event.target.value})}
+                            onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
                         />
                         <TextField
                             variant="outlined"
@@ -102,7 +102,7 @@ class AdminHallsAdd extends React.Component {
                             label="Hall rows"
                             name="rows"
                             autoFocus
-                            onChange={(event) => this.setState({rows: event.target.value})}
+                            onChange={(event) => this.setState({rowsNumber: parseInt(event.target.value, 10)})}
                         />
                         <TextField
                             variant="outlined"
@@ -113,7 +113,7 @@ class AdminHallsAdd extends React.Component {
                             label="Hall row length"
                             name="rowLength"
                             autoFocus
-                            onChange={(event) => this.setState({rowLength: event.target.value})}
+                            onChange={(event) => this.setState({rowLength: parseInt(event.target.value, 10)})}
                         />
                         <Button
                             fullWidth

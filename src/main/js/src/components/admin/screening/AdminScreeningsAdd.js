@@ -38,9 +38,9 @@ class AdminScreenings extends React.Component {
         // send a POST request
         axios.post('/screening/add', {
             startDate: this.state.startDate,
-            theaterId: parseInt(this.state.theaterId,10),
-            hallId: parseInt(this.state.hallId,10),
-            movieId: parseInt(this.state.movieId,10)
+            theaterId: (this.state.theaterId),
+            hallId: (this.state.hallId),
+            movieId: (this.state.movieId)
         })
         .then((response) =>{
             console.log(response);
@@ -91,7 +91,7 @@ class AdminScreenings extends React.Component {
                             label="Screening theater Id"
                             name="theaterId"
                             autoFocus
-                            onChange={(event) => this.setState({theaterId: event.target.value})}
+                            onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
                         />
                         <TextField
                             variant="outlined"
@@ -102,7 +102,7 @@ class AdminScreenings extends React.Component {
                             label="Screening hall Id"
                             name="hallId"
                             autoFocus
-                            onChange={(event) => this.setState({hallId: event.target.value})}
+                            onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
                         />
                         <TextField
                             variant="outlined"
@@ -113,7 +113,7 @@ class AdminScreenings extends React.Component {
                             label="Screening movie Id"
                             name="movieId"
                             autoFocus
-                            onChange={(event) => this.setState({movieId: event.target.value})}
+                            onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
                         />
                         <Button
                             fullWidth

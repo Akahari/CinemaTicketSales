@@ -54668,12 +54668,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_admin_AdminHomePage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/components/admin/AdminHomePage */ "./src/main/js/src/components/admin/AdminHomePage.js");
 /* harmony import */ var _src_components_admin_hall_AdminHalls__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHalls */ "./src/main/js/src/components/admin/hall/AdminHalls.js");
 /* harmony import */ var _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsAdd */ "./src/main/js/src/components/admin/hall/AdminHallsAdd.js");
-/* harmony import */ var _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsEdit */ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js");
+/* harmony import */ var _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesEdit */ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsEdit */ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -54691,6 +54695,10 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
 
 
 
@@ -54783,19 +54791,27 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/theaters",
-        component: _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_18__["default"]
+        component: _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_21__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/theaters/add",
-        component: _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_19__["default"]
+        component: _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_22__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+        exact: true,
+        path: "/admin/theaters/edit",
+        component: _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_23__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/movies",
-        component: _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_14__["default"]
+        component: _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_15__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/movies/add",
-        component: _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_15__["default"]
+        component: _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_16__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+        exact: true,
+        path: "/admin/movies/edit",
+        component: _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_17__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/halls",
@@ -54806,12 +54822,20 @@ function (_React$Component) {
         component: _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_13__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
+        path: "/admin/halls/edit",
+        component: _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_14__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+        exact: true,
         path: "/admin/screenings",
-        component: _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_16__["default"]
+        component: _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_18__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/screenings/add",
-        component: _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_17__["default"]
+        component: _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_19__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+        exact: true,
+        path: "/admin/screenings/edit",
+        component: _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_20__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         component: function component() {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
@@ -55811,12 +55835,9 @@ function (_React$Component) {
         to: "/admin/halls/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
+        to: "/admin/halls/edit",
         style: styles.link
-      }, "Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
-        style: styles.link
-      }, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
         style: styles.link
       }, "Back"));
@@ -55915,7 +55936,7 @@ function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "state", {
       theaterId: 0,
       name: '',
-      rows: 0,
+      rowsNumber: 0,
       rowLength: 0,
       error: null
     });
@@ -55927,7 +55948,7 @@ function (_React$Component) {
       axios__WEBPACK_IMPORTED_MODULE_7__["post"]('/hall/add', {
         theaterId: parseInt(_this.state.theaterId, 10),
         name: _this.state.name,
-        rows: parseInt(_this.state.rows, 10),
+        rowsNumber: parseInt(_this.state.rowsNumber, 10),
         rowLength: parseInt(_this.state.rowLength, 10)
       }).then(function (response) {
         console.log(response);
@@ -55981,7 +56002,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            theaterId: event.target.value
+            theaterId: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56009,7 +56030,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            rows: event.target.value
+            rowsNumber: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56023,7 +56044,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            rowLength: event.target.value
+            rowLength: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -56039,6 +56060,164 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (AdminHallsAdd);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js":
+/*!*****************************************************************!*\
+  !*** ./src/main/js/src/components/admin/hall/AdminHallsEdit.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Container */ "./node_modules/@material-ui/core/esm/Container/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+
+var styles = {
+  container: {
+    height: '100%'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  }
+};
+
+var AdminHallsEdit =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AdminHallsEdit, _React$Component);
+
+  function AdminHallsEdit() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, AdminHallsEdit);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(AdminHallsEdit)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      halls: [],
+      error: null
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "edit", function () {
+      var history = _this.props.history;
+      console.log("You pushed edit button :)");
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+      var history = _this.props.history;
+      console.log("You pushed remove button :)");
+    });
+
+    return _this;
+  }
+
+  _createClass(AdminHallsEdit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/hall/all').then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          halls: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      console.log('Hello World :)');
+      console.log(this.state);
+      console.log('Hello World2 :)');
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      if (this.state.error) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, this.state.error);
+      }
+
+      console.log(this.state);
+      console.log('Hello World3 :)');
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/admin/movies",
+        style: styles.link
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rows), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+          to: "/movies",
+          style: styles.link
+        }, hall.screeningId.join(", "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.edit
+        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.remove
+        }, "Remove")));
+      }))));
+    }
+  }]);
+
+  return AdminHallsEdit;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AdminHallsEdit);
 
 /***/ }),
 
@@ -56110,12 +56289,9 @@ function (_React$Component) {
         to: "/admin/movies/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
+        to: "/admin/movies/edit",
         style: styles.link
-      }, "Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
-        style: styles.link
-      }, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
         style: styles.link
       }, "Back"));
@@ -56270,7 +56446,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new hall"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Add new movie"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56312,7 +56488,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            duration: event.target.value
+            duration: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56326,7 +56502,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            tags: event.target.value
+            tags: event.target.value.split(";")
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56340,7 +56516,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            cast: event.target.value
+            cast: event.target.value.split(";")
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56354,7 +56530,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            directors: event.target.value
+            directors: event.target.value.split(";")
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -56370,6 +56546,163 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (AdminMovies);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js":
+/*!*******************************************************************!*\
+  !*** ./src/main/js/src/components/admin/movie/AdminMoviesEdit.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Container */ "./node_modules/@material-ui/core/esm/Container/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+
+var styles = {
+  container: {
+    height: '100%'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  }
+};
+
+var AdminMoviesEdit =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AdminMoviesEdit, _React$Component);
+
+  function AdminMoviesEdit() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, AdminMoviesEdit);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(AdminMoviesEdit)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      movies: [],
+      error: null
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "edit", function () {
+      var history = _this.props.history;
+      console.log("You pushed edit button :)");
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+      var history = _this.props.history;
+      console.log("You pushed remove button :)");
+    });
+
+    return _this;
+  }
+
+  _createClass(AdminMoviesEdit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/movie/all').then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          movies: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      console.log('Hello World :)');
+      console.log(this.state);
+      console.log('Hello World2 :)');
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      if (this.state.error) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, this.state.error);
+      }
+
+      console.log(this.state);
+      console.log('Hello World3 :)');
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/admin/movies",
+        style: styles.link
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.movies.map(function (movie) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+          to: "/movies/".concat(movie.id)
+        }, "Open")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.edit
+        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.remove
+        }, "Remove")));
+      }))));
+    }
+  }]);
+
+  return AdminMoviesEdit;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AdminMoviesEdit);
 
 /***/ }),
 
@@ -56441,12 +56774,9 @@ function (_React$Component) {
         to: "/admin/screenings/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
+        to: "/admin/screenings/edit",
         style: styles.link
-      }, "Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
-        style: styles.link
-      }, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
         style: styles.link
       }, "Back"));
@@ -56556,9 +56886,9 @@ function (_React$Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_7__["post"]('/screening/add', {
         startDate: _this.state.startDate,
-        theaterId: parseInt(_this.state.theaterId, 10),
-        hallId: parseInt(_this.state.hallId, 10),
-        movieId: parseInt(_this.state.movieId, 10)
+        theaterId: _this.state.theaterId,
+        hallId: _this.state.hallId,
+        movieId: _this.state.movieId
       }).then(function (response) {
         console.log(response);
         var history = _this.props.history;
@@ -56625,7 +56955,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            theaterId: event.target.value
+            theaterId: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56639,7 +56969,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            hallId: event.target.value
+            hallId: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -56653,7 +56983,7 @@ function (_React$Component) {
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            movieId: event.target.value
+            movieId: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -56669,6 +56999,161 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (AdminScreenings);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js":
+/*!***************************************************************************!*\
+  !*** ./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Container */ "./node_modules/@material-ui/core/esm/Container/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+
+var styles = {
+  container: {
+    height: '100%'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  }
+};
+
+var AdminScreeningsEdit =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AdminScreeningsEdit, _React$Component);
+
+  function AdminScreeningsEdit() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, AdminScreeningsEdit);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(AdminScreeningsEdit)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      screenings: [],
+      error: null
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "edit", function () {
+      var history = _this.props.history;
+      console.log("You pushed edit button :)");
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+      var history = _this.props.history;
+      console.log("You pushed remove button :)");
+    });
+
+    return _this;
+  }
+
+  _createClass(AdminScreeningsEdit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/screening/all').then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          screenings: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      console.log('Hello World :)');
+      console.log(this.state);
+      console.log('Hello World2 :)');
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      if (this.state.error) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, this.state.error);
+      }
+
+      console.log(this.state);
+      console.log('Hello World3 :)');
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/admin/screenings",
+        style: styles.link
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.screenings.map(function (screening) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.startDate), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.edit
+        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.remove
+        }, "Remove")));
+      }))));
+    }
+  }]);
+
+  return AdminScreeningsEdit;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AdminScreeningsEdit);
 
 /***/ }),
 
@@ -56740,12 +57225,9 @@ function (_React$Component) {
         to: "/admin/theaters/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
+        to: "/admin/theaters/edit",
         style: styles.link
-      }, "Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
-        style: styles.link
-      }, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
         style: styles.link
       }, "Back"));
@@ -56952,6 +57434,161 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (AdminTheaters);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js":
+/*!***********************************************************************!*\
+  !*** ./src/main/js/src/components/admin/theater/AdminTheatersEdit.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Container */ "./node_modules/@material-ui/core/esm/Container/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+
+
+var styles = {
+  container: {
+    height: '100%'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  }
+};
+
+var AdminTheatersEdit =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AdminTheatersEdit, _React$Component);
+
+  function AdminTheatersEdit() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, AdminTheatersEdit);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(AdminTheatersEdit)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      theaters: [],
+      error: null
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "edit", function () {
+      var history = _this.props.history;
+      console.log("You pushed edit button :)");
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+      var history = _this.props.history;
+      console.log("You pushed remove button :)");
+    });
+
+    return _this;
+  }
+
+  _createClass(AdminTheatersEdit, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/theater/all').then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          theaters: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      console.log('Hello World :)');
+      console.log(this.state);
+      console.log('Hello World2 :)');
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      if (this.state.error) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, this.state.error);
+      }
+
+      console.log(this.state);
+      console.log('Hello World3 :)');
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/admin/theaters",
+        style: styles.link
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.theaters.map(function (theater) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.edit
+        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: _this3.remove
+        }, "Remove")));
+      }))));
+    }
+  }]);
+
+  return AdminTheatersEdit;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AdminTheatersEdit);
 
 /***/ })
 

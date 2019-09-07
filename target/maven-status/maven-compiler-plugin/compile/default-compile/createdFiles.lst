@@ -1,4 +1,8 @@
 pl\edu\agh\ticketsales\service\BookingService.class
+pl\edu\agh\ticketsales\util\ScreeningString.class
+pl\edu\agh\ticketsales\util\HallString.class
 pl\edu\agh\ticketsales\controller\BookingController.class
 pl\edu\agh\ticketsales\controller\HomeController.class
+pl\edu\agh\ticketsales\util\BookingString.class
 pl\edu\agh\ticketsales\util\Quasi_booking.class
+pl\edu\agh\ticketsales\util\MovieString.class
