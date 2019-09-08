@@ -25,13 +25,18 @@ public class HallService {
 
 //add hall
     public void addHall(Hall hall) {
-        if(hall.getTheaterId() != null) {
+        boolean success = true;
+        if(hall.getTheaterId() == null) {
+            success = false;
+        }
+        hallRepository.save(hall);
+        if(success){
+            hallRepository.save(hall);
             Theater theater = theaterRepository.findById(hall.getTheaterId());
             theater.addHallId(hall.getId());
             theaterRepository.save(theater);
+
         }
-        System.out.println(hall.getRowsNumber());
-        hallRepository.save(hall);
     }
 
 //remove hall

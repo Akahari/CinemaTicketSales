@@ -18,33 +18,41 @@ const styles = {
     }
 };
 
-class AdminTheatersEdit extends React.Component {
+class AdminHallsEdit extends React.Component {
     state = {
-        theaters: [],
+        halls: [],
         error: null
     };
     edit = () => {
         const {history} = this.props;
         console.log("You pushed edit button :)");
     };
-    remove = () => {
+    remove = (hallId) => {
         const {history} = this.props;
         console.log("You pushed remove button :)");
+        axios.post(`/hall/remove/${hallId}`).then(
+            response => {
+                console.log(response);
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            }
+        );
+        history.push('/admin/halls');
     };
 
     componentDidMount() {
-        axios.get('/theater/all').then(
+        axios.get('/hall/all').then(
             response => {
                 console.log(response);
-                this.setState({theaters: response.data});
+                this.setState({halls: response.data});
             },
             error => {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
-            console.log('Hello World :)');
             console.log(this.state);
-            console.log('Hello World2 :)');
     }
 
     render() {
@@ -55,30 +63,32 @@ class AdminTheatersEdit extends React.Component {
                 </div>
             )
         }
-        console.log(this.state);
-        console.log('Hello World3 :)');
         return (
             <div style={styles.container}>
-                <Link to={"/admin/theaters"} style={styles.link}>Exit</Link>
+                <Link to={"/admin/halls"} style={styles.link}>Exit</Link>
                 <table>
-                    <tbody>
+                    <thead>
                     <tr>
-                        <th>Theater id</th>
-                        <th>Name</th>
-                        <th>City</th>
-                        <th>Address</th>
-                        <th>Hall ids</th>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Rows</th>
+                        <th>Row length</th>
+                        <th>Screening Ids</th>
+                        <th>Theater Id</th>
                         <th>Edit</th>
                         <th>Remove</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     {
-                        this.state.theaters.map(theater => (
+                        this.state.halls.map(hall => (
                             <tr>
-                                <td>{theater.id}</td>
-                                <td>{theater.name}</td>
-                                <td>{theater.city}</td>
-                                <td>{theater.address}</td>
-                                <td>{theater.hallIds}</td>
+                                <td>{hall.id}</td>
+                                <td>{hall.name}</td>
+                                <td>{hall.rowsNumber}</td>
+                                <td>{hall.rowLength}</td>
+                                <td><Link to="/halls" style={styles.link}>{hall.screeningId.join(", ")}</Link></td>
+                                <td>{hall.theaterId}</td>
                                 <td>
                                     <Button
                                         variant="contained"
@@ -92,7 +102,7 @@ class AdminTheatersEdit extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={this.remove}
+                                        onClick={() => this.remove(hall.id)}
                                     >
                                         Remove
                                     </Button>
@@ -107,4 +117,4 @@ class AdminTheatersEdit extends React.Component {
     }
 }
 
-export default AdminTheatersEdit;
+export default AdminHallsEdit;

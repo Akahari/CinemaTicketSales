@@ -4,9 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pl.edu.agh.ticketsales.domain.Hall;
 import pl.edu.agh.ticketsales.service.HallService;
-import pl.edu.agh.ticketsales.util.HallString;
-
-import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/api/hall")
@@ -17,7 +14,7 @@ public class HallController {
 //add new hall
     @PostMapping(path = "/add")
     public @ResponseBody
-    String addHall(@RequestBody Hall hall) {//at least temporarily input is all strings, untill I figure our how to parse variables on the JS side
+    String addHall(@RequestBody Hall hall) {
         hallService.addHall(hall);
         return "Saved hall";
     }

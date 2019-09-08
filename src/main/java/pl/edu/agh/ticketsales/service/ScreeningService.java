@@ -10,6 +10,7 @@ import pl.edu.agh.ticketsales.domain.Screening;
 import pl.edu.agh.ticketsales.repository.HallRepository;
 import pl.edu.agh.ticketsales.repository.MovieRepository;
 import pl.edu.agh.ticketsales.repository.ScreeningRepository;
+import pl.edu.agh.ticketsales.util.Quasi_screening;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -25,27 +26,30 @@ public class ScreeningService {
     private MovieRepository movieRepository;
 
 //add screening
-    public boolean addScreening(Integer hallId, Integer movieId, Date startDate) {
+    public boolean addScreening(Quasi_screening quasi_screening) {
+
         boolean success = true;
-        Movie movie = movieRepository.findById(movieId);
-        Hall hall = hallRepository.findById(hallId);
+        Movie movie = movieRepository.findById(quasi_screening.getMovieId());
+        Hall hall = hallRepository.findById(quasi_screening.getHallId());
         Screening screening = new Screening();
         screening.setMovieId(movie);
         screening.setHallId(hall);
 
         Set<Integer> bookedScreeningIds = hall.getScreeningId();
-        for(Integer screeningId : bookedScreeningIds){
-            Screening tempScreening = screeningRepository.findById(screeningId);
-            Date tempStartDate = tempScreening.getStartDate();
-            Date tempEndDate = tempScreening.getEndDate();
-            Date endDate =  DateUtils.addMinutes(startDate, screening.getDuration());
-            if( (startDate.compareTo(tempStartDate) >= 0  && startDate.compareTo(tempEndDate) <= 0) || (endDate.compareTo(tempStartDate) >= 0  && endDate.compareTo(tempEndDate) <= 0)  ) {
-                //that means the screening I want to add clashes with already scheduled screening
-                success = false;
+        if(!bookedScreeningIds.isEmpty()) {
+            for (Integer screeningId : bookedScreeningIds) {
+                Screening tempScreening = screeningRepository.findById(screeningId);
+                Date tempStartDate = tempScreening.getStartDate();
+                Date tempEndDate = tempScreening.getEndDate();
+                Date endDate = DateUtils.addMinutes(quasi_screening.getStartDate(), screening.getDuration());
+                if ((quasi_screening.getStartDate().compareTo(tempStartDate) >= 0 && quasi_screening.getStartDate().compareTo(tempEndDate) <= 0) || (endDate.compareTo(tempStartDate) >= 0 && endDate.compareTo(tempEndDate) <= 0)) {
+                    //that means the screening I want to add clashes with already scheduled screening
+                    success = false;
+                }
             }
         }
         if(success) {
-            screening.setStartDate(startDate);
+            screening.setStartDate(quasi_screening.getStartDate());
             screeningRepository.save(screening);
             hall.addScreeningId(screening);
             hallRepository.save(hall);

@@ -27,9 +27,19 @@ class AdminMoviesEdit extends React.Component {
         const {history} = this.props;
         console.log("You pushed edit button :)");
     };
-    remove = () => {
+    remove = (movieId) => {
         const {history} = this.props;
         console.log("You pushed remove button :)");
+        axios.post(`/movie/remove/${movieId}`).then(
+            response => {
+                console.log(response);
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            }
+        );
+    history.push('/admin/movies');
     };
 
     componentDidMount() {
@@ -42,9 +52,7 @@ class AdminMoviesEdit extends React.Component {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
-            console.log('Hello World :)');
             console.log(this.state);
-            console.log('Hello World2 :)');
     }
 
     render() {
@@ -55,8 +63,6 @@ class AdminMoviesEdit extends React.Component {
                 </div>
             )
         }
-        console.log(this.state);
-        console.log('Hello World3 :)');
         return (
             <div style={styles.container}>
                 <Link to={"/admin/movies"} style={styles.link}>Exit</Link>
@@ -96,7 +102,7 @@ class AdminMoviesEdit extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={this.remove}
+                                        onClick={() => this.remove(movie.id)}
                                     >
                                         Remove
                                     </Button>

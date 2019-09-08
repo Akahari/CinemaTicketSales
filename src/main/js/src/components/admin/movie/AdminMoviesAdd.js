@@ -67,7 +67,7 @@ class AdminMovies extends React.Component {
         return (
             <Container component="main" maxWidth="xs">
                 <div style={styles.container}>
-                    <Link to={"/admin"} style={styles.link}>Exit</Link>
+                    <Link to={"/admin/movies"} style={styles.link}>Exit</Link>
                 </div>
                 <CssBaseline/>
                 <div style={styles.paper}>

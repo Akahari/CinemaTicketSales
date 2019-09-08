@@ -59,7 +59,7 @@ class Halls extends React.Component {
                             <tr>
                                 <td>{hall.id}</td>
                                 <td>{hall.name}</td>
-                                <td>{hall.rows}</td>
+                                <td>{hall.rowsNumber}</td>
                                 <td>{hall.rowLength}</td>
                                 <td><Link to="/movies" style={styles.link}>{hall.screeningId.join(", ")}</Link></td>
                                 <td>{hall.theaterId}</td>

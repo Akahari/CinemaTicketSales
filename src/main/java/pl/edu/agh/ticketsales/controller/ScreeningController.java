@@ -2,18 +2,14 @@ package pl.edu.agh.ticketsales.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.edu.agh.ticketsales.domain.Hall;
-import pl.edu.agh.ticketsales.domain.Movie;
 import pl.edu.agh.ticketsales.domain.Screening;
 import pl.edu.agh.ticketsales.service.HallService;
 import pl.edu.agh.ticketsales.service.MovieService;
 import pl.edu.agh.ticketsales.service.ScreeningService;
 import pl.edu.agh.ticketsales.util.Quasi_screening;
-import pl.edu.agh.ticketsales.util.ScreeningString;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 @RestController
@@ -29,24 +25,17 @@ public class ScreeningController {
 
 //add screening
     @PostMapping(path="/add")
-    public @ResponseBody String addScreening (@RequestBody Quasi_screening quasi_screening) {//at least temporarily input is all strings, untill I figure our how to parse variables on the JS side
-        //Quasi_screening quasi_screening = new Quasi_screening();
-        //quasi_screening = screeningString.parseToQuasi_screening();
-        System.out.println("sample text 1");
-        System.out.println(quasi_screening.getStartDateString());
-        System.out.println("sample text 2");
-        Date startDate = new Date();
+    public @ResponseBody String addScreening (@RequestBody Quasi_screening quasi_screening) {
         boolean success;
         if(quasi_screening.getStartDateString() != null){
-
-            System.out.println(startDate);
             try {
-                startDate = this.sdf.parse(quasi_screening.getStartDateString());
-            } catch (ParseException e) { e.printStackTrace(); }
-        } else if(quasi_screening.getStartDate() != null){
-            startDate = quasi_screening.getStartDate();
+                quasi_screening.setStartDate(this.sdf.parse(quasi_screening.getStartDateString()));
+            } catch (ParseException e) {
+                e.printStackTrace();
+                quasi_screening.setStartDate(new Date());
+            }
         }
-        success = screeningService.addScreening(quasi_screening.getHallId(), quasi_screening.getMovieId(), startDate);
+        success = screeningService.addScreening(quasi_screening);
         if(success){
             return "Saved screening";
         } else {

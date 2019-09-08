@@ -26,7 +26,7 @@ const styles = {
 
 class AdminScreenings extends React.Component {
     state = {
-        startDate: '',
+        startDateString: '',
         theaterId: 0,
         hallId: 0,
         movieId: 0,
@@ -37,7 +37,7 @@ class AdminScreenings extends React.Component {
         console.log(this.state);
         // send a POST request
         axios.post('/screening/add', {
-            startDate: this.state.startDate,
+            startDateString: this.state.startDateString,
             theaterId: (this.state.theaterId),
             hallId: (this.state.hallId),
             movieId: (this.state.movieId)
@@ -63,7 +63,7 @@ class AdminScreenings extends React.Component {
         return (
             <Container component="main" maxWidth="xs">
                 <div style={styles.container}>
-                    <Link to={"/admin"} style={styles.link}>Exit</Link>
+                    <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
                 </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
@@ -76,11 +76,11 @@ class AdminScreenings extends React.Component {
                             margin="normal"
                             required
                             fullWidth
-                            id="startDate"
+                            id="startDateString"
                             label="Screening start date"
-                            name="startDate"
+                            name="startDateString"
                             autoFocus
-                            onChange={(event) => this.setState({startDate: event.target.value})}
+                            onChange={(event) => this.setState({startDateString: event.target.value})}
                         />
                         <TextField
                             variant="outlined"

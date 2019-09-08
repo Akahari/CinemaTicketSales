@@ -18,33 +18,41 @@ const styles = {
     }
 };
 
-class AdminScreeningsEdit extends React.Component {
+class AdminTheatersEdit extends React.Component {
     state = {
-        screenings: [],
+        theaters: [],
         error: null
     };
     edit = () => {
         const {history} = this.props;
         console.log("You pushed edit button :)");
     };
-    remove = () => {
+    remove = (theaterId) => {
         const {history} = this.props;
         console.log("You pushed remove button :)");
+        axios.post(`/theater/remove/${theaterId}`).then(
+            response => {
+                console.log(response);
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            }
+        );
+        history.push('/admin/theaters');
     };
 
     componentDidMount() {
-        axios.get('/screening/all').then(
+        axios.get('/theater/all').then(
             response => {
                 console.log(response);
-                this.setState({screenings: response.data});
+                this.setState({theaters: response.data});
             },
             error => {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
-            console.log('Hello World :)');
             console.log(this.state);
-            console.log('Hello World2 :)');
     }
 
     render() {
@@ -55,26 +63,28 @@ class AdminScreeningsEdit extends React.Component {
                 </div>
             )
         }
-        console.log(this.state);
-        console.log('Hello World3 :)');
         return (
             <div style={styles.container}>
-                <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
+                <Link to={"/admin/theaters"} style={styles.link}>Exit</Link>
                 <table>
                     <tbody>
                     <tr>
-                        <th>Movie id</th>
-                        <th>Start date</th>
-                        <th>Hall id</th>
+                        <th>Theater id</th>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Address</th>
+                        <th>Hall ids</th>
                         <th>Edit</th>
                         <th>Remove</th>
                     </tr>
                     {
-                        this.state.screenings.map(screening => (
+                        this.state.theaters.map(theater => (
                             <tr>
-                                <td>{screening.movieId}</td>
-                                <td>{screening.startDate}</td>
-                                <td>{screening.hallId}</td>
+                                <td>{theater.id}</td>
+                                <td>{theater.name}</td>
+                                <td>{theater.city}</td>
+                                <td>{theater.address}</td>
+                                <td>{theater.hallIds}</td>
                                 <td>
                                     <Button
                                         variant="contained"
@@ -88,7 +98,7 @@ class AdminScreeningsEdit extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={this.remove}
+                                        onClick={() => this.remove(theater.id)}
                                     >
                                         Remove
                                     </Button>
@@ -103,4 +113,4 @@ class AdminScreeningsEdit extends React.Component {
     }
 }
 
-export default AdminScreeningsEdit;
+export default AdminTheatersEdit;

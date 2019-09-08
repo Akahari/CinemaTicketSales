@@ -54668,16 +54668,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_admin_AdminHomePage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/components/admin/AdminHomePage */ "./src/main/js/src/components/admin/AdminHomePage.js");
 /* harmony import */ var _src_components_admin_hall_AdminHalls__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHalls */ "./src/main/js/src/components/admin/hall/AdminHalls.js");
 /* harmony import */ var _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsAdd */ "./src/main/js/src/components/admin/hall/AdminHallsAdd.js");
-/* harmony import */ var _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsEdit */ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsOverview__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsOverview */ "./src/main/js/src/components/admin/hall/AdminHallsOverview.js");
 /* harmony import */ var _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
 /* harmony import */ var _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesEdit */ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesOverview */ "./src/main/js/src/components/admin/movie/AdminMoviesOverview.js");
 /* harmony import */ var _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
 /* harmony import */ var _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsEdit */ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsOverview */ "./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js");
 /* harmony import */ var _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
 /* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersOverview */ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -54798,8 +54798,8 @@ function (_React$Component) {
         component: _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_22__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
-        path: "/admin/theaters/edit",
-        component: _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_23__["default"]
+        path: "/admin/theaters/overview",
+        component: _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_23__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/movies",
@@ -54810,8 +54810,8 @@ function (_React$Component) {
         component: _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_16__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
-        path: "/admin/movies/edit",
-        component: _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_17__["default"]
+        path: "/admin/movies/overview",
+        component: _src_components_admin_movie_AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_17__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/halls",
@@ -54822,8 +54822,8 @@ function (_React$Component) {
         component: _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_13__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
-        path: "/admin/halls/edit",
-        component: _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_14__["default"]
+        path: "/admin/halls/overview",
+        component: _src_components_admin_hall_AdminHallsOverview__WEBPACK_IMPORTED_MODULE_14__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/admin/screenings",
@@ -54834,8 +54834,8 @@ function (_React$Component) {
         component: _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_19__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
-        path: "/admin/screenings/edit",
-        component: _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_20__["default"]
+        path: "/admin/screenings/overview",
+        component: _src_components_admin_screening_AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_20__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         component: function component() {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
@@ -54961,7 +54961,7 @@ function (_React$Component) {
         to: "/",
         style: styles.link
       }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater Id"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rows), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowsNumber), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
           to: "/movies",
           style: styles.link
         }, hall.screeningId.join(", "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.theaterId));
@@ -55835,7 +55835,7 @@ function (_React$Component) {
         to: "/admin/halls/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/halls/edit",
+        to: "/admin/halls/overview",
         style: styles.link
       }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
@@ -55981,7 +55981,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin",
+        to: "/admin/halls",
         style: styles.link
       }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
@@ -56063,10 +56063,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js":
-/*!*****************************************************************!*\
-  !*** ./src/main/js/src/components/admin/hall/AdminHallsEdit.js ***!
-  \*****************************************************************/
+/***/ "./src/main/js/src/components/admin/hall/AdminHallsOverview.js":
+/*!*********************************************************************!*\
+  !*** ./src/main/js/src/components/admin/hall/AdminHallsOverview.js ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56149,9 +56149,19 @@ function (_React$Component) {
       console.log("You pushed edit button :)");
     });
 
-    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+    _defineProperty(_assertThisInitialized(_this), "remove", function (hallId) {
       var history = _this.props.history;
       console.log("You pushed remove button :)");
+      axios__WEBPACK_IMPORTED_MODULE_1__["post"]("/hall/remove/".concat(hallId)).then(function (response) {
+        console.log(response);
+      }, function (error) {
+        console.log(error);
+
+        _this.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      history.push('/admin/halls');
     });
 
     return _this;
@@ -56175,9 +56185,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      console.log('Hello World :)');
       console.log(this.state);
-      console.log('Hello World2 :)');
     }
   }, {
     key: "render",
@@ -56190,16 +56198,14 @@ function (_React$Component) {
         }, this.state.error);
       }
 
-      console.log(this.state);
-      console.log('Hello World3 :)');
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/admin/movies",
+        to: "/admin/halls",
         style: styles.link
       }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rows), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-          to: "/movies",
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowsNumber), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+          to: "/halls",
           style: styles.link
         }, hall.screeningId.join(", "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
@@ -56208,7 +56214,9 @@ function (_React$Component) {
         }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
-          onClick: _this3.remove
+          onClick: function onClick() {
+            return _this3.remove(hall.id);
+          }
         }, "Remove")));
       }))));
     }
@@ -56289,7 +56297,7 @@ function (_React$Component) {
         to: "/admin/movies/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/movies/edit",
+        to: "/admin/movies/overview",
         style: styles.link
       }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
@@ -56439,7 +56447,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin",
+        to: "/admin/movies",
         style: styles.link
       }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
@@ -56549,10 +56557,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js":
-/*!*******************************************************************!*\
-  !*** ./src/main/js/src/components/admin/movie/AdminMoviesEdit.js ***!
-  \*******************************************************************/
+/***/ "./src/main/js/src/components/admin/movie/AdminMoviesOverview.js":
+/*!***********************************************************************!*\
+  !*** ./src/main/js/src/components/admin/movie/AdminMoviesOverview.js ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56635,9 +56643,19 @@ function (_React$Component) {
       console.log("You pushed edit button :)");
     });
 
-    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+    _defineProperty(_assertThisInitialized(_this), "remove", function (movieId) {
       var history = _this.props.history;
       console.log("You pushed remove button :)");
+      axios__WEBPACK_IMPORTED_MODULE_1__["post"]("/movie/remove/".concat(movieId)).then(function (response) {
+        console.log(response);
+      }, function (error) {
+        console.log(error);
+
+        _this.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      history.push('/admin/movies');
     });
 
     return _this;
@@ -56661,9 +56679,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      console.log('Hello World :)');
       console.log(this.state);
-      console.log('Hello World2 :)');
     }
   }, {
     key: "render",
@@ -56676,8 +56692,6 @@ function (_React$Component) {
         }, this.state.error);
       }
 
-      console.log(this.state);
-      console.log('Hello World3 :)');
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -56693,7 +56707,9 @@ function (_React$Component) {
         }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
-          onClick: _this3.remove
+          onClick: function onClick() {
+            return _this3.remove(movie.id);
+          }
         }, "Remove")));
       }))));
     }
@@ -56774,7 +56790,7 @@ function (_React$Component) {
         to: "/admin/screenings/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/screenings/edit",
+        to: "/admin/screenings/overview",
         style: styles.link
       }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
@@ -56873,7 +56889,7 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(AdminScreenings)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_this), "state", {
-      startDate: '',
+      startDateString: '',
       theaterId: 0,
       hallId: 0,
       movieId: 0,
@@ -56885,7 +56901,7 @@ function (_React$Component) {
       console.log(_this.state); // send a POST request
 
       axios__WEBPACK_IMPORTED_MODULE_7__["post"]('/screening/add', {
-        startDate: _this.state.startDate,
+        startDateString: _this.state.startDateString,
         theaterId: _this.state.theaterId,
         hallId: _this.state.hallId,
         movieId: _this.state.movieId
@@ -56920,7 +56936,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin",
+        to: "/admin/screenings",
         style: styles.link
       }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
@@ -56935,13 +56951,13 @@ function (_React$Component) {
         margin: "normal",
         required: true,
         fullWidth: true,
-        id: "startDate",
+        id: "startDateString",
         label: "Screening start date",
-        name: "startDate",
+        name: "startDateString",
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
-            startDate: event.target.value
+            startDateString: event.target.value
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -57002,10 +57018,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js":
-/*!***************************************************************************!*\
-  !*** ./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js ***!
-  \***************************************************************************/
+/***/ "./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js":
+/*!*******************************************************************************!*\
+  !*** ./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js ***!
+  \*******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -57088,9 +57104,19 @@ function (_React$Component) {
       console.log("You pushed edit button :)");
     });
 
-    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+    _defineProperty(_assertThisInitialized(_this), "remove", function (screeningId) {
       var history = _this.props.history;
       console.log("You pushed remove button :)");
+      axios__WEBPACK_IMPORTED_MODULE_1__["post"]("/screening/remove/".concat(screeningId)).then(function (response) {
+        console.log(response);
+      }, function (error) {
+        console.log(error);
+
+        _this.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      history.push('/admin/screenings');
     });
 
     return _this;
@@ -57114,9 +57140,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      console.log('Hello World :)');
       console.log(this.state);
-      console.log('Hello World2 :)');
     }
   }, {
     key: "render",
@@ -57129,8 +57153,6 @@ function (_React$Component) {
         }, this.state.error);
       }
 
-      console.log(this.state);
-      console.log('Hello World3 :)');
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -57144,7 +57166,9 @@ function (_React$Component) {
         }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
-          onClick: _this3.remove
+          onClick: function onClick() {
+            return _this3.remove(screening.id);
+          }
         }, "Remove")));
       }))));
     }
@@ -57225,7 +57249,7 @@ function (_React$Component) {
         to: "/admin/theaters/add",
         style: styles.link
       }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/theaters/edit",
+        to: "/admin/theaters/overview",
         style: styles.link
       }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin",
@@ -57369,7 +57393,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin",
+        to: "/admin/theaters",
         style: styles.link
       }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
@@ -57437,10 +57461,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js":
-/*!***********************************************************************!*\
-  !*** ./src/main/js/src/components/admin/theater/AdminTheatersEdit.js ***!
-  \***********************************************************************/
+/***/ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js":
+/*!***************************************************************************!*\
+  !*** ./src/main/js/src/components/admin/theater/AdminTheatersOverview.js ***!
+  \***************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -57523,9 +57547,19 @@ function (_React$Component) {
       console.log("You pushed edit button :)");
     });
 
-    _defineProperty(_assertThisInitialized(_this), "remove", function () {
+    _defineProperty(_assertThisInitialized(_this), "remove", function (theaterId) {
       var history = _this.props.history;
       console.log("You pushed remove button :)");
+      axios__WEBPACK_IMPORTED_MODULE_1__["post"]("/theater/remove/".concat(theaterId)).then(function (response) {
+        console.log(response);
+      }, function (error) {
+        console.log(error);
+
+        _this.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      history.push('/admin/theaters');
     });
 
     return _this;
@@ -57549,9 +57583,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      console.log('Hello World :)');
       console.log(this.state);
-      console.log('Hello World2 :)');
     }
   }, {
     key: "render",
@@ -57564,8 +57596,6 @@ function (_React$Component) {
         }, this.state.error);
       }
 
-      console.log(this.state);
-      console.log('Hello World3 :)');
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -57579,7 +57609,9 @@ function (_React$Component) {
         }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
-          onClick: _this3.remove
+          onClick: function onClick() {
+            return _this3.remove(theater.id);
+          }
         }, "Remove")));
       }))));
     }

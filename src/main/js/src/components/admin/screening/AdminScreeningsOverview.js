@@ -18,33 +18,41 @@ const styles = {
     }
 };
 
-class AdminHallsEdit extends React.Component {
+class AdminScreeningsEdit extends React.Component {
     state = {
-        halls: [],
+        screenings: [],
         error: null
     };
     edit = () => {
         const {history} = this.props;
         console.log("You pushed edit button :)");
     };
-    remove = () => {
+    remove = (screeningId) => {
         const {history} = this.props;
         console.log("You pushed remove button :)");
+        axios.post(`/screening/remove/${screeningId}`).then(
+            response => {
+                console.log(response);
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            }
+        );
+    history.push('/admin/screenings');
     };
 
     componentDidMount() {
-        axios.get('/hall/all').then(
+        axios.get('/screening/all').then(
             response => {
                 console.log(response);
-                this.setState({halls: response.data});
+                this.setState({screenings: response.data});
             },
             error => {
                 console.log(error);
                 this.setState({error: 'Wystąpił błąd'});
             });
-            console.log('Hello World :)');
             console.log(this.state);
-            console.log('Hello World2 :)');
     }
 
     render() {
@@ -55,34 +63,24 @@ class AdminHallsEdit extends React.Component {
                 </div>
             )
         }
-        console.log(this.state);
-        console.log('Hello World3 :)');
         return (
             <div style={styles.container}>
-                <Link to={"/admin/movies"} style={styles.link}>Exit</Link>
+                <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
                 <table>
-                    <thead>
+                    <tbody>
                     <tr>
-                        <th>Id</th>
-                        <th>Title</th>
-                        <th>Rows</th>
-                        <th>Row length</th>
-                        <th>Screening Ids</th>
-                        <th>Theater Id</th>
+                        <th>Movie id</th>
+                        <th>Start date</th>
+                        <th>Hall id</th>
                         <th>Edit</th>
                         <th>Remove</th>
                     </tr>
-                    </thead>
-                    <tbody>
                     {
-                        this.state.halls.map(hall => (
+                        this.state.screenings.map(screening => (
                             <tr>
-                                <td>{hall.id}</td>
-                                <td>{hall.name}</td>
-                                <td>{hall.rows}</td>
-                                <td>{hall.rowLength}</td>
-                                <td><Link to="/movies" style={styles.link}>{hall.screeningId.join(", ")}</Link></td>
-                                <td>{hall.theaterId}</td>
+                                <td>{screening.movieId}</td>
+                                <td>{screening.startDate}</td>
+                                <td>{screening.hallId}</td>
                                 <td>
                                     <Button
                                         variant="contained"
@@ -96,7 +94,7 @@ class AdminHallsEdit extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={this.remove}
+                                        onClick={() => this.remove(screening.id)}
                                     >
                                         Remove
                                     </Button>
@@ -111,4 +109,4 @@ class AdminHallsEdit extends React.Component {
     }
 }
 
-export default AdminHallsEdit;
+export default AdminScreeningsEdit;

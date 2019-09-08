@@ -22,7 +22,7 @@ class AdminHalls extends React.Component {
             <div style={styles.container}>
                 <p>Welcome to admin view</p>
                 <Link to={"/admin/halls/add"} style={styles.link}>Add</Link>
-                <Link to={"/admin/halls/edit"} style={styles.link}>Edit/Remove</Link>
+                <Link to={"/admin/halls/overview"} style={styles.link}>Edit/Remove</Link>
                 <Link to={"/admin"} style={styles.link}>Back</Link>
             </div>
         );
