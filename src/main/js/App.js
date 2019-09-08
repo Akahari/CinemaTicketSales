@@ -15,18 +15,22 @@ import AdminHomePage from './src/components/admin/AdminHomePage';
 import AdminHalls from './src/components/admin/hall/AdminHalls';
 import AdminHallsAdd from './src/components/admin/hall/AdminHallsAdd';
 import AdminHallsOverview from './src/components/admin/hall/AdminHallsOverview';
+import AdminHallsEdit from './src/components/admin/hall/AdminHallsEdit';
 
 import AdminMovies from './src/components/admin/movie/AdminMovies';
 import AdminMoviesAdd from './src/components/admin/movie/AdminMoviesAdd';
 import AdminMoviesOverview from './src/components/admin/movie/AdminMoviesOverview';
+import AdminMoviesEdit from './src/components/admin/movie/AdminMoviesEdit';
 
 import AdminScreenings from './src/components/admin/screening/AdminScreenings';
 import AdminScreeningsAdd from './src/components/admin/screening/AdminScreeningsAdd';
 import AdminScreeningsOverview from './src/components/admin/screening/AdminScreeningsOverview';
+import AdminScreeningsEdit from './src/components/admin/screening/AdminScreeningsEdit';
 
 import AdminTheaters from './src/components/admin/theater/AdminTheaters';
 import AdminTheatersAdd from './src/components/admin/theater/AdminTheatersAdd';
 import AdminTheatersOverview from './src/components/admin/theater/AdminTheatersOverview';
+import AdminTheatersEdit from './src/components/admin/theater/AdminTheatersEdit';
 
 const styles = {
     grid: {
@@ -66,18 +70,22 @@ class App extends React.Component {
                         <Route exact path="/admin/theaters" component={AdminTheaters}/>
                         <Route exact path="/admin/theaters/add" component={AdminTheatersAdd}/>
                         <Route exact path="/admin/theaters/overview" component={AdminTheatersOverview}/>
+                        <Route path="/admin/theaters/edit/:theaterId" component={AdminTheatersEdit}/>
 
                         <Route exact path="/admin/movies" component={AdminMovies}/>
                         <Route exact path="/admin/movies/add" component={AdminMoviesAdd}/>
                         <Route exact path="/admin/movies/overview" component={AdminMoviesOverview}/>
+                        <Route path="/admin/movies/edit/:movieId" component={AdminMoviesEdit}/>
 
                         <Route exact path="/admin/halls" component={AdminHalls}/>
                         <Route exact path="/admin/halls/add" component={AdminHallsAdd}/>
                         <Route exact path="/admin/halls/overview" component={AdminHallsOverview}/>
+                        <Route path="/admin/halls/edit/:hallId" component={AdminHallsEdit}/>
 
                         <Route exact path="/admin/screenings" component={AdminScreenings}/>
                         <Route exact path="/admin/screenings/add" component={AdminScreeningsAdd}/>
                         <Route exact path="/admin/screenings/overview" component={AdminScreeningsOverview}/>
+                        <Route path="/admin/screenings/edit/:screeningId" component={AdminScreeningsEdit}/>
                         <Route component={() => <Redirect to="/"/>}/>
                     </div>
                 </Router>

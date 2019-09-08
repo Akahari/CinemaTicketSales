@@ -23,9 +23,10 @@ class AdminHallsEdit extends React.Component {
         halls: [],
         error: null
     };
-    edit = () => {
+    edit = (hallId) => {
         const {history} = this.props;
         console.log("You pushed edit button :)");
+        history.push(`/admin/halls/edit/${hallId}`);
     };
     remove = (hallId) => {
         const {history} = this.props;
@@ -93,7 +94,7 @@ class AdminHallsEdit extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={this.edit}
+                                        onClick={() => this.edit(hall.id)}
                                     >
                                         Edit
                                     </Button>

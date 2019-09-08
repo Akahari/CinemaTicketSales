@@ -2,39 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e1dd256-ff7b-49b2-b17c-a86c2a4e23f9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersEdit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HallController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/HallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/HallService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/HallString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/MovieString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/ScreeningString.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/js/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/Halls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/Halls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHalls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHalls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/MovieDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreenings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreenings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheaters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheaters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsOverview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/built/bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/HallController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/HallController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/MovieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/MovieController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/ScreeningController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/controller/ScreeningController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/HallService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/HallService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/ScreeningService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ticketsales/service/ScreeningService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/built/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/built/bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/built/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/built/bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,17 +50,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/js/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="79" column="69" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="69" />
+            <state relative-caret-position="153">
+              <caret line="72" column="94" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsAdd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Halls.js">
+        <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsEdit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="238">
+              <caret line="143" column="37" lean-forward="true" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -139,10 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/MovieService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Quasi_Movie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Admin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/Quasi_booking.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Seat.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/BookingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Booking.java" />
@@ -156,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/AdminHomePage.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/AdminHalls.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/Theaters.js" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/MovieDetails.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/HomePage.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreening.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheater.js" />
@@ -171,14 +161,7 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Screening.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/HallString.java" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersAdd.js" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesAdd.js" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsAdd.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsAdd.js" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesEdit.js" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsEdit.js" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsEdit.js" />
-        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersEdit.js" />
-        <option value="$PROJECT_DIR$/src/main/js/App.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHalls.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMovies.js" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreenings.js" />
@@ -186,10 +169,22 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/js/src/components/Halls.js" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/HallService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/HallController.java" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/MovieDetails.js" />
+        <option value="$PROJECT_DIR$/src/main/js/App.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersOverview.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsOverview.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsAdd.js" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsEdit.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesAdd.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesOverview.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesEdit.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersEdit.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsEdit.js" />
+        <option value="$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsOverview.js" />
       </list>
     </option>
   </component>
@@ -276,6 +271,15 @@
               <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ticketsales" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -304,6 +308,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketSales" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="screening" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyRestApi" type="b2602c69:ProjectViewProjectNode" />
@@ -491,7 +506,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23726542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1930295" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -501,7 +516,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.32797858" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" visible="true" weight="0.2570281" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39759037" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -519,7 +534,7 @@
       <window_info anchor="right" id="Properties" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32975295" />
-      <window_info anchor="right" id="Maven" order="9" sideWeight="0.49813432" visible="true" weight="0.1494638" />
+      <window_info anchor="right" id="Maven" order="9" sideWeight="0.49813432" visible="true" weight="0.16420911" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5018657" side_tool="true" weight="0.14678285" />
     </layout>
     <layout-to-restore>
@@ -614,22 +629,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/TicketType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Seat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -718,20 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Theaters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/BookingString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/ScreeningString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -774,36 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/MovieDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Movies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="63" column="66" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/TheaterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="20" selection-start-line="18" selection-start-column="29" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#removeTheater#0;class#TheaterController#0" />
-            <element signature="method#updateTheater#0;class#TheaterController#0" />
-            <element signature="method#addHallId#0;class#TheaterController#0" />
-            <element signature="method#addHallIds#0;class#TheaterController#0" />
-            <element signature="method#removeHallId#0;class#TheaterController#0" />
-            <element signature="method#getHallIds#0;class#TheaterController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/src/components/LoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -818,19 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Screening.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setHallId#0;class#Screening#0" />
-            <element signature="method#setMovieId#0;class#Screening#0" />
-            <element signature="method#setStartDate#0;class#Screening#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Hall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -838,67 +780,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/Quasi_screening.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesOverview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersOverview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsOverview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="58" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -916,31 +797,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreenings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheaters.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsOverview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -956,41 +816,6 @@
             <element signature="method#editRows#0;class#HallService#0" />
             <element signature="method#editRowsLength#0;class#HallService#0" />
             <element signature="method#editName#0;class#HallService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="40" column="84" selection-start-line="40" selection-start-column="84" selection-end-line="40" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#assignHall#0;class#ScreeningService#0" />
-            <element signature="method#assignMovie#0;class#ScreeningService#0" />
-            <element signature="method#assignStartDate#0;class#ScreeningService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="69" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#removeScreening#0;class#ScreeningController#0" />
-            <element signature="method#updateScreening#0;class#ScreeningController#0" />
-            <element signature="method#assignHall#0;class#ScreeningController#0" />
-            <element signature="method#assignMovie#0;class#ScreeningController#0" />
-            <element signature="method#assignDate#0;class#ScreeningController#0" />
           </folding>
         </state>
       </provider>
@@ -1044,6 +869,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Halls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="48" column="11" selection-start-line="35" selection-start-column="32" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Movies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="63" column="66" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Theaters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/TheaterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#removeTheater#0;class#TheaterController#0" />
+            <element signature="method#updateTheater#0;class#TheaterController#0" />
+            <element signature="method#addHallId#0;class#TheaterController#0" />
+            <element signature="method#addHallIds#0;class#TheaterController#0" />
+            <element signature="method#removeHallId#0;class#TheaterController#0" />
+            <element signature="method#getHallIds#0;class#TheaterController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsOverview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreenings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1068,10 +958,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/Halls.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/Quasi_screening.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="71">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/domain/Screening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setHallId#0;class#Screening#0" />
+            <element signature="method#setMovieId#0;class#Screening#0" />
+            <element signature="method#setStartDate#0;class#Screening#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/service/ScreeningService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#assignHall#0;class#ScreeningService#0" />
+            <element signature="method#assignMovie#0;class#ScreeningService#0" />
+            <element signature="method#assignStartDate#0;class#ScreeningService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/util/BookingString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ticketsales/controller/ScreeningController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="64" column="60" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#removeScreening#0;class#ScreeningController#0" />
+            <element signature="method#assignHall#0;class#ScreeningController#0" />
+            <element signature="method#assignMovie#0;class#ScreeningController#0" />
+            <element signature="method#assignDate#0;class#ScreeningController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/MovieDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesOverview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/movie/AdminMoviesEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="68" column="43" lean-forward="true" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="65" column="63" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsOverview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/hall/AdminHallsEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2043">
+          <caret line="140" column="43" selection-start-line="140" selection-start-column="43" selection-end-line="140" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="130" column="75" selection-start-line="129" selection-start-column="43" selection-end-line="130" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/theater/AdminTheatersOverview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="72" column="94" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/src/components/admin/screening/AdminScreeningsEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="143" column="37" lean-forward="true" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
         </state>
       </provider>
     </entry>

@@ -24,28 +24,49 @@ const styles = {
     }
 };
 
-class AdminScreeningsAdd extends React.Component {
+class AdminScreeningsEdit extends React.Component {
     state = {
+        screeningId: 0,
+        startDate: '',
         startDateString: '',
         theaterId: 0,
         hallId: 0,
         movieId: 0,
         error: null
     };
-    send = () => {
+
+    componentDidMount() {
+        const {screeningId} = this.props.match.params;
+        axios.get(`/screening/find/${screeningId}`).then(
+            response => {
+                console.log(response);
+                this.setState({screeningId: response.data.id});
+                this.setState({theaterId: response.data.theaterId});
+                this.setState({startDate: response.data.startDate});
+                this.setState({hallId: response.data.hallId});
+                this.setState({movieId: response.data.movieId});
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            });
+        console.log(this.state);
+    }
+
+    edit = (screeningId) => {
         const {history} = this.props;
         console.log(this.state);
         // send a POST request
-        axios.post('/screening/add', {
+        axios.post(`/screening/update/${screeningId}`, {
             startDateString: this.state.startDateString,
-            theaterId: (this.state.theaterId),
-            hallId: (this.state.hallId),
-            movieId: (this.state.movieId)
+            theaterId: this.state.theaterId,
+            movieId: this.state.movieId,
+            hallId: this.state.hallId
         })
         .then((response) =>{
             console.log(response);
             const {history} = this.props;
-            history.push('/admin/screenings');
+            history.push('/admin/screenings/overview');
         }, (error) => {
             console.log(error);
         });
@@ -77,7 +98,8 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="startDateString"
-                            label="Screening start date"
+                            label="startDateString"
+                            //defaultValue={Date(this.state.startDateString).toString()}
                             name="startDateString"
                             autoFocus
                             onChange={(event) => this.setState({startDateString: event.target.value})}
@@ -88,7 +110,8 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="theaterId"
-                            label="Screening theater Id"
+                            label="Theater Id "
+                            //defaultValue={this.state.theaterId}
                             name="theaterId"
                             autoFocus
                             onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
@@ -99,7 +122,8 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="hallId"
-                            label="Screening hall Id"
+                            label="hallId"
+                            //defaultValue={this.state.hallId}
                             name="hallId"
                             autoFocus
                             onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
@@ -110,7 +134,8 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="movieId"
-                            label="Screening movie Id"
+                            label="movieId"
+                            //defaultValue={this.state.movieId}
                             name="movieId"
                             autoFocus
                             onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
@@ -119,7 +144,7 @@ class AdminScreeningsAdd extends React.Component {
                             fullWidth
                             variant="contained"
                             color="primary"
-                            onClick={this.send}
+                            onClick={() => this.edit(this.state.screeningId)}
                         >
                             Add
                         </Button>
@@ -130,4 +155,4 @@ class AdminScreeningsAdd extends React.Component {
     }
 }
 
-export default AdminScreeningsAdd;
+export default AdminScreeningsEdit;

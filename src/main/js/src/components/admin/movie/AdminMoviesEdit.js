@@ -24,8 +24,9 @@ const styles = {
     }
 };
 
-class AdminMoviesAdd extends React.Component {
+class AdminMoviesEdit extends React.Component {
     state = {
+        movieId: 0,
         title: '',
         description: '',
         duration: 0,
@@ -34,11 +35,32 @@ class AdminMoviesAdd extends React.Component {
         directors: [],
         error: null
     };
-    send = () => {
+
+    componentDidMount() {
+        const {movieId} = this.props.match.params;
+        axios.get(`/movie/find/${movieId}`).then(
+            response => {
+                console.log(response);
+                this.setState({movieId: response.data.id});
+                this.setState({title: response.data.title});
+                this.setState({description: response.data.description});
+                this.setState({duration: response.data.duration});
+                this.setState({tags: response.data.tags});
+                this.setState({cast: response.data.cast});
+                this.setState({directors: response.data.directors});
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            });
+        console.log(this.state);
+    }
+
+    edit = (movieId) => {
         const {history} = this.props;
         console.log(this.state);
         // send a POST request
-        axios.post('/movie/add', {
+        axios.post(`/movie/update/${movieId}`, {
             title: this.state.title,
             description: this.state.description,
             duration: this.state.duration,
@@ -49,7 +71,7 @@ class AdminMoviesAdd extends React.Component {
         .then((response) =>{
             console.log(response);
             const {history} = this.props;
-            history.push('/admin/movies');
+            history.push('/admin/movies/overview');
         }, (error) => {
             console.log(error);
         });
@@ -145,7 +167,7 @@ class AdminMoviesAdd extends React.Component {
                             fullWidth
                             variant="contained"
                             color="primary"
-                            onClick={this.send}
+                            onClick={() => this.edit(this.state.movieId)}
                         >
                             Add
                         </Button>
@@ -156,4 +178,4 @@ class AdminMoviesAdd extends React.Component {
     }
 }
 
-export default AdminMoviesAdd;
+export default AdminMoviesEdit;

@@ -65,21 +65,22 @@ public class ScreeningService {
     }
 
 //update screening
-    public void updateScreening(Integer id, Screening screening){
+    public void updateScreening(Integer id, Quasi_screening quasi_screening){
+
         Screening n = screeningRepository.findById(id);
-        if(screening.getStartDate() != null && n.getStartDate() != screening.getStartDate()) {  //situation = rescheduling a screening
+        if(quasi_screening.getStartDate() != null && n.getStartDate() != quasi_screening.getStartDate()) {  //situation = rescheduling a screening
             //possibly reschedule all the bookings of this screening too?
-            n.setStartDate(screening.getStartDate());
+            n.setStartDate(quasi_screening.getStartDate());
         }
-        if(screening.getHallId() != null && !n.getHallId().equals(screening.getHallId())) {     //situation = moving screening to another hall
+        if(quasi_screening.getHallId() != null && !n.getHallId().equals(quasi_screening.getHallId())) {     //situation = moving screening to another hall
             //if there are no bookings for the screening yet, then no problem
             //if there are some bookings already and the hall have the same size, no problem
             //if there are and new hall have different size (should never happen) then solution might be too complicated to bother, so just ditch all the booking IDs
-            Hall h = hallRepository.findById(screening.getHallId());
+            Hall h = hallRepository.findById(quasi_screening.getHallId());
             n.setHallId(h); //setHallId has some kind of self-defense mechanism implemented anyway
         }
-        if(screening.getMovieId() != null &&  !n.getMovieId().equals(screening.getMovieId())) {  //situation = changing movie
-            Movie m = movieRepository.findById(screening.getMovieId());
+        if(quasi_screening.getMovieId() != null &&  !n.getMovieId().equals(quasi_screening.getMovieId())) {  //situation = changing movie
+            Movie m = movieRepository.findById(quasi_screening.getMovieId());
             n.setMovieId(m);
         }
         screeningRepository.save(n);

@@ -24,35 +24,52 @@ const styles = {
     }
 };
 
-class AdminScreeningsAdd extends React.Component {
+class AdminTheatersEdit extends React.Component {
     state = {
-        startDateString: '',
         theaterId: 0,
-        hallId: 0,
-        movieId: 0,
+        name: '',
+        city: '',
+        address: '',
         error: null
     };
-    send = () => {
+
+    componentDidMount() {
+        const {theaterId} = this.props.match.params;
+        axios.get(`/theater/find/${theaterId}`).then(
+            response => {
+                console.log(response);
+                this.setState({theaterId: response.data.id});
+                this.setState({name: response.data.name});
+                this.setState({city: response.data.city});
+                this.setState({address: response.data.address});
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            });
+        console.log(this.state);
+    }
+
+    edit = (theaterId) => {
         const {history} = this.props;
         console.log(this.state);
         // send a POST request
-        axios.post('/screening/add', {
-            startDateString: this.state.startDateString,
-            theaterId: (this.state.theaterId),
-            hallId: (this.state.hallId),
-            movieId: (this.state.movieId)
+        axios.post(`/theater/update/${theaterId}`, {
+            name: this.state.name,
+            city: this.state.city,
+            address: this.state.address
         })
         .then((response) =>{
             console.log(response);
             const {history} = this.props;
-            history.push('/admin/screenings');
+            history.push('/admin/theaters/overview');
         }, (error) => {
             console.log(error);
         });
     };
 
     render() {
-        const {movieId} = this.props.match.params;
+        const {theaterId} = this.props.match.params;
         if(this.state.error) {
             return (
                 <div style={styles.container}>
@@ -63,12 +80,12 @@ class AdminScreeningsAdd extends React.Component {
         return (
             <Container component="main" maxWidth="xs">
                 <div style={styles.container}>
-                    <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
+                    <Link to={"/admin/theaters/overview"} style={styles.link}>Exit</Link>
                 </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new screening
+                        Add new theater
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -76,52 +93,44 @@ class AdminScreeningsAdd extends React.Component {
                             margin="normal"
                             required
                             fullWidth
-                            id="startDateString"
-                            label="Screening start date"
-                            name="startDateString"
+                            id="name"
+                            label="name"
+                            //defaultValue={this.state.name}
+                            name="name"
                             autoFocus
-                            onChange={(event) => this.setState({startDateString: event.target.value})}
+                            onChange={(event) => this.setState({name: event.target.value})}
                         />
                         <TextField
                             variant="outlined"
                             margin="normal"
                             required
                             fullWidth
-                            id="theaterId"
-                            label="Screening theater Id"
-                            name="theaterId"
+                            id="city"
+                            label="city"
+                            //defaultValue={this.state.city}
+                            name="city"
                             autoFocus
-                            onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
+                            onChange={(event) => this.setState({city: event.target.value})}
                         />
                         <TextField
                             variant="outlined"
                             margin="normal"
                             required
                             fullWidth
-                            id="hallId"
-                            label="Screening hall Id"
-                            name="hallId"
+                            id="address"
+                            label="address"
+                            //defaultValue={this.state.address}
+                            name="address"
                             autoFocus
-                            onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="movieId"
-                            label="Screening movie Id"
-                            name="movieId"
-                            autoFocus
-                            onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
+                            onChange={(event) => this.setState({address: event.target.value})}
                         />
                         <Button
                             fullWidth
                             variant="contained"
                             color="primary"
-                            onClick={this.send}
+                            onClick={() => this.edit(this.state.theaterId)}
                         >
-                            Add
+                            Edit
                         </Button>
                     </form>
                 </div>
@@ -130,4 +139,4 @@ class AdminScreeningsAdd extends React.Component {
     }
 }
 
-export default AdminScreeningsAdd;
+export default AdminTheatersEdit;

@@ -23,9 +23,10 @@ class AdminMoviesEdit extends React.Component {
         movies: [],
         error: null
     };
-    edit = () => {
+    edit = (movieId) => {
         const {history} = this.props;
         console.log("You pushed edit button :)");
+        history.push(`/admin/movies/edit/${movieId}`);
     };
     remove = (movieId) => {
         const {history} = this.props;
@@ -93,7 +94,7 @@ class AdminMoviesEdit extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={this.edit}
+                                        onClick={() => this.edit(movie.id)}
                                     >
                                         Edit
                                     </Button>

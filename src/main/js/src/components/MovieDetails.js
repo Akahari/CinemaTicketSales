@@ -25,6 +25,7 @@ class MovieDetails extends React.Component {
         return (
             <div style={styles.container}>
                 Movie Details
+                <p>{movieId}</p>
             </div>
         );
     }

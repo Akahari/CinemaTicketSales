@@ -23,9 +23,10 @@ class AdminScreeningsEdit extends React.Component {
         screenings: [],
         error: null
     };
-    edit = () => {
+    edit = (screeningId) => {
         const {history} = this.props;
         console.log("You pushed edit button :)");
+        history.push(`/admin/screenings/edit/${screeningId}`);
     };
     remove = (screeningId) => {
         const {history} = this.props;
@@ -85,7 +86,7 @@ class AdminScreeningsEdit extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={this.edit}
+                                        onClick={() => this.edit(screening.id)}
                                     >
                                         Edit
                                     </Button>

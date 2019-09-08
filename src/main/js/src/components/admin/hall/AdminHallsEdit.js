@@ -24,35 +24,55 @@ const styles = {
     }
 };
 
-class AdminScreeningsAdd extends React.Component {
+class AdminHallsEdit extends React.Component {
     state = {
-        startDateString: '',
-        theaterId: 0,
         hallId: 0,
-        movieId: 0,
+        theaterId: 0,
+        name: '',
+        rowsNumber: 0,
+        rowLength: 0,
         error: null
     };
-    send = () => {
+
+    componentDidMount() {
+        const {hallId} = this.props.match.params;
+        axios.get(`/hall/find/${hallId}`).then(
+            response => {
+                console.log(response);
+                this.setState({hallId: response.data.id});
+                this.setState({theaterId: response.data.theaterId});
+                this.setState({name: response.data.name});
+                this.setState({rowsNumber: response.data.rowsNumber});
+                this.setState({rowLength: response.data.rowLength});
+            },
+            error => {
+                console.log(error);
+                this.setState({error: 'Wystąpił błąd'});
+            });
+        console.log(this.state);
+    }
+
+    edit = (hallId) => {
         const {history} = this.props;
         console.log(this.state);
         // send a POST request
-        axios.post('/screening/add', {
-            startDateString: this.state.startDateString,
-            theaterId: (this.state.theaterId),
-            hallId: (this.state.hallId),
-            movieId: (this.state.movieId)
+        axios.post(`/hall/update/${hallId}`, {
+            theaterId: this.state.theaterId,
+            name: this.state.name,
+            rowsNumber: this.state.rowsNumber,
+            rowLength: this.state.rowLength
         })
         .then((response) =>{
             console.log(response);
             const {history} = this.props;
-            history.push('/admin/screenings');
+            history.push('/admin/halls/overview');
         }, (error) => {
             console.log(error);
         });
     };
 
     render() {
-        const {movieId} = this.props.match.params;
+        const {hallId} = this.props.match.params;
         if(this.state.error) {
             return (
                 <div style={styles.container}>
@@ -63,12 +83,12 @@ class AdminScreeningsAdd extends React.Component {
         return (
             <Container component="main" maxWidth="xs">
                 <div style={styles.container}>
-                    <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
+                    <Link to={"/admin/halls"} style={styles.link}>Exit</Link>
                 </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new screening
+                        Add new hall
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -76,19 +96,8 @@ class AdminScreeningsAdd extends React.Component {
                             margin="normal"
                             required
                             fullWidth
-                            id="startDateString"
-                            label="Screening start date"
-                            name="startDateString"
-                            autoFocus
-                            onChange={(event) => this.setState({startDateString: event.target.value})}
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
                             id="theaterId"
-                            label="Screening theater Id"
+                            label="Hall theater Id"
                             name="theaterId"
                             autoFocus
                             onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
@@ -98,28 +107,39 @@ class AdminScreeningsAdd extends React.Component {
                             margin="normal"
                             required
                             fullWidth
-                            id="hallId"
-                            label="Screening hall Id"
-                            name="hallId"
+                            id="name"
+                            label="Hall name"
+                            name="name"
                             autoFocus
-                            onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
+                            onChange={(event) => this.setState({name: event.target.value})}
                         />
                         <TextField
                             variant="outlined"
                             margin="normal"
                             required
                             fullWidth
-                            id="movieId"
-                            label="Screening movie Id"
-                            name="movieId"
+                            id="rows"
+                            label="Hall rows"
+                            name="rows"
                             autoFocus
-                            onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
+                            onChange={(event) => this.setState({rowsNumber: parseInt(event.target.value, 10)})}
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="rowLength"
+                            label="Hall row length"
+                            name="rowLength"
+                            autoFocus
+                            onChange={(event) => this.setState({rowLength: parseInt(event.target.value, 10)})}
                         />
                         <Button
                             fullWidth
                             variant="contained"
                             color="primary"
-                            onClick={this.send}
+                            onClick={() => this.edit(this.state.hallId)}
                         >
                             Add
                         </Button>
@@ -130,4 +150,4 @@ class AdminScreeningsAdd extends React.Component {
     }
 }
 
-export default AdminScreeningsAdd;
+export default AdminHallsEdit;

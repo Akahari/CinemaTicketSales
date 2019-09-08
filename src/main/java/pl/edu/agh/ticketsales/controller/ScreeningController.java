@@ -52,8 +52,17 @@ public class ScreeningController {
 
 //update screening
     @PostMapping(path="/update/{id}")
-    public @ResponseBody String updateScreening(@PathVariable("id") Integer id, @RequestBody Screening screening) {
-        screeningService.updateScreening(id, screening);
+    public @ResponseBody String updateScreening(@PathVariable("id") Integer id, @RequestBody Quasi_screening quasi_screening) {
+        if(quasi_screening.getStartDateString() != null){
+            try {
+                quasi_screening.setStartDate(this.sdf.parse(quasi_screening.getStartDateString()));
+            } catch (ParseException e) {
+                e.printStackTrace();
+                quasi_screening.setStartDate(new Date());
+            }
+        }
+
+        screeningService.updateScreening(id, quasi_screening);
         return "Updated screening";
     }
 
