@@ -45,15 +45,21 @@ class Screenings extends React.Component {
                     <tbody>
                     <tr>
                         <th>Movie id</th>
-                        <th>Start date</th>
+                        <th>Theater id</th>
                         <th>Hall id</th>
+                        <th>Start date</th>
+                        <th>End date</th>
+                        <th>duration</th>
                     </tr>
                     {
                         this.state.screenings.map(screening => (
                             <tr>
+                                <td>{screening.theaterId}</td>
                                 <td>{screening.movieId}</td>
-                                <td>{screening.startDate}</td>
                                 <td>{screening.hallId}</td>
+                                <td>{new Date(screening.startDate).toGMTString()}</td>
+                                <td>{new Date(screening.endDate).toGMTString()}</td>
+                                <td>{screening.duration}</td>
                             </tr>
                         ))
                     }

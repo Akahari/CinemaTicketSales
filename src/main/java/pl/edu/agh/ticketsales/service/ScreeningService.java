@@ -61,7 +61,10 @@ public class ScreeningService {
     public void removeScreening(Integer id) {
         //maybe some pre-processing, remove any artifacts
         //also needs to be removed from hall timetable
+        Hall hall = hallRepository.findByScreeningId(id);
+        hall.removeScreeningId(id);
         screeningRepository.delete(id);
+        hallRepository.save(hall);
     }
 
 //update screening
@@ -78,6 +81,8 @@ public class ScreeningService {
             //if there are and new hall have different size (should never happen) then solution might be too complicated to bother, so just ditch all the booking IDs
             Hall h = hallRepository.findById(quasi_screening.getHallId());
             n.setHallId(h); //setHallId has some kind of self-defense mechanism implemented anyway
+            h.removeScreeningId(id);
+            hallRepository.save(h);
         }
         if(quasi_screening.getMovieId() != null &&  !n.getMovieId().equals(quasi_screening.getMovieId())) {  //situation = changing movie
             Movie m = movieRepository.findById(quasi_screening.getMovieId());

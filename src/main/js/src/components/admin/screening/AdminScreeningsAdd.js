@@ -27,7 +27,6 @@ const styles = {
 class AdminScreeningsAdd extends React.Component {
     state = {
         startDateString: '',
-        theaterId: 0,
         hallId: 0,
         movieId: 0,
         error: null
@@ -38,7 +37,6 @@ class AdminScreeningsAdd extends React.Component {
         // send a POST request
         axios.post('/screening/add', {
             startDateString: this.state.startDateString,
-            theaterId: (this.state.theaterId),
             hallId: (this.state.hallId),
             movieId: (this.state.movieId)
         })
@@ -77,21 +75,10 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="startDateString"
-                            label="Screening start date"
+                            label="Screening start date (yyyy-MM-dd HH:mm)"
                             name="startDateString"
                             autoFocus
                             onChange={(event) => this.setState({startDateString: event.target.value})}
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="theaterId"
-                            label="Screening theater Id"
-                            name="theaterId"
-                            autoFocus
-                            onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
                         />
                         <TextField
                             variant="outlined"

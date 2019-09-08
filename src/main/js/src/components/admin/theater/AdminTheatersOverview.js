@@ -85,7 +85,7 @@ class AdminTheatersEdit extends React.Component {
                                 <td>{theater.name}</td>
                                 <td>{theater.city}</td>
                                 <td>{theater.address}</td>
-                                <td>{theater.hallIds}</td>
+                                <td>{theater.hallIds.join(", ")}</td>
                                 <td>
                                     <Button
                                         variant="contained"

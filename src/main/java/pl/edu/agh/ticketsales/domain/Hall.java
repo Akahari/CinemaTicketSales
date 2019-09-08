@@ -32,6 +32,7 @@ public class Hall implements Serializable {
 
     public Set<Integer> getScreeningId() { return this.screeningId; }
     public void addScreeningId(Screening screening) { this.screeningId.add(screening.getId()); }
+    public void removeScreeningId(Integer screeningId) { this.screeningId.remove(screeningId); }
 
     public String getName() { return name;}
     public void setName(String name) { this.name = name;}

@@ -61,7 +61,7 @@ public class HallController {
     //find by screening id
     @GetMapping(path = "/find/screening/{screeningId}")
     public @ResponseBody
-    Iterable<Hall> findByScreeningId(@PathVariable("screeningId") Integer screeningId) {
+    Hall findByScreeningId(@PathVariable("screeningId") Integer screeningId) {
         return hallService.findByScreeningId(screeningId);
     }
 

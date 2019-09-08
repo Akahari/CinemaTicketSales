@@ -58,9 +58,9 @@ class Movies extends React.Component {
                                 <td>{movie.title}</td>
                                 <td>{movie.duration}</td>
                                 <td>{movie.description}</td>
-                                <td>{movie.cast}</td>
-                                <td>{movie.directors}</td>
-                                <td>{movie.tags}</td>
+                                <td>{movie.cast.join(", ")}</td>
+                                <td>{movie.directors.join(", ")}</td>
+                                <td>{movie.tags.join(", ")}</td>
                                 <td><Link to={`/movies/${movie.id}`}>Open</Link></td>
                             </tr>
                         ))

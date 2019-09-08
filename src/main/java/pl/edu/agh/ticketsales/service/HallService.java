@@ -98,7 +98,7 @@ public class HallService {
 //find
     public Iterable<Hall> getAll() { return hallRepository.findAll(); }
     public Hall findById(Integer id) { return hallRepository.findById(id); }
-    public Iterable<Hall> findByScreeningId(Integer screeningId) { return hallRepository.findByScreeningId(screeningId); }
+    public Hall findByScreeningId(Integer screeningId) { return hallRepository.findByScreeningId(screeningId); }
     public Iterable<Hall> findByTheaterId(Integer theaterId) {return hallRepository.findByTheaterId(theaterId); }
 
 //edit (outdated, use update instead)

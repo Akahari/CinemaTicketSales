@@ -55440,7 +55440,7 @@ function (_React$Component) {
         to: "/",
         style: styles.link
       }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link")), this.state.movies.map(function (movie) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
           to: "/movies/".concat(movie.id)
         }, "Open")));
       }))));
@@ -55560,8 +55560,8 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/",
         style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id")), this.state.screenings.map(function (screening) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.startDate), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId));
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "End date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "duration")), this.state.screenings.map(function (screening) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, new Date(screening.startDate).toGMTString()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, new Date(screening.endDate).toGMTString()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.duration));
       }))));
     }
   }]);
@@ -55684,8 +55684,28 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/",
         style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall ids")), this.state.theaters.map(function (theater) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds));
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        align: "center"
+      }, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        align: "center"
+      }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        align: "center"
+      }, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        align: "center"
+      }, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        align: "center"
+      }, "Hall ids")), this.state.theaters.map(function (theater) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          align: "center"
+        }, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          align: "center"
+        }, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          align: "center"
+        }, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          align: "center"
+        }, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          align: "center"
+        }, theater.hallIds.join(", ")));
       }))));
     }
   }]);
@@ -57266,7 +57286,7 @@ function (_React$Component) {
         to: "/admin/movies",
         style: styles.link
       }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.movies.map(function (movie) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
           to: "/movies/".concat(movie.id)
         }, "Open")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
@@ -57460,7 +57480,6 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       startDateString: '',
-      theaterId: 0,
       hallId: 0,
       movieId: 0,
       error: null
@@ -57472,7 +57491,6 @@ function (_React$Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_7__["post"]('/screening/add', {
         startDateString: _this.state.startDateString,
-        theaterId: _this.state.theaterId,
         hallId: _this.state.hallId,
         movieId: _this.state.movieId
       }).then(function (response) {
@@ -57522,26 +57540,12 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "startDateString",
-        label: "Screening start date",
+        label: "Screening start date (yyyy-MM-dd HH:mm)",
         name: "startDateString",
         autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             startDateString: event.target.value
-          });
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        variant: "outlined",
-        margin: "normal",
-        required: true,
-        fullWidth: true,
-        id: "theaterId",
-        label: "Screening theater Id",
-        name: "theaterId",
-        autoFocus: true,
-        onChange: function onChange(event) {
-          return _this2.setState({
-            theaterId: parseInt(event.target.value, 10)
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -58668,7 +58672,7 @@ function (_React$Component) {
         to: "/admin/theaters",
         style: styles.link
       }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.theaters.map(function (theater) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
