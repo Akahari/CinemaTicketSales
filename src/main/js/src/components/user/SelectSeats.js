@@ -82,25 +82,24 @@ class SelectSeats extends React.Component {
         this.state.reducedAmount = this.props.location.state.reducedAmount;
         this.state.kidsAmount = this.props.location.state.kidsAmount;
         this.state.ticketsAmount = this.props.location.state.ticketsAmount;
-        let tempRow = [];
-        for (let j = 1; j <= this.props.location.state.rowLength; j++) {
-            let seat = {id:j, number: j};
-            tempRow.push(seat);
-        }
-        this.state.rows = tempRow;
-        console.log(tempRow);
-        console.log(this.state.rows);
     }
 
     render(){
-        const rows = [
-          [{ id:1, number: 1}, { id:2, number: 2}, { id:3, number: '3'}, { id:4, number: '4'}, { id:5, number: 5}, { id:6, number: 6}],
-          [{ id:7, number: 1}, { id:8, number: 2}, { id:9, number: '3'}, { id:10, number: '4'}, { id:11, number: 5}, { id:12, number: 6}],
-          [{ id:13, number: 1}, { id:14, number: 2}, { id:15, number: 3}, { id:16, number: '4'}, { id:17, number: 5}, { id:18, number: 6}],
-          [{ id:19, number: 1}, { id:20, number: 2},  { id:21, number: 3}, { id:22, number: '4'}, { id:23, number: 5}, { id:24, number: 6}],
-          [{ id:25, number: 1}, { id:26, number: 2}, { id:27, number: '3'}, { id:28, number: '4'}, { id:29, number: 5}, { id:30, number: 6}]
-        ];
+
+        let tempRowMatrix = [];
+        let tempRow = [];
+        for (let i = 0; i < this.props.location.state.rowNumber; i++) {
+            tempRow = [];
+            for (let j = 0; j < this.props.location.state.rowLength; j++) {
+                let seat = {id:((i)*this.props.location.state.rowLength) + j, number: j+1};
+                tempRow.push(seat);
+                console.log(seat.id);
+            }
+            tempRowMatrix.push(tempRow);
+        }
         const {loading}=this.state;
+        console.log(tempRow);
+        console.log(tempRowMatrix);
 
         if(this.state.error) {
             return (
@@ -123,7 +122,7 @@ class SelectSeats extends React.Component {
                     </Typography>
                     <SeatPicker
                       addSeatCallback={this.addSeatCallback}
-                      rows={this.state.rows}
+                      rows={tempRowMatrix}
                       maxReservableSeats={this.props.location.state.ticketsAmount}
                       alpha
                       visible

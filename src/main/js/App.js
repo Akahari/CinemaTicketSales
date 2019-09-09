@@ -9,6 +9,9 @@ import HomePage from './src/components/HomePage';
 import Movies from './src/components/Movies';
 import MovieDetails from './src/components/MovieDetails';
 
+import DeclareTickets from './src/components/user/DeclareTickets';
+import SelectSeats from './src/components/user/SelectSeats';
+
 import LoginPage from './src/components/LoginPage';
 import AdminHomePage from './src/components/admin/AdminHomePage';
 
@@ -56,6 +59,9 @@ class App extends React.Component {
                         <Route exact path="/" component={HomePage}/>
                         <Route exact path="/login" component={LoginPage}/>
                         <Route path="/admin" component={AdminRouter}/>
+
+                        <Route exact path="/screenings/declareTickets" component={DeclareTickets}/>
+                        <Route exact path="/screenings/selectSeats" component={SelectSeats}/>
 
                         <Route exact path="/movies" component={Movies}/>
                         <Route path="/movies/:movieId" component={MovieDetails}/>
