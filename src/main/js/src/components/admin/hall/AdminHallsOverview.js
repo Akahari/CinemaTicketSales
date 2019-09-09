@@ -66,7 +66,6 @@ class AdminHallsEdit extends React.Component {
         }
         return (
             <div style={styles.container}>
-                <Link to={"/admin/halls"} style={styles.link}>Exit</Link>
                 <table>
                     <thead>
                     <tr>
@@ -88,7 +87,7 @@ class AdminHallsEdit extends React.Component {
                                 <td>{hall.name}</td>
                                 <td>{hall.rowsNumber}</td>
                                 <td>{hall.rowLength}</td>
-                                <td><Link to="/halls" style={styles.link}>{hall.screeningId.join(", ")}</Link></td>
+                                <td>{hall.screeningId.join(", ")}</td>
                                 <td>{hall.theaterId}</td>
                                 <td>
                                     <Button

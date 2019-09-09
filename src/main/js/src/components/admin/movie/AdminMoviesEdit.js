@@ -88,9 +88,6 @@ class AdminMoviesEdit extends React.Component {
         }
         return (
             <Container component="main" maxWidth="xs">
-                <div style={styles.container}>
-                    <Link to={"/admin/movies"} style={styles.link}>Exit</Link>
-                </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
@@ -116,7 +113,6 @@ class AdminMoviesEdit extends React.Component {
                             id="description"
                             label="Movie description"
                             name="description"
-                            autoFocus
                             onChange={(event) => this.setState({description: event.target.value})}
                         />
                         <TextField
@@ -127,7 +123,6 @@ class AdminMoviesEdit extends React.Component {
                             id="duration"
                             label="Movie duration"
                             name="duration"
-                            autoFocus
                             onChange={(event) => this.setState({duration: parseInt(event.target.value, 10)})}
                         />
                         <TextField
@@ -138,7 +133,6 @@ class AdminMoviesEdit extends React.Component {
                             id="tags"
                             label="Movie tags"
                             name="tags"
-                            autoFocus
                             onChange={(event) => this.setState({tags: event.target.value.split(";")})}
                         />
                         <TextField
@@ -149,7 +143,6 @@ class AdminMoviesEdit extends React.Component {
                             id="cast"
                             label="Movie cast"
                             name="cast"
-                            autoFocus
                             onChange={(event) => this.setState({cast: event.target.value.split(";")})}
                         />
                         <TextField
@@ -160,7 +153,6 @@ class AdminMoviesEdit extends React.Component {
                             id="directors"
                             label="Movie directors"
                             name="directors"
-                            autoFocus
                             onChange={(event) => this.setState({directors: event.target.value.split(";")})}
                         />
                         <Button

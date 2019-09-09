@@ -60,9 +60,6 @@ class AdminTheaters extends React.Component {
         }
         return (
             <Container component="main" maxWidth="xs">
-                <div style={styles.container}>
-                    <Link to={"/admin/theaters"} style={styles.link}>Exit</Link>
-                </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
@@ -88,7 +85,6 @@ class AdminTheaters extends React.Component {
                             id="city"
                             label="Theater City"
                             name="city"
-                            autoFocus
                             onChange={(event) => this.setState({city: event.target.value})}
                         />
                         <TextField
@@ -99,7 +95,6 @@ class AdminTheaters extends React.Component {
                             id="address"
                             label="Theater address"
                             name="address"
-                            autoFocus
                             onChange={(event) => this.setState({address: event.target.value})}
                         />
                         <Button

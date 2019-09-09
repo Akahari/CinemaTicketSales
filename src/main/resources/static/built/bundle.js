@@ -391,6 +391,35 @@ function _typeof(obj) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/extends.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/inheritsLoose.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/inheritsLoose.js ***!
@@ -422,6 +451,171 @@ function _interopRequireDefault(obj) {
 }
 
 module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/AppBar/AppBar.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/AppBar/AppBar.js ***!
+  \*************************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _utils_helpers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/esm/utils/helpers.js");
+/* harmony import */ var _Paper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
+
+
+
+
+
+
+
+
+var styles = function styles(theme) {
+  var backgroundColorDefault = theme.palette.type === 'light' ? theme.palette.grey[100] : theme.palette.grey[900];
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      display: 'flex',
+      flexDirection: 'column',
+      width: '100%',
+      boxSizing: 'border-box',
+      // Prevent padding issue with the Modal and fixed positioned AppBar.
+      zIndex: theme.zIndex.appBar,
+      flexShrink: 0
+    },
+
+    /* Styles applied to the root element if `position="fixed"`. */
+    positionFixed: {
+      position: 'fixed',
+      top: 0,
+      left: 'auto',
+      right: 0
+    },
+
+    /* Styles applied to the root element if `position="absolute"`. */
+    positionAbsolute: {
+      position: 'absolute',
+      top: 0,
+      left: 'auto',
+      right: 0
+    },
+
+    /* Styles applied to the root element if `position="sticky"`. */
+    positionSticky: {
+      position: 'sticky',
+      top: 0,
+      left: 'auto',
+      right: 0
+    },
+
+    /* Styles applied to the root element if `position="static"`. */
+    positionStatic: {
+      position: 'static'
+    },
+
+    /* Styles applied to the root element if `position="relative"`. */
+    positionRelative: {
+      position: 'relative'
+    },
+
+    /* Styles applied to the root element if `color="default"`. */
+    colorDefault: {
+      backgroundColor: backgroundColorDefault,
+      color: theme.palette.getContrastText(backgroundColorDefault)
+    },
+
+    /* Styles applied to the root element if `color="primary"`. */
+    colorPrimary: {
+      backgroundColor: theme.palette.primary.main,
+      color: theme.palette.primary.contrastText
+    },
+
+    /* Styles applied to the root element if `color="secondary"`. */
+    colorSecondary: {
+      backgroundColor: theme.palette.secondary.main,
+      color: theme.palette.secondary.contrastText
+    }
+  };
+};
+var AppBar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function AppBar(props, ref) {
+  var classes = props.classes,
+      className = props.className,
+      _props$color = props.color,
+      color = _props$color === void 0 ? 'primary' : _props$color,
+      _props$position = props.position,
+      position = _props$position === void 0 ? 'fixed' : _props$position,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "color", "position"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    square: true,
+    component: "header",
+    elevation: 4,
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["position".concat(Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_6__["capitalize"])(position))], className, color !== 'inherit' && classes["color".concat(Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_6__["capitalize"])(color))], {
+      fixed: 'mui-fixed'
+    }[position]),
+    ref: ref
+  }, other));
+});
+ true ? AppBar.propTypes = {
+  /**
+   * The content of the component.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
+
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   */
+  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['default', 'inherit', 'primary', 'secondary']),
+
+  /**
+   * The positioning type. The behavior of the different options is described
+   * [in the MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning).
+   * Note: `sticky` is not universally supported and will fall back to `static` when unavailable.
+   */
+  position: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['absolute', 'fixed', 'relative', 'static', 'sticky'])
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__["default"])(styles, {
+  name: 'MuiAppBar'
+})(AppBar));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/AppBar/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/AppBar/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppBar */ "./node_modules/@material-ui/core/esm/AppBar/AppBar.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _AppBar__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
 
 /***/ }),
 
@@ -3094,6 +3288,440 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/Grid/Grid.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Grid/Grid.js ***!
+  \*********************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _utils_requirePropFactory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/requirePropFactory */ "./node_modules/@material-ui/core/esm/utils/requirePropFactory.js");
+
+
+// A grid component using the following libs as inspiration.
+//
+// For the implementation:
+// - https://getbootstrap.com/docs/4.3/layout/grid/
+// - https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
+// - https://github.com/roylee0704/react-flexbox-grid
+// - https://material.angularjs.org/latest/layout/introduction
+//
+// Follow this flexbox Guide to better understand the underlying model:
+// - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+
+
+var SPACINGS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var GRID_SIZES = ['auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+function generateGrid(globalStyles, theme, breakpoint) {
+  var styles = {};
+  GRID_SIZES.forEach(function (size) {
+    var key = "grid-".concat(breakpoint, "-").concat(size);
+
+    if (size === true) {
+      // For the auto layouting
+      styles[key] = {
+        flexBasis: 0,
+        flexGrow: 1,
+        maxWidth: '100%'
+      };
+      return;
+    }
+
+    if (size === 'auto') {
+      styles[key] = {
+        flexBasis: 'auto',
+        flexGrow: 0,
+        maxWidth: 'none'
+      };
+      return;
+    } // Keep 7 significant numbers.
+
+
+    var width = "".concat(Math.round(size / 12 * 10e7) / 10e5, "%"); // Close to the bootstrap implementation:
+    // https://github.com/twbs/bootstrap/blob/8fccaa2439e97ec72a4b7dc42ccc1f649790adb0/scss/mixins/_grid.scss#L41
+
+    styles[key] = {
+      flexBasis: width,
+      flexGrow: 0,
+      maxWidth: width
+    };
+  }); // No need for a media query for the first size.
+
+  if (breakpoint === 'xs') {
+    Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])(globalStyles, styles);
+  } else {
+    globalStyles[theme.breakpoints.up(breakpoint)] = styles;
+  }
+}
+
+function getOffset(val) {
+  var div = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  var parse = parseFloat(val);
+  return "".concat(parse / div).concat(String(val).replace(String(parse), '') || 'px');
+}
+
+function generateGutter(theme, breakpoint) {
+  var styles = {};
+  SPACINGS.forEach(function (spacing) {
+    var themeSpacing = theme.spacing(spacing);
+
+    if (themeSpacing === 0) {
+      return;
+    }
+
+    styles["spacing-".concat(breakpoint, "-").concat(spacing)] = {
+      margin: "-".concat(getOffset(themeSpacing, 2)),
+      width: "calc(100% + ".concat(getOffset(themeSpacing), ")"),
+      '& > $item': {
+        padding: getOffset(themeSpacing, 2)
+      }
+    };
+  });
+  return styles;
+} // Default CSS values
+// flex: '0 1 auto',
+// flexDirection: 'row',
+// alignItems: 'flex-start',
+// flexWrap: 'nowrap',
+// justifyContent: 'flex-start',
+
+
+var styles = function styles(theme) {
+  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    /* Styles applied to the root element */
+    root: {},
+
+    /* Styles applied to the root element if `container={true}`. */
+    container: {
+      boxSizing: 'border-box',
+      display: 'flex',
+      flexWrap: 'wrap',
+      width: '100%'
+    },
+
+    /* Styles applied to the root element if `item={true}`. */
+    item: {
+      boxSizing: 'border-box',
+      margin: '0' // For instance, it's useful when used with a `figure` element.
+
+    },
+
+    /* Styles applied to the root element if `zeroMinWidth={true}`. */
+    zeroMinWidth: {
+      minWidth: 0
+    },
+
+    /* Styles applied to the root element if `direction="column"`. */
+    'direction-xs-column': {
+      flexDirection: 'column'
+    },
+
+    /* Styles applied to the root element if `direction="column-reverse"`. */
+    'direction-xs-column-reverse': {
+      flexDirection: 'column-reverse'
+    },
+
+    /* Styles applied to the root element if `direction="rwo-reverse"`. */
+    'direction-xs-row-reverse': {
+      flexDirection: 'row-reverse'
+    },
+
+    /* Styles applied to the root element if `wrap="nowrap"`. */
+    'wrap-xs-nowrap': {
+      flexWrap: 'nowrap'
+    },
+
+    /* Styles applied to the root element if `wrap="reverse"`. */
+    'wrap-xs-wrap-reverse': {
+      flexWrap: 'wrap-reverse'
+    },
+
+    /* Styles applied to the root element if `alignItems="center"`. */
+    'align-items-xs-center': {
+      alignItems: 'center'
+    },
+
+    /* Styles applied to the root element if `alignItems="flex-start"`. */
+    'align-items-xs-flex-start': {
+      alignItems: 'flex-start'
+    },
+
+    /* Styles applied to the root element if `alignItems="flex-end"`. */
+    'align-items-xs-flex-end': {
+      alignItems: 'flex-end'
+    },
+
+    /* Styles applied to the root element if `alignItems="baseline"`. */
+    'align-items-xs-baseline': {
+      alignItems: 'baseline'
+    },
+
+    /* Styles applied to the root element if `alignContent="center"`. */
+    'align-content-xs-center': {
+      alignContent: 'center'
+    },
+
+    /* Styles applied to the root element if `alignContent="flex-start"`. */
+    'align-content-xs-flex-start': {
+      alignContent: 'flex-start'
+    },
+
+    /* Styles applied to the root element if `alignContent="flex-end"`. */
+    'align-content-xs-flex-end': {
+      alignContent: 'flex-end'
+    },
+
+    /* Styles applied to the root element if `alignContent="space-between"`. */
+    'align-content-xs-space-between': {
+      alignContent: 'space-between'
+    },
+
+    /* Styles applied to the root element if `alignContent="space-around"`. */
+    'align-content-xs-space-around': {
+      alignContent: 'space-around'
+    },
+
+    /* Styles applied to the root element if `justify="center"`. */
+    'justify-xs-center': {
+      justifyContent: 'center'
+    },
+
+    /* Styles applied to the root element if `justify="flex-end"`. */
+    'justify-xs-flex-end': {
+      justifyContent: 'flex-end'
+    },
+
+    /* Styles applied to the root element if `justify="space-between"`. */
+    'justify-xs-space-between': {
+      justifyContent: 'space-between'
+    },
+
+    /* Styles applied to the root element if `justify="space-around"`. */
+    'justify-xs-space-around': {
+      justifyContent: 'space-around'
+    },
+
+    /* Styles applied to the root element if `justify="space-evenly"`. */
+    'justify-xs-space-evenly': {
+      justifyContent: 'space-evenly'
+    }
+  }, generateGutter(theme, 'xs'), {}, theme.breakpoints.keys.reduce(function (accumulator, key) {
+    // Use side effect over immutability for better performance.
+    generateGrid(accumulator, theme, key);
+    return accumulator;
+  }, {}));
+};
+var Grid = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function (props, ref) {
+  var _props$alignContent = props.alignContent,
+      alignContent = _props$alignContent === void 0 ? 'stretch' : _props$alignContent,
+      _props$alignItems = props.alignItems,
+      alignItems = _props$alignItems === void 0 ? 'stretch' : _props$alignItems,
+      classes = props.classes,
+      classNameProp = props.className,
+      _props$component = props.component,
+      Component = _props$component === void 0 ? 'div' : _props$component,
+      _props$container = props.container,
+      container = _props$container === void 0 ? false : _props$container,
+      _props$direction = props.direction,
+      direction = _props$direction === void 0 ? 'row' : _props$direction,
+      _props$item = props.item,
+      item = _props$item === void 0 ? false : _props$item,
+      _props$justify = props.justify,
+      justify = _props$justify === void 0 ? 'flex-start' : _props$justify,
+      _props$lg = props.lg,
+      lg = _props$lg === void 0 ? false : _props$lg,
+      _props$md = props.md,
+      md = _props$md === void 0 ? false : _props$md,
+      _props$sm = props.sm,
+      sm = _props$sm === void 0 ? false : _props$sm,
+      _props$spacing = props.spacing,
+      spacing = _props$spacing === void 0 ? 0 : _props$spacing,
+      _props$wrap = props.wrap,
+      wrap = _props$wrap === void 0 ? 'wrap' : _props$wrap,
+      _props$xl = props.xl,
+      xl = _props$xl === void 0 ? false : _props$xl,
+      _props$xs = props.xs,
+      xs = _props$xs === void 0 ? false : _props$xs,
+      _props$zeroMinWidth = props.zeroMinWidth,
+      zeroMinWidth = _props$zeroMinWidth === void 0 ? false : _props$zeroMinWidth,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["alignContent", "alignItems", "classes", "className", "component", "container", "direction", "item", "justify", "lg", "md", "sm", "spacing", "wrap", "xl", "xs", "zeroMinWidth"]);
+
+  var className = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classNameProp, container && [classes.container, spacing !== 0 && classes["spacing-xs-".concat(String(spacing))]], item && classes.item, zeroMinWidth && classes.zeroMinWidth, direction !== 'row' && classes["direction-xs-".concat(String(direction))], wrap !== 'wrap' && classes["wrap-xs-".concat(String(wrap))], alignItems !== 'stretch' && classes["align-items-xs-".concat(String(alignItems))], alignContent !== 'stretch' && classes["align-content-xs-".concat(String(alignContent))], justify !== 'flex-start' && classes["justify-xs-".concat(String(justify))], xs !== false && classes["grid-xs-".concat(String(xs))], sm !== false && classes["grid-sm-".concat(String(sm))], md !== false && classes["grid-md-".concat(String(md))], lg !== false && classes["grid-lg-".concat(String(lg))], xl !== false && classes["grid-xl-".concat(String(xl))]);
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    className: className,
+    ref: ref
+  }, other));
+});
+
+if (true) {
+  // can't use named function expression since the function body references `Grid`
+  // which would point to the render function instead of the actual component
+  Grid.displayName = 'ForwardRef(Grid)';
+}
+
+ true ? Grid.propTypes = {
+  /**
+   * Defines the `align-content` style property.
+   * It's applied for all screen sizes.
+   */
+  alignContent: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['stretch', 'center', 'flex-start', 'flex-end', 'space-between', 'space-around']),
+
+  /**
+   * Defines the `align-items` style property.
+   * It's applied for all screen sizes.
+   */
+  alignItems: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['flex-start', 'center', 'flex-end', 'stretch', 'baseline']),
+
+  /**
+   * The content of the component.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a DOM element or a component.
+   */
+  component: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.elementType,
+
+  /**
+   * If `true`, the component will have the flex *container* behavior.
+   * You should be wrapping *items* with a *container*.
+   */
+  container: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * Defines the `flex-direction` style property.
+   * It is applied for all screen sizes.
+   */
+  direction: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['row', 'row-reverse', 'column', 'column-reverse']),
+
+  /**
+   * If `true`, the component will have the flex *item* behavior.
+   * You should be wrapping *items* with a *container*.
+   */
+  item: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * Defines the `justify-content` style property.
+   * It is applied for all screen sizes.
+   */
+  justify: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly']),
+
+  /**
+   * Defines the number of grids the component is going to use.
+   * It's applied for the `lg` breakpoint and wider screens if not overridden.
+   */
+  lg: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+
+  /**
+   * Defines the number of grids the component is going to use.
+   * It's applied for the `md` breakpoint and wider screens if not overridden.
+   */
+  md: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+
+  /**
+   * Defines the number of grids the component is going to use.
+   * It's applied for the `sm` breakpoint and wider screens if not overridden.
+   */
+  sm: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+
+  /**
+   * Defines the space between the type `item` component.
+   * It can only be used on a type `container` component.
+   */
+  spacing: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(SPACINGS),
+
+  /**
+   * Defines the `flex-wrap` style property.
+   * It's applied for all screen sizes.
+   */
+  wrap: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['nowrap', 'wrap', 'wrap-reverse']),
+
+  /**
+   * Defines the number of grids the component is going to use.
+   * It's applied for the `xl` breakpoint and wider screens.
+   */
+  xl: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+
+  /**
+   * Defines the number of grids the component is going to use.
+   * It's applied for all the screen sizes with the lowest priority.
+   */
+  xs: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf([false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+
+  /**
+   * If `true`, it sets `min-width: 0` on the item.
+   * Refer to the limitations section of the documentation to better understand the use case.
+   */
+  zeroMinWidth: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool
+} : undefined;
+var StyledGrid = Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__["default"])(styles, {
+  name: 'MuiGrid'
+})(Grid);
+
+if (true) {
+  var requireProp = Object(_utils_requirePropFactory__WEBPACK_IMPORTED_MODULE_6__["default"])('Grid');
+  StyledGrid.propTypes = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, StyledGrid.propTypes, {
+    alignContent: requireProp('container'),
+    alignItems: requireProp('container'),
+    direction: requireProp('container'),
+    justify: requireProp('container'),
+    lg: requireProp('item'),
+    md: requireProp('item'),
+    sm: requireProp('item'),
+    spacing: requireProp('container'),
+    wrap: requireProp('container'),
+    xs: requireProp('item'),
+    zeroMinWidth: requireProp('item')
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (StyledGrid);
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Grid/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Grid/index.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Grid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Grid */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Grid__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/Grow/Grow.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/Grow/Grow.js ***!
@@ -3307,6 +3935,249 @@ Grow.muiSupportAuto = true;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Grow__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Grow */ "./node_modules/@material-ui/core/esm/Grow/Grow.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Grow__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/IconButton/IconButton.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/IconButton/IconButton.js ***!
+  \*********************************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+/* harmony import */ var _styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/colorManipulator */ "./node_modules/@material-ui/core/esm/styles/colorManipulator.js");
+/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@material-ui/core/esm/ButtonBase/index.js");
+/* harmony import */ var _utils_helpers__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/helpers */ "./node_modules/@material-ui/core/esm/utils/helpers.js");
+
+
+
+
+
+
+
+
+
+
+var styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      textAlign: 'center',
+      flex: '0 0 auto',
+      fontSize: theme.typography.pxToRem(24),
+      padding: 12,
+      borderRadius: '50%',
+      overflow: 'visible',
+      // Explicitly set the default value to solve a bug on IE 11.
+      color: theme.palette.action.active,
+      transition: theme.transitions.create('background-color', {
+        duration: theme.transitions.duration.shortest
+      }),
+      '&:hover': {
+        backgroundColor: Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["fade"])(theme.palette.action.active, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
+      },
+      '&$disabled': {
+        backgroundColor: 'transparent',
+        color: theme.palette.action.disabled
+      }
+    },
+
+    /* Styles applied to the root element if `edge="start"`. */
+    edgeStart: {
+      marginLeft: -12,
+      '$sizeSmall&': {
+        marginLeft: -3
+      }
+    },
+
+    /* Styles applied to the root element if `edge="end"`. */
+    edgeEnd: {
+      marginRight: -12,
+      '$sizeSmall&': {
+        marginRight: -3
+      }
+    },
+
+    /* Styles applied to the root element if `color="inherit"`. */
+    colorInherit: {
+      color: 'inherit'
+    },
+
+    /* Styles applied to the root element if `color="primary"`. */
+    colorPrimary: {
+      color: theme.palette.primary.main,
+      '&:hover': {
+        backgroundColor: Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["fade"])(theme.palette.primary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+
+    /* Styles applied to the root element if `color="secondary"`. */
+    colorSecondary: {
+      color: theme.palette.secondary.main,
+      '&:hover': {
+        backgroundColor: Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["fade"])(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+
+    /* Pseudo-class applied to the root element if `disabled={true}`. */
+    disabled: {},
+
+    /* Styles applied to the root element if `size="small"`. */
+    sizeSmall: {
+      padding: 3,
+      fontSize: theme.typography.pxToRem(18)
+    },
+
+    /* Styles applied to the children container element. */
+    label: {
+      width: '100%',
+      display: 'flex',
+      alignItems: 'inherit',
+      justifyContent: 'inherit'
+    }
+  };
+};
+/**
+ * Refer to the [Icons](/components/icons/) section of the documentation
+ * regarding the available icon options.
+ */
+
+var IconButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function IconButton(props, ref) {
+  var _props$edge = props.edge,
+      edge = _props$edge === void 0 ? false : _props$edge,
+      children = props.children,
+      classes = props.classes,
+      className = props.className,
+      _props$color = props.color,
+      color = _props$color === void 0 ? 'default' : _props$color,
+      _props$disabled = props.disabled,
+      disabled = _props$disabled === void 0 ? false : _props$disabled,
+      _props$disableFocusRi = props.disableFocusRipple,
+      disableFocusRipple = _props$disableFocusRi === void 0 ? false : _props$disableFocusRi,
+      _props$size = props.size,
+      size = _props$size === void 0 ? 'medium' : _props$size,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["edge", "children", "classes", "className", "color", "disabled", "disableFocusRipple", "size"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, color !== 'default' && classes["color".concat(Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_9__["capitalize"])(color))], disabled && classes.disabled, {
+      small: classes["size".concat(Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_9__["capitalize"])(size))]
+    }[size], {
+      start: classes.edgeStart,
+      end: classes.edgeEnd
+    }[edge]),
+    centerRipple: true,
+    focusRipple: !disableFocusRipple,
+    disabled: disabled,
+    ref: ref
+  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+    className: classes.label
+  }, children));
+});
+ true ? IconButton.propTypes = {
+  /**
+   * The icon element.
+   */
+  children: Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_5__["chainPropTypes"])(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node, function (props) {
+    var found = react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.toArray(props.children).some(function (child) {
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child) && child.props.onClick;
+    });
+
+    if (found) {
+      return new Error(['Material-UI: you are providing an onClick event listener ' + 'to a child of a button element.', 'Firefox will never trigger the event.', 'You should move the onClick listener to the parent button element.', 'https://github.com/mui-org/material-ui/issues/13957'].join('\n'));
+    }
+
+    return null;
+  }),
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   */
+  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['default', 'inherit', 'primary', 'secondary']),
+
+  /**
+   * If `true`, the button will be disabled.
+   */
+  disabled: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If `true`, the  keyboard focus ripple will be disabled.
+   * `disableRipple` must also be true.
+   */
+  disableFocusRipple: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If `true`, the ripple effect will be disabled.
+   */
+  disableRipple: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If given, uses a negative margin to counteract the padding on one
+   * side (this is often helpful for aligning the left or right
+   * side of the icon with content above or below, without ruining the border
+   * size and shape).
+   */
+  edge: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['start', 'end', false]),
+
+  /**
+   * The size of the button.
+   * `small` is equivalent to the dense button styling.
+   */
+  size: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['small', 'medium'])
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
+  name: 'MuiIconButton'
+})(IconButton));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/IconButton/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/IconButton/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _IconButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IconButton */ "./node_modules/@material-ui/core/esm/IconButton/IconButton.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _IconButton__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
@@ -9502,6 +10373,131 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/Toolbar/Toolbar.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Toolbar/Toolbar.js ***!
+  \***************************************************************/
+/*! exports provided: styles, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
+
+
+
+
+
+
+
+var styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      position: 'relative',
+      display: 'flex',
+      alignItems: 'center'
+    },
+
+    /* Styles applied to the root element if `disableGutters={false}`. */
+    gutters: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({
+      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(2)
+    }, theme.breakpoints.up('sm'), {
+      paddingLeft: theme.spacing(3),
+      paddingRight: theme.spacing(3)
+    }),
+
+    /* Styles applied to the root element if `variant="regular"`. */
+    regular: theme.mixins.toolbar,
+
+    /* Styles applied to the root element if `variant="dense"`. */
+    dense: {
+      minHeight: 48
+    }
+  };
+};
+var Toolbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Toolbar(props, ref) {
+  var classes = props.classes,
+      classNameProp = props.className,
+      _props$component = props.component,
+      Component = _props$component === void 0 ? 'div' : _props$component,
+      _props$disableGutters = props.disableGutters,
+      disableGutters = _props$disableGutters === void 0 ? false : _props$disableGutters,
+      _props$variant = props.variant,
+      variant = _props$variant === void 0 ? 'regular' : _props$variant,
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component", "disableGutters", "variant"]);
+
+  var className = Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, classes[variant], classNameProp, !disableGutters && classes.gutters);
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: className,
+    ref: ref
+  }, other));
+});
+ true ? Toolbar.propTypes = {
+  /**
+   * Toolbar children, usually a mixture of `IconButton`, `Button` and `Typography`.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a DOM element or a component.
+   */
+  component: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.elementType,
+
+  /**
+   * If `true`, disables gutter padding.
+   */
+  disableGutters: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+
+  /**
+   * The variant to use.
+   */
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['regular', 'dense'])
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
+  name: 'MuiToolbar'
+})(Toolbar));
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/esm/Toolbar/index.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/Toolbar/index.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Toolbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Toolbar */ "./node_modules/@material-ui/core/esm/Toolbar/Toolbar.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Toolbar__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/Typography/Typography.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/Typography/Typography.js ***!
@@ -11588,6 +12584,37 @@ function useForkRef(refA, refB) {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/utils/requirePropFactory.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/utils/requirePropFactory.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function requirePropFactory(componentNameInError) {
+  if (false) {}
+
+  var requireProp = function requireProp(requiredProp) {
+    return function (props, propName, componentName, location, propFullName) {
+      var propFullNameSafe = propFullName || propName;
+
+      if (typeof props[propName] !== 'undefined' && !props[requiredProp]) {
+        return new Error("The prop `".concat(propFullNameSafe, "` of ") + "`".concat(componentNameInError, "` must be used on `").concat(requiredProp, "`."));
+      }
+
+      return null;
+    };
+  };
+
+  return requireProp;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (requirePropFactory);
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/utils/useEventCallback.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/utils/useEventCallback.js ***!
@@ -11691,6 +12718,75 @@ function isObject(val) {
   return val != null && typeof val === 'object' && Array.isArray(val) === false;
 };
 
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/ArrowBack.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@material-ui/icons/ArrowBack.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+}), 'ArrowBack');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createSvgIcon;
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _SvgIcon = _interopRequireDefault(__webpack_require__(/*! @material-ui/core/SvgIcon */ "./node_modules/@material-ui/core/esm/SvgIcon/index.js"));
+
+function createSvgIcon(path, displayName) {
+  var Component = _react.default.memo(_react.default.forwardRef(function (props, ref) {
+    return _react.default.createElement(_SvgIcon.default, (0, _extends2.default)({
+      ref: ref
+    }, props), path);
+  }));
+
+  if (true) {
+    Component.displayName = "".concat(displayName, "Icon");
+  }
+
+  Component.muiName = _SvgIcon.default.muiName;
+  return Component;
+}
 
 /***/ }),
 
@@ -54682,6 +55778,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
 /* harmony import */ var _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersOverview */ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js");
 /* harmony import */ var _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
+/* harmony import */ var _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/components/admin/AdminRouter */ "./src/main/js/src/components/admin/AdminRouter.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -54728,12 +55825,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var styles = {
-  grid: {
-    minHeight: 700,
-    minWidth: 1100,
-    height: '100%'
-  },
   container: {
     height: '100%',
     backgroundColor: 'white'
@@ -54774,9 +55867,8 @@ function (_React$Component) {
         path: "/login",
         component: _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_10__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
         path: "/admin",
-        component: _src_components_admin_AdminHomePage__WEBPACK_IMPORTED_MODULE_11__["default"]
+        component: _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_28__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/movies",
@@ -54797,66 +55889,6 @@ function (_React$Component) {
         path: "/theaters",
         component: _src_components_Theaters__WEBPACK_IMPORTED_MODULE_6__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/theaters",
-        component: _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_24__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/theaters/add",
-        component: _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_25__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/theaters/overview",
-        component: _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_26__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        path: "/admin/theaters/edit/:theaterId",
-        component: _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_27__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/movies",
-        component: _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_16__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/movies/add",
-        component: _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_17__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/movies/overview",
-        component: _src_components_admin_movie_AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_18__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        path: "/admin/movies/edit/:movieId",
-        component: _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_19__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/halls",
-        component: _src_components_admin_hall_AdminHalls__WEBPACK_IMPORTED_MODULE_12__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/halls/add",
-        component: _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_13__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/halls/overview",
-        component: _src_components_admin_hall_AdminHallsOverview__WEBPACK_IMPORTED_MODULE_14__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        path: "/admin/halls/edit/:hallId",
-        component: _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_15__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/screenings",
-        component: _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_20__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/screenings/add",
-        component: _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_21__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/admin/screenings/overview",
-        component: _src_components_admin_screening_AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_22__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        path: "/admin/screenings/edit/:screeningId",
-        component: _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_23__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         component: function component() {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
             to: "/"
@@ -54870,6 +55902,113 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('react'));
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/AppBar.js":
+/*!**********************************************!*\
+  !*** ./src/main/js/src/components/AppBar.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "./node_modules/@material-ui/core/esm/Toolbar/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
+/* harmony import */ var _material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/ArrowBack */ "./node_modules/@material-ui/icons/ArrowBack.js");
+/* harmony import */ var _material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+
+var styles = {
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  },
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex',
+    padding: 10
+  },
+  title: {
+    flexGrow: 1
+  },
+  grid: {
+    padding: 10
+  }
+};
+
+var AppBar =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AppBar, _React$Component);
+
+  function AppBar() {
+    _classCallCheck(this, AppBar);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(AppBar).apply(this, arguments));
+  }
+
+  _createClass(AppBar, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        position: "static"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        edge: "start",
+        color: "inherit",
+        "aria-label": "menu"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: this.props.linkTo,
+        style: styles.link
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        variant: "h6",
+        style: styles.title
+      }, this.props.title)));
+    }
+  }]);
+
+  return AppBar;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AppBar);
 
 /***/ }),
 
@@ -55135,7 +56274,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var styles = {
   paper: {
-    marginTop: 40,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
@@ -55187,10 +56325,8 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "main",
-        maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        maxWidth: "xs",
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "h1",
@@ -55440,7 +56576,7 @@ function (_React$Component) {
         to: "/",
         style: styles.link
       }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link")), this.state.movies.map(function (movie) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
           to: "/movies/".concat(movie.id)
         }, "Open")));
       }))));
@@ -55468,6 +56604,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Container */ "./node_modules/@material-ui/core/esm/Container/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -55487,6 +56628,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
 
 
 
@@ -55524,6 +56671,18 @@ function (_React$Component) {
       error: null
     });
 
+    _defineProperty(_assertThisInitialized(_this), "buy", function (screeningId, rowNumber, rowLength) {
+      var history = _this.props.history;
+      history.push({
+        pathname: '/screenings/declareTickets',
+        state: {
+          screeningId: screeningId,
+          rowLength: rowLength,
+          rowNumber: rowNumber
+        }
+      });
+    });
+
     return _this;
   }
 
@@ -55549,6 +56708,8 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       if (this.state.error) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           style: styles.container
@@ -55560,8 +56721,14 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/",
         style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "End date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "duration")), this.state.screenings.map(function (screening) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, new Date(screening.startDate).toGMTString()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, new Date(screening.endDate).toGMTString()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.duration));
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "End date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Free seats left"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Buy tickets")), this.state.screenings.map(function (screening) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, new Date(screening.startDate).toGMTString()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, new Date(screening.endDate).toGMTString()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.rows * screening.rowLength - screening.seatsStatus.filter(Boolean).length), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          variant: "contained",
+          color: "primary",
+          onClick: function onClick() {
+            return _this3.buy(screening.id, screening.rows, screening.rowLength);
+          }
+        }, "Buy")));
       }))));
     }
   }]);
@@ -55684,28 +56851,8 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/",
         style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        align: "center"
-      }, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        align: "center"
-      }, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        align: "center"
-      }, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        align: "center"
-      }, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-        align: "center"
-      }, "Hall ids")), this.state.theaters.map(function (theater) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          align: "center"
-        }, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          align: "center"
-        }, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          align: "center"
-        }, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          align: "center"
-        }, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          align: "center"
-        }, theater.hallIds.join(", ")));
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall ids")), this.state.theaters.map(function (theater) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds));
       }))));
     }
   }]);
@@ -55729,8 +56876,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../AppBar */ "./src/main/js/src/components/AppBar.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -55752,16 +56900,32 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
 var styles = {
   container: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  },
+  root: {
+    flexGrow: 1
+  },
+  paper: {
     flex: 1,
     flexDirection: 'column',
     display: 'flex',
     padding: 10
   },
-  link: {
-    flex: 1,
-    margin: 10
+  title: {
+    flexGrow: 1
+  },
+  grid: {
+    padding: 10
   }
 };
 
@@ -55779,24 +56943,58 @@ function (_React$Component) {
   _createClass(AdminHomePage, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Welcome to admin view"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/theaters",
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        title: "Zarz\u0105dzanie kinami",
+        linkTo: "/"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        container: true,
+        spacing: 3,
+        style: styles.grid
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        style: styles.paper
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Theaters"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/theaters/add",
         style: styles.link
-      }, "Theaters"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/movies",
+      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/theaters/overview",
         style: styles.link
-      }, "Movies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/halls",
+      }, "Edit/Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        style: styles.paper
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Movies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/movies/add",
         style: styles.link
-      }, "Halls"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/screenings",
+      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/movies/overview",
         style: styles.link
-      }, "Screenings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/",
+      }, "Edit/Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        style: styles.paper
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Halls"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/halls/add",
         style: styles.link
-      }, "Exit"));
+      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/halls/overview",
+        style: styles.link
+      }, "Edit/Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        style: styles.paper
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Screenings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/screenings/add",
+        style: styles.link
+      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/admin/screenings/overview",
+        style: styles.link
+      }, "Edit/Remove")))));
     }
   }]);
 
@@ -55807,10 +57005,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/admin/hall/AdminHalls.js":
-/*!*************************************************************!*\
-  !*** ./src/main/js/src/components/admin/hall/AdminHalls.js ***!
-  \*************************************************************/
+/***/ "./src/main/js/src/components/admin/AdminRouter.js":
+/*!*********************************************************!*\
+  !*** ./src/main/js/src/components/admin/AdminRouter.js ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -55819,8 +57017,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _AdminHomePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AdminHomePage */ "./src/main/js/src/components/admin/AdminHomePage.js");
+/* harmony import */ var _theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
+/* harmony import */ var _movie_AdminMovies__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
+/* harmony import */ var _hall_AdminHalls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hall/AdminHalls */ "./src/main/js/src/components/admin/hall/AdminHalls.js");
+/* harmony import */ var _screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -55842,16 +57043,128 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
+
+
+var styles = {
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  },
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex',
+    padding: 10
+  },
+  title: {
+    flexGrow: 1
+  },
+  grid: {
+    padding: 10
+  }
+};
+
+var AdminRouter =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AdminRouter, _React$Component);
+
+  function AdminRouter() {
+    _classCallCheck(this, AdminRouter);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(AdminRouter).apply(this, arguments));
+  }
+
+  _createClass(AdminRouter, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin",
+        component: _AdminHomePage__WEBPACK_IMPORTED_MODULE_2__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/theaters",
+        component: _theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_3__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/movies",
+        component: _movie_AdminMovies__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/halls",
+        component: _hall_AdminHalls__WEBPACK_IMPORTED_MODULE_5__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/screenings",
+        component: _screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_6__["default"]
+      })));
+    }
+  }]);
+
+  return AdminRouter;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AdminRouter);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/admin/hall/AdminHalls.js":
+/*!*************************************************************!*\
+  !*** ./src/main/js/src/components/admin/hall/AdminHalls.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../AppBar */ "./src/main/js/src/components/AppBar.js");
+/* harmony import */ var _AdminHallsAdd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AdminHallsAdd */ "./src/main/js/src/components/admin/hall/AdminHallsAdd.js");
+/* harmony import */ var _AdminHallsOverview__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AdminHallsOverview */ "./src/main/js/src/components/admin/hall/AdminHallsOverview.js");
+/* harmony import */ var _AdminHallsEdit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AdminHallsEdit */ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
 var styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
     display: 'flex',
     padding: 10
-  },
-  link: {
-    flex: 1,
-    margin: 10
   }
 };
 
@@ -55869,18 +57182,23 @@ function (_React$Component) {
   _createClass(AdminHalls, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        title: "Zarz\u0105dzanie salami",
+        linkTo: "/admin"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Welcome to admin view"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/halls/add",
-        style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/halls/overview",
-        style: styles.link
-      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin",
-        style: styles.link
-      }, "Back"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/halls/add",
+        component: _AdminHallsAdd__WEBPACK_IMPORTED_MODULE_3__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/halls/overview",
+        component: _AdminHallsOverview__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/halls/edit/:hallId",
+        component: _AdminHallsEdit__WEBPACK_IMPORTED_MODULE_5__["default"]
+      })));
     }
   }]);
 
@@ -56018,12 +57336,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/halls",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -56053,7 +57366,6 @@ function (_React$Component) {
         id: "name",
         label: "Hall name",
         name: "name",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             name: event.target.value
@@ -56067,7 +57379,6 @@ function (_React$Component) {
         id: "rows",
         label: "Hall rows",
         name: "rows",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             rowsNumber: parseInt(event.target.value, 10)
@@ -56081,7 +57392,6 @@ function (_React$Component) {
         id: "rowLength",
         label: "Hall row length",
         name: "rowLength",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             rowLength: parseInt(event.target.value, 10)
@@ -56268,12 +57578,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/halls",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -56303,7 +57608,6 @@ function (_React$Component) {
         id: "name",
         label: "Hall name",
         name: "name",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             name: event.target.value
@@ -56317,7 +57621,6 @@ function (_React$Component) {
         id: "rows",
         label: "Hall rows",
         name: "rows",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             rowsNumber: parseInt(event.target.value, 10)
@@ -56331,7 +57634,6 @@ function (_React$Component) {
         id: "rowLength",
         label: "Hall row length",
         name: "rowLength",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             rowLength: parseInt(event.target.value, 10)
@@ -56493,14 +57795,8 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/admin/halls",
-        style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowsNumber), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-          to: "/halls",
-          style: styles.link
-        }, hall.screeningId.join(", "))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowsNumber), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.screeningId.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
@@ -56536,8 +57832,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../AppBar */ "./src/main/js/src/components/AppBar.js");
+/* harmony import */ var _AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
+/* harmony import */ var _AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AdminMoviesOverview */ "./src/main/js/src/components/admin/movie/AdminMoviesOverview.js");
+/* harmony import */ var _AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AdminMoviesEdit */ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -56559,16 +57857,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
+
 var styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
     display: 'flex',
     padding: 10
-  },
-  link: {
-    flex: 1,
-    margin: 10
   }
 };
 
@@ -56586,18 +57883,23 @@ function (_React$Component) {
   _createClass(AdminMovies, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        title: "Zarz\u0105dzanie filmami",
+        linkTo: "/admin"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Welcome to admin view"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/movies/add",
-        style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/movies/overview",
-        style: styles.link
-      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin",
-        style: styles.link
-      }, "Back"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/movies/add",
+        component: _AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_3__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/movies/overview",
+        component: _AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/movies/edit/:movieId",
+        component: _AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_5__["default"]
+      })));
     }
   }]);
 
@@ -56739,12 +58041,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/movies",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -56774,7 +58071,6 @@ function (_React$Component) {
         id: "description",
         label: "Movie description",
         name: "description",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             description: event.target.value
@@ -56788,7 +58084,6 @@ function (_React$Component) {
         id: "duration",
         label: "Movie duration",
         name: "duration",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             duration: parseInt(event.target.value, 10)
@@ -56802,7 +58097,6 @@ function (_React$Component) {
         id: "tags",
         label: "Movie tags",
         name: "tags",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             tags: event.target.value.split(";")
@@ -56816,7 +58110,6 @@ function (_React$Component) {
         id: "cast",
         label: "Movie cast",
         name: "cast",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             cast: event.target.value.split(";")
@@ -56830,7 +58123,6 @@ function (_React$Component) {
         id: "directors",
         label: "Movie directors",
         name: "directors",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             directors: event.target.value.split(";")
@@ -57029,12 +58321,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/movies",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -57064,7 +58351,6 @@ function (_React$Component) {
         id: "description",
         label: "Movie description",
         name: "description",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             description: event.target.value
@@ -57078,7 +58364,6 @@ function (_React$Component) {
         id: "duration",
         label: "Movie duration",
         name: "duration",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             duration: parseInt(event.target.value, 10)
@@ -57092,7 +58377,6 @@ function (_React$Component) {
         id: "tags",
         label: "Movie tags",
         name: "tags",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             tags: event.target.value.split(";")
@@ -57106,7 +58390,6 @@ function (_React$Component) {
         id: "cast",
         label: "Movie cast",
         name: "cast",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             cast: event.target.value.split(";")
@@ -57120,7 +58403,6 @@ function (_React$Component) {
         id: "directors",
         label: "Movie directors",
         name: "directors",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             directors: event.target.value.split(";")
@@ -57282,11 +58564,8 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/admin/movies",
-        style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.movies.map(function (movie) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.movies.map(function (movie) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
           to: "/movies/".concat(movie.id)
         }, "Open")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
@@ -57324,8 +58603,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../AppBar */ "./src/main/js/src/components/AppBar.js");
+/* harmony import */ var _AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
+/* harmony import */ var _AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AdminScreeningsOverview */ "./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js");
+/* harmony import */ var _AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AdminScreeningsEdit */ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -57347,16 +58628,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
+
 var styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
     display: 'flex',
     padding: 10
-  },
-  link: {
-    flex: 1,
-    margin: 10
   }
 };
 
@@ -57374,18 +58654,23 @@ function (_React$Component) {
   _createClass(AdminScreenings, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        title: "Zarz\u0105dzanie seansami",
+        linkTo: "/admin"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Welcome to admin view"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/screenings/add",
-        style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/screenings/overview",
-        style: styles.link
-      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin",
-        style: styles.link
-      }, "Back"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/screenings/add",
+        component: _AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_3__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/screenings/overview",
+        component: _AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/screenings/edit/:screeningId",
+        component: _AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_5__["default"]
+      })));
     }
   }]);
 
@@ -57480,6 +58765,7 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       startDateString: '',
+      theaterId: 0,
       hallId: 0,
       movieId: 0,
       error: null
@@ -57491,6 +58777,7 @@ function (_React$Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_7__["post"]('/screening/add', {
         startDateString: _this.state.startDateString,
+        theaterId: _this.state.theaterId,
         hallId: _this.state.hallId,
         movieId: _this.state.movieId
       }).then(function (response) {
@@ -57521,12 +58808,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/screenings",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -57540,7 +58822,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "startDateString",
-        label: "Screening start date (yyyy-MM-dd HH:mm)",
+        label: "Screening start date",
         name: "startDateString",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -57553,10 +58835,22 @@ function (_React$Component) {
         margin: "normal",
         required: true,
         fullWidth: true,
+        id: "theaterId",
+        label: "Screening theater Id",
+        name: "theaterId",
+        onChange: function onChange(event) {
+          return _this2.setState({
+            theaterId: parseInt(event.target.value, 10)
+          });
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        variant: "outlined",
+        margin: "normal",
+        required: true,
+        fullWidth: true,
         id: "hallId",
         label: "Screening hall Id",
         name: "hallId",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             hallId: parseInt(event.target.value, 10)
@@ -57570,7 +58864,6 @@ function (_React$Component) {
         id: "movieId",
         label: "Screening movie Id",
         name: "movieId",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             movieId: parseInt(event.target.value, 10)
@@ -57758,12 +59051,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/screenings",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -57795,7 +59083,6 @@ function (_React$Component) {
         label: "Theater Id " //defaultValue={this.state.theaterId}
         ,
         name: "theaterId",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             theaterId: parseInt(event.target.value, 10)
@@ -57810,7 +59097,6 @@ function (_React$Component) {
         label: "hallId" //defaultValue={this.state.hallId}
         ,
         name: "hallId",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             hallId: parseInt(event.target.value, 10)
@@ -57825,7 +59111,6 @@ function (_React$Component) {
         label: "movieId" //defaultValue={this.state.movieId}
         ,
         name: "movieId",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             movieId: parseInt(event.target.value, 10)
@@ -57987,10 +59272,7 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/admin/screenings",
-        style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.screenings.map(function (screening) {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.screenings.map(function (screening) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.startDate), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
@@ -58027,8 +59309,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../AppBar */ "./src/main/js/src/components/AppBar.js");
+/* harmony import */ var _AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
+/* harmony import */ var _AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AdminTheatersOverview */ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js");
+/* harmony import */ var _AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -58050,16 +59334,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
+
 var styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
     display: 'flex',
     padding: 10
-  },
-  link: {
-    flex: 1,
-    margin: 10
   }
 };
 
@@ -58077,18 +59360,23 @@ function (_React$Component) {
   _createClass(AdminTheaters, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        title: "Zarz\u0105dzanie kinami",
+        linkTo: "/admin"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Welcome to admin view"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/theaters/add",
-        style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin/theaters/overview",
-        style: styles.link
-      }, "Edit/Remove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: "/admin",
-        style: styles.link
-      }, "Back"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/theaters/add",
+        component: _AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_3__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/admin/theaters/overview",
+        component: _AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/admin/theaters/edit/:theaterId",
+        component: _AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_5__["default"]
+      })));
     }
   }]);
 
@@ -58224,12 +59512,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/theaters",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -58259,7 +59542,6 @@ function (_React$Component) {
         id: "city",
         label: "Theater City",
         name: "city",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             city: event.target.value
@@ -58273,7 +59555,6 @@ function (_React$Component) {
         id: "address",
         label: "Theater address",
         name: "address",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this2.setState({
             address: event.target.value
@@ -58454,12 +59735,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
         component: "main",
         maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: "/admin/theaters/overview",
-        style: styles.link
-      }, "Exit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
@@ -58491,7 +59767,6 @@ function (_React$Component) {
         label: "city" //defaultValue={this.state.city}
         ,
         name: "city",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             city: event.target.value
@@ -58506,7 +59781,6 @@ function (_React$Component) {
         label: "address" //defaultValue={this.state.address}
         ,
         name: "address",
-        autoFocus: true,
         onChange: function onChange(event) {
           return _this3.setState({
             address: event.target.value
@@ -58668,11 +59942,8 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/admin/theaters",
-        style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.theaters.map(function (theater) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.theaters.map(function (theater) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {

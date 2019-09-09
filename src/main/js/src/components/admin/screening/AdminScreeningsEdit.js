@@ -83,9 +83,6 @@ class AdminScreeningsEdit extends React.Component {
         }
         return (
             <Container component="main" maxWidth="xs">
-                <div style={styles.container}>
-                    <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
-                </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
@@ -113,7 +110,6 @@ class AdminScreeningsEdit extends React.Component {
                             label="Theater Id "
                             //defaultValue={this.state.theaterId}
                             name="theaterId"
-                            autoFocus
                             onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
                         />
                         <TextField
@@ -125,7 +121,6 @@ class AdminScreeningsEdit extends React.Component {
                             label="hallId"
                             //defaultValue={this.state.hallId}
                             name="hallId"
-                            autoFocus
                             onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
                         />
                         <TextField
@@ -137,7 +132,6 @@ class AdminScreeningsEdit extends React.Component {
                             label="movieId"
                             //defaultValue={this.state.movieId}
                             name="movieId"
-                            autoFocus
                             onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
                         />
                         <Button

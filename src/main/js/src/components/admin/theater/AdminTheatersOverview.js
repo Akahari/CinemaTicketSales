@@ -66,7 +66,6 @@ class AdminTheatersEdit extends React.Component {
         }
         return (
             <div style={styles.container}>
-                <Link to={"/admin/theaters"} style={styles.link}>Exit</Link>
                 <table>
                     <tbody>
                     <tr>
@@ -85,7 +84,7 @@ class AdminTheatersEdit extends React.Component {
                                 <td>{theater.name}</td>
                                 <td>{theater.city}</td>
                                 <td>{theater.address}</td>
-                                <td>{theater.hallIds.join(", ")}</td>
+                                <td>{theater.hallIds}</td>
                                 <td>
                                     <Button
                                         variant="contained"

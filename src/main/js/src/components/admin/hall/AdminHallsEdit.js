@@ -82,9 +82,6 @@ class AdminHallsEdit extends React.Component {
         }
         return (
             <Container component="main" maxWidth="xs">
-                <div style={styles.container}>
-                    <Link to={"/admin/halls"} style={styles.link}>Exit</Link>
-                </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
@@ -110,7 +107,6 @@ class AdminHallsEdit extends React.Component {
                             id="name"
                             label="Hall name"
                             name="name"
-                            autoFocus
                             onChange={(event) => this.setState({name: event.target.value})}
                         />
                         <TextField
@@ -121,7 +117,6 @@ class AdminHallsEdit extends React.Component {
                             id="rows"
                             label="Hall rows"
                             name="rows"
-                            autoFocus
                             onChange={(event) => this.setState({rowsNumber: parseInt(event.target.value, 10)})}
                         />
                         <TextField
@@ -132,7 +127,6 @@ class AdminHallsEdit extends React.Component {
                             id="rowLength"
                             label="Hall row length"
                             name="rowLength"
-                            autoFocus
                             onChange={(event) => this.setState({rowLength: parseInt(event.target.value, 10)})}
                         />
                         <Button

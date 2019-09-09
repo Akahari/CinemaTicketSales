@@ -31,13 +31,9 @@ import AdminTheaters from './src/components/admin/theater/AdminTheaters';
 import AdminTheatersAdd from './src/components/admin/theater/AdminTheatersAdd';
 import AdminTheatersOverview from './src/components/admin/theater/AdminTheatersOverview';
 import AdminTheatersEdit from './src/components/admin/theater/AdminTheatersEdit';
+import AdminRouter from './src/components/admin/AdminRouter';
 
 const styles = {
-    grid: {
-        minHeight: 700,
-        minWidth: 1100,
-        height: '100%'
-    },
     container: {
         height: '100%',
         backgroundColor: 'white'
@@ -59,7 +55,7 @@ class App extends React.Component {
                     <div style={styles.container}>
                         <Route exact path="/" component={HomePage}/>
                         <Route exact path="/login" component={LoginPage}/>
-                        <Route exact path="/admin" component={AdminHomePage}/>
+                        <Route path="/admin" component={AdminRouter}/>
 
                         <Route exact path="/movies" component={Movies}/>
                         <Route path="/movies/:movieId" component={MovieDetails}/>
@@ -67,25 +63,6 @@ class App extends React.Component {
                         <Route exact path="/screenings" component={Screenings}/>
                         <Route exact path="/theaters" component={Theaters}/>
 
-                        <Route exact path="/admin/theaters" component={AdminTheaters}/>
-                        <Route exact path="/admin/theaters/add" component={AdminTheatersAdd}/>
-                        <Route exact path="/admin/theaters/overview" component={AdminTheatersOverview}/>
-                        <Route path="/admin/theaters/edit/:theaterId" component={AdminTheatersEdit}/>
-
-                        <Route exact path="/admin/movies" component={AdminMovies}/>
-                        <Route exact path="/admin/movies/add" component={AdminMoviesAdd}/>
-                        <Route exact path="/admin/movies/overview" component={AdminMoviesOverview}/>
-                        <Route path="/admin/movies/edit/:movieId" component={AdminMoviesEdit}/>
-
-                        <Route exact path="/admin/halls" component={AdminHalls}/>
-                        <Route exact path="/admin/halls/add" component={AdminHallsAdd}/>
-                        <Route exact path="/admin/halls/overview" component={AdminHallsOverview}/>
-                        <Route path="/admin/halls/edit/:hallId" component={AdminHallsEdit}/>
-
-                        <Route exact path="/admin/screenings" component={AdminScreenings}/>
-                        <Route exact path="/admin/screenings/add" component={AdminScreeningsAdd}/>
-                        <Route exact path="/admin/screenings/overview" component={AdminScreeningsOverview}/>
-                        <Route path="/admin/screenings/edit/:screeningId" component={AdminScreeningsEdit}/>
                         <Route component={() => <Redirect to="/"/>}/>
                     </div>
                 </Router>

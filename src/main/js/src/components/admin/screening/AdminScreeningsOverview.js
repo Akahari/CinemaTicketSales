@@ -66,7 +66,6 @@ class AdminScreeningsEdit extends React.Component {
         }
         return (
             <div style={styles.container}>
-                <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
                 <table>
                     <tbody>
                     <tr>

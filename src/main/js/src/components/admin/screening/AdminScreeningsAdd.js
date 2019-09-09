@@ -27,6 +27,7 @@ const styles = {
 class AdminScreeningsAdd extends React.Component {
     state = {
         startDateString: '',
+        theaterId: 0,
         hallId: 0,
         movieId: 0,
         error: null
@@ -37,6 +38,7 @@ class AdminScreeningsAdd extends React.Component {
         // send a POST request
         axios.post('/screening/add', {
             startDateString: this.state.startDateString,
+            theaterId: (this.state.theaterId),
             hallId: (this.state.hallId),
             movieId: (this.state.movieId)
         })
@@ -60,9 +62,6 @@ class AdminScreeningsAdd extends React.Component {
         }
         return (
             <Container component="main" maxWidth="xs">
-                <div style={styles.container}>
-                    <Link to={"/admin/screenings"} style={styles.link}>Exit</Link>
-                </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
@@ -75,7 +74,7 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="startDateString"
-                            label="Screening start date (yyyy-MM-dd HH:mm)"
+                            label="Screening start date"
                             name="startDateString"
                             autoFocus
                             onChange={(event) => this.setState({startDateString: event.target.value})}
@@ -85,10 +84,19 @@ class AdminScreeningsAdd extends React.Component {
                             margin="normal"
                             required
                             fullWidth
+                            id="theaterId"
+                            label="Screening theater Id"
+                            name="theaterId"
+                            onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
                             id="hallId"
                             label="Screening hall Id"
                             name="hallId"
-                            autoFocus
                             onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
                         />
                         <TextField
@@ -99,7 +107,6 @@ class AdminScreeningsAdd extends React.Component {
                             id="movieId"
                             label="Screening movie Id"
                             name="movieId"
-                            autoFocus
                             onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
                         />
                         <Button

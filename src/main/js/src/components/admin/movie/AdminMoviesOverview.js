@@ -66,7 +66,6 @@ class AdminMoviesEdit extends React.Component {
         }
         return (
             <div style={styles.container}>
-                <Link to={"/admin/movies"} style={styles.link}>Exit</Link>
                 <table>
                     <tbody>
                     <tr>
@@ -86,9 +85,9 @@ class AdminMoviesEdit extends React.Component {
                                 <td>{movie.title}</td>
                                 <td>{movie.duration}</td>
                                 <td>{movie.description}</td>
-                                <td>{movie.cast.join(", ")}</td>
-                                <td>{movie.directors.join(", ")}</td>
-                                <td>{movie.tags.join(", ")}</td>
+                                <td>{movie.cast}</td>
+                                <td>{movie.directors}</td>
+                                <td>{movie.tags}</td>
                                 <td><Link to={`/movies/${movie.id}`}>Open</Link></td>
                                 <td>
                                     <Button

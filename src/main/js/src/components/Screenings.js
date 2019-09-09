@@ -1,6 +1,12 @@
 import React from 'react';
 import * as axios from 'axios';
 import {Link} from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import {withRouter} from "react-router-dom";
 
 const styles = {
     container: {
@@ -16,6 +22,18 @@ class Screenings extends React.Component {
     state = {
         screenings: [],
         error: null
+    };
+    buy = (screeningId, rowNumber , rowLength) => {
+        const {history} = this.props;
+        history.push(
+        {
+            pathname: '/screenings/declareTickets',
+            state: {
+              screeningId: screeningId,
+              rowLength: rowLength,
+              rowNumber: rowNumber
+            }
+      })
     };
 
     componentDidMount() {
@@ -49,17 +67,29 @@ class Screenings extends React.Component {
                         <th>Hall id</th>
                         <th>Start date</th>
                         <th>End date</th>
-                        <th>duration</th>
+                        <th>Duration</th>
+                        <th>Free seats left</th>
+                        <th>Buy tickets</th>
                     </tr>
                     {
                         this.state.screenings.map(screening => (
                             <tr>
-                                <td>{screening.theaterId}</td>
                                 <td>{screening.movieId}</td>
+                                <td>{screening.theaterId}</td>
                                 <td>{screening.hallId}</td>
                                 <td>{new Date(screening.startDate).toGMTString()}</td>
                                 <td>{new Date(screening.endDate).toGMTString()}</td>
                                 <td>{screening.duration}</td>
+                                <td>{screening.rows * screening.rowLength - screening.seatsStatus.filter(Boolean).length}</td>
+                                <td>
+                                    <Button
+                                        variant="contained"
+                                        color="primary"
+                                        onClick={() => this.buy(screening.id, screening.rows , screening.rowLength)}
+                                    >
+                                        Buy
+                                    </Button>
+                                </td>
                             </tr>
                         ))
                     }

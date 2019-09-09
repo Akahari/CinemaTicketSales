@@ -1,6 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import * as axios from 'axios';
+import {Route} from 'react-router-dom';
+import AppBar from '../../AppBar';
+import AdminTheatersAdd from './AdminTheatersAdd';
+import AdminTheatersOverview from './AdminTheatersOverview';
+import AdminTheatersEdit from './AdminTheatersEdit';
 
 const styles = {
     container: {
@@ -8,10 +11,6 @@ const styles = {
         flexDirection: 'column',
         display: 'flex',
         padding: 10
-    },
-    link: {
-        flex: 1,
-        margin: 10
     }
 };
 
@@ -19,15 +18,16 @@ class AdminTheaters extends React.Component {
 
     render() {
         return (
-            <div style={styles.container}>
-                <p>Welcome to admin view</p>
-                <Link to={"/admin/theaters/add"} style={styles.link}>Add</Link>
-                <Link to={"/admin/theaters/overview"} style={styles.link}>Edit/Remove</Link>
-                <Link to={"/admin"} style={styles.link}>Back</Link>
-            </div>
+            <React.Fragment>
+                <AppBar title="Zarządzanie kinami" linkTo={"/admin"}/>
+                <div style={styles.container}>
+                    <Route exact path="/admin/theaters/add" component={AdminTheatersAdd}/>
+                    <Route exact path="/admin/theaters/overview" component={AdminTheatersOverview}/>
+                    <Route path="/admin/theaters/edit/:theaterId" component={AdminTheatersEdit}/>
+                </div>
+            </React.Fragment>
         );
     }
 }
 
 export default AdminTheaters;
-
