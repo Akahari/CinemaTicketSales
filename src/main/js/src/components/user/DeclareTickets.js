@@ -35,13 +35,19 @@ class DeclareTickets extends React.Component {
 
     componentDidMount() {
             console.log("welcome to tickets declaration");
+            console.log(this.props.location);
     }
 
     next = () => {
         const {history} = this.props;
-        this.setState({ticketsAmount: this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount});
-        if(this.state.ticketsAmount > 0){
-            console.log(this.state);
+        const ticketsAmount = this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount;
+        //this.setState({ticketsAmount: this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount});
+        console.log(this.state);
+        console.log(ticketsAmount);
+        if(ticketsAmount > 0){
+            console.log("Debug x");
+//            console.log(this.state);
+//            console.log(this.props.location.state);
             history.push(
             {
                 pathname: '/screenings/selectSeats',
@@ -53,7 +59,7 @@ class DeclareTickets extends React.Component {
                     normalAmount: this.state.normalAmount,
                     reducedAmount: this.state.reducedAmount,
                     kidsAmount: this.state.kidsAmount,
-                    ticketsAmount: this.state.ticketsAmount
+                    ticketsAmount: ticketsAmount
                 }
             })
         } else {

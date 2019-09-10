@@ -33,19 +33,34 @@ class BookingDetails extends React.Component {
     };
 
     componentDidMount() {
-        console.log("welcome to booking details");
-        console.log("DEBUG 5");
-        console.log(this.props.location.state);
-        console.log(this.props.location.state.normalAmount);
-        console.log(this.props.location.state.reducedAmount);
-        console.log(this.props.location.state.kidsAmount);
-        console.log("DEBUG 5.5");
-        console.log(this.state);
-        this.state.normalAmount = this.props.location.state.normalAmount;
-        this.state.reducedAmount = this.props.location.state.reducedAmount;
-        this.state.kidsAmount = this.props.location.state.kidsAmount;
-        this.state.ticketsAmount = this.props.location.state.ticketsAmount;
+        let seats = [];
+        let {normalAmount, reducedAmount, kidsAmount, rowLength, newSeats} = this.props.location.state;
+        for(let i = 0; i < newSeats.length; i++) {
+            if(newSeats[i]){
+                newSeats[i] = false;
+                let tempRow = Math.floor(i / rowLength);
+                let tempSeat = i % rowLength;
+                let newSeat = {
+                    row: tempRow,
+                    seat: tempSeat
+                };
+
+                if(normalAmount > 0){
+                    normalAmount--;
+                    newSeat.ticketType = 'normal';
+                } else if(reducedAmount > 0){
+                    reducedAmount--;
+                    newSeat.ticketType = 'reduced';
+                } else if(kidsAmount > 0){
+                    kidsAmount--;
+                    newSeat.ticketType = 'kids';
+                }
+                seats.push(newSeat);
+            }
+        }
+        this.setState({seats: seats});
     };
+
 
     send = () => {
         console.log("zarejestruj booking");
@@ -73,11 +88,11 @@ class BookingDetails extends React.Component {
                 firstName: this.state.firstName,
                 lastName: this.state.lastName,
                 screeningId: this.props.location.state.screeningId, //only passed further
-                normalAmount: this.state.normalAmount, //only passed further
-                reducedAmount: this.state.reducedAmount, //only passed further
-                kidsAmount: this.state.kidsAmount, //only passed further
+                normalAmount: this.props.location.state.normalAmount, //only passed further
+                reducedAmount: this.props.location.state.reducedAmount, //only passed further
+                kidsAmount: this.props.location.state.kidsAmount, //only passed further
                 rowLength: this.props.location.state.rowLength,
-                newSeats: this.state.newSeats
+                newSeats: this.state.seats
             }
         })
     };

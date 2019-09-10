@@ -38,6 +38,7 @@ class SelectSeats extends React.Component {
 
     componentDidMount() {
         console.log("welcome to seats selection");
+            console.log(this.props.location);
         for(let i = 0; i < this.props.location.state.seatsStatus.length; i++) {
             this.state.newSeats.push(false);
         }

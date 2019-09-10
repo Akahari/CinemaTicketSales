@@ -62269,14 +62269,14 @@ function (_React$Component) {
           lastName: _this.state.lastName,
           screeningId: _this.props.location.state.screeningId,
           //only passed further
-          normalAmount: _this.state.normalAmount,
+          normalAmount: _this.props.location.state.normalAmount,
           //only passed further
-          reducedAmount: _this.state.reducedAmount,
+          reducedAmount: _this.props.location.state.reducedAmount,
           //only passed further
-          kidsAmount: _this.state.kidsAmount,
+          kidsAmount: _this.props.location.state.kidsAmount,
           //only passed further
           rowLength: _this.props.location.state.rowLength,
-          newSeats: _this.state.newSeats
+          newSeats: _this.state.seats
         }
       });
     });
@@ -62287,18 +62287,42 @@ function (_React$Component) {
   _createClass(BookingDetails, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      console.log("welcome to booking details");
-      console.log("DEBUG 5");
-      console.log(this.props.location.state);
-      console.log(this.props.location.state.normalAmount);
-      console.log(this.props.location.state.reducedAmount);
-      console.log(this.props.location.state.kidsAmount);
-      console.log("DEBUG 5.5");
-      console.log(this.state);
-      this.state.normalAmount = this.props.location.state.normalAmount;
-      this.state.reducedAmount = this.props.location.state.reducedAmount;
-      this.state.kidsAmount = this.props.location.state.kidsAmount;
-      this.state.ticketsAmount = this.props.location.state.ticketsAmount;
+      var seats = [];
+      var _this$props$location$ = this.props.location.state,
+          normalAmount = _this$props$location$.normalAmount,
+          reducedAmount = _this$props$location$.reducedAmount,
+          kidsAmount = _this$props$location$.kidsAmount,
+          rowLength = _this$props$location$.rowLength,
+          newSeats = _this$props$location$.newSeats;
+
+      for (var i = 0; i < newSeats.length; i++) {
+        if (newSeats[i]) {
+          newSeats[i] = false;
+          var tempRow = Math.floor(i / rowLength);
+          var tempSeat = i % rowLength;
+          var newSeat = {
+            row: tempRow,
+            seat: tempSeat
+          };
+
+          if (normalAmount > 0) {
+            normalAmount--;
+            newSeat.ticketType = 'normal';
+          } else if (reducedAmount > 0) {
+            reducedAmount--;
+            newSeat.ticketType = 'reduced';
+          } else if (kidsAmount > 0) {
+            kidsAmount--;
+            newSeat.ticketType = 'kids';
+          }
+
+          seats.push(newSeat);
+        }
+      }
+
+      this.setState({
+        seats: seats
+      });
     }
   }, {
     key: "render",
@@ -62476,10 +62500,6 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(BookingReceipt)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_this), "state", {
-      //        screening: null,
-      //        movie: null,
-      //        theater: null,
-      //        hall: null,
       error: null
     });
 
@@ -62490,16 +62510,7 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("welcome to booking receipt");
-      console.log(this.props.location.state); //get all information about this screening
-      //        axios.get(`/screening/find/${this.props.location.state.screeningId}`).then(
-      //            response => {
-      //                console.log(response);
-      //                this.setState({screening: response.data});
-      //            },
-      //            error => {
-      //                console.log(error);
-      //                this.setState({error: 'Wystąpił błąd'});
-      //            })
+      console.log(this.props.location);
     }
   }, {
     key: "render",
@@ -62675,9 +62686,15 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "next", function () {
       var history = _this.props.history;
-      _this.state.ticketsAmount = _this.state.normalAmount + _this.state.reducedAmount + _this.state.kidsAmount;
+      var ticketsAmount = _this.state.normalAmount + _this.state.reducedAmount + _this.state.kidsAmount; //this.setState({ticketsAmount: this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount});
 
-      if (_this.state.ticketsAmount > 0) {
+      console.log(_this.state);
+      console.log(ticketsAmount);
+
+      if (ticketsAmount > 0) {
+        console.log("Debug x"); //            console.log(this.state);
+        //            console.log(this.props.location.state);
+
         history.push({
           pathname: '/screenings/selectSeats',
           state: {
@@ -62688,7 +62705,7 @@ function (_React$Component) {
             normalAmount: _this.state.normalAmount,
             reducedAmount: _this.state.reducedAmount,
             kidsAmount: _this.state.kidsAmount,
-            ticketsAmount: _this.state.ticketsAmount
+            ticketsAmount: ticketsAmount
           }
         });
       } else {
@@ -62703,6 +62720,7 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("welcome to tickets declaration");
+      console.log(this.props.location);
     }
   }, {
     key: "render",
@@ -62994,6 +63012,7 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("welcome to seats selection");
+      console.log(this.props.location);
 
       for (var i = 0; i < this.props.location.state.seatsStatus.length; i++) {
         this.state.newSeats.push(false);

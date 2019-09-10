@@ -26,26 +26,12 @@ const styles = {
 
 class BookingReceipt extends React.Component {
     state = {
-//        screening: null,
-//        movie: null,
-//        theater: null,
-//        hall: null,
         error: null
     };
 
     componentDidMount() {
         console.log("welcome to booking receipt");
-        console.log(this.props.location.state);
-        //get all information about this screening
-//        axios.get(`/screening/find/${this.props.location.state.screeningId}`).then(
-//            response => {
-//                console.log(response);
-//                this.setState({screening: response.data});
-//            },
-//            error => {
-//                console.log(error);
-//                this.setState({error: 'Wystąpił błąd'});
-//            })
+        console.log(this.props.location);
     };
 
     render(){
