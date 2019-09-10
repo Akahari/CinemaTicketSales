@@ -33,12 +33,22 @@ class BookingDetails extends React.Component {
     };
 
     componentDidMount() {
-            console.log("welcome to booking details");
+        console.log("welcome to booking details");
+        console.log("DEBUG 5");
+        console.log(this.props.location.state);
+        console.log(this.props.location.state.normalAmount);
+        console.log(this.props.location.state.reducedAmount);
+        console.log(this.props.location.state.kidsAmount);
+        console.log("DEBUG 5.5");
+        console.log(this.state);
+        this.state.normalAmount = this.props.location.state.normalAmount;
+        this.state.reducedAmount = this.props.location.state.reducedAmount;
+        this.state.kidsAmount = this.props.location.state.kidsAmount;
+        this.state.ticketsAmount = this.props.location.state.ticketsAmount;
     };
 
     send = () => {
         console.log("zarejestruj booking");
-        console.log(this.state);
         // send a POST request
         axios.post('/booking/add', {
             firstName: this.state.firstName,
@@ -48,28 +58,37 @@ class BookingDetails extends React.Component {
         })
         .then((response) =>{
             console.log(response);
-            const {history} = this.props;
-            history.push('/screenings/bookingReceipt');
         }, (error) => {
             console.log(error);
         });
+
+        console.log("goodbyeBookingDetails");
+        console.log(this.props.location.state);
+        console.log(this.state);
+        const {history} = this.props;
+        history.push(
+        {
+            pathname: '/screenings/bookingReceipt',
+            state: {
+                firstName: this.state.firstName,
+                lastName: this.state.lastName,
+                screeningId: this.props.location.state.screeningId, //only passed further
+                normalAmount: this.state.normalAmount, //only passed further
+                reducedAmount: this.state.reducedAmount, //only passed further
+                kidsAmount: this.state.kidsAmount, //only passed further
+                rowLength: this.props.location.state.rowLength,
+                newSeats: this.state.newSeats
+            }
+        })
     };
 
     render(){
-        //pre-processing
         let inputState = this.props.location.state;
         for(let i = 0; i < inputState.newSeats.length; i++) {
             if(inputState.newSeats[i]){
                 inputState.newSeats[i] = false;
-                console.log("this element of array is true: ");
-                console.log(i);
-                console.log("row: ");
                 let tempRow = Math.floor(i / this.props.location.state.rowLength);
-                console.log(Math.floor(i / this.props.location.state.rowLength));
-                console.log("seat: ");
                 let tempSeat = i % this.props.location.state.rowLength;
-                console.log(i % this.props.location.state.rowLength);
-                console.log("create a new seat here and push it to this.state.seats");
                 let newSeat = {
                     row: tempRow,
                     seat: tempSeat,

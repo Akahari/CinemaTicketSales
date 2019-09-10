@@ -45,16 +45,19 @@ class SelectSeats extends React.Component {
 
     next = () => {
         const {history} = this.props;
-//        console.log(this.state.newSeats);
         if(this.props.location.state.ticketsAmount == this.state.seatsSelected){
+            console.log("DEBUG 4.5");
+            console.log(this.props.location.state);
+
             history.push(
             {
                 pathname: '/screenings/bookingDetails',
                 state: {
-                    screeningId: this.props.location.state.screeningId, //only passed further
-                    normalAmount: this.props.location.state.normalAmount, //only passed further
-                    reducedAmount: this.props.location.state.reducedAmount, //only passed further
-                    kidsAmount: this.props.location.state.kidsAmount, //only passed further
+                    screeningId: this.props.location.state.screeningId,
+                    normalAmount: this.props.location.state.normalAmount,
+                    reducedAmount: this.props.location.state.reducedAmount,
+                    kidsAmount: this.props.location.state.kidsAmount,
+                    ticketsAmount: this.props.location.state.ticketsAmount,
                     rowLength: this.props.location.state.rowLength,
                     newSeats: this.state.newSeats
                 }
@@ -65,7 +68,6 @@ class SelectSeats extends React.Component {
     };
 
     addSeatCallback=(row, number, id, cb)=>{
-        console.log("add seat");
         this.state.seatsSelected++;
         this.state.newSeats[id] = true;
         this.setState({
@@ -81,7 +83,6 @@ class SelectSeats extends React.Component {
     removeSeatCallback=(row, number, id, cb)=>{
         this.state.seatsSelected--;
         this.state.newSeats[id] = false;
-        console.log("remove seat");
         this.setState({
           loading:true
         },async()=>{

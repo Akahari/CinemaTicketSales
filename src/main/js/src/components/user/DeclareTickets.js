@@ -39,19 +39,20 @@ class DeclareTickets extends React.Component {
 
     next = () => {
         const {history} = this.props;
-        this.state.ticketsAmount = this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount;
+        this.setState({ticketsAmount: this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount});
         if(this.state.ticketsAmount > 0){
+            console.log(this.state);
             history.push(
             {
                 pathname: '/screenings/selectSeats',
                 state: {
-                    screeningId: this.props.location.state.screeningId, //only passed further
-                    rowLength: this.props.location.state.rowLength, //only passed further
-                    rowNumber: this.props.location.state.rowNumber, //only passed further
-                    seatsStatus: this.props.location.state.seatsStatus, //only passed further //boolean array
-                    normalAmount: this.state.normalAmount,  //information only needed later to create proper booking
-                    reducedAmount: this.state.reducedAmount,  //information only needed later to create proper booking
-                    kidsAmount: this.state.kidsAmount,  //information only needed later to create proper booking
+                    screeningId: this.props.location.state.screeningId,
+                    rowLength: this.props.location.state.rowLength,
+                    rowNumber: this.props.location.state.rowNumber,
+                    seatsStatus: this.props.location.state.seatsStatus,
+                    normalAmount: this.state.normalAmount,
+                    reducedAmount: this.state.reducedAmount,
+                    kidsAmount: this.state.kidsAmount,
                     ticketsAmount: this.state.ticketsAmount
                 }
             })

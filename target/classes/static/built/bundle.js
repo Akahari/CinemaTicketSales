@@ -62246,8 +62246,7 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "send", function () {
-      console.log("zarejestruj booking");
-      console.log(_this.state); // send a POST request
+      console.log("zarejestruj booking"); // send a POST request
 
       axios__WEBPACK_IMPORTED_MODULE_1__["post"]('/booking/add', {
         firstName: _this.state.firstName,
@@ -62256,10 +62255,29 @@ function (_React$Component) {
         seats: _this.state.seats
       }).then(function (response) {
         console.log(response);
-        var history = _this.props.history;
-        history.push('/screenings/bookingReceipt');
       }, function (error) {
         console.log(error);
+      });
+      console.log("goodbyeBookingDetails");
+      console.log(_this.props.location.state);
+      console.log(_this.state);
+      var history = _this.props.history;
+      history.push({
+        pathname: '/screenings/bookingReceipt',
+        state: {
+          firstName: _this.state.firstName,
+          lastName: _this.state.lastName,
+          screeningId: _this.props.location.state.screeningId,
+          //only passed further
+          normalAmount: _this.state.normalAmount,
+          //only passed further
+          reducedAmount: _this.state.reducedAmount,
+          //only passed further
+          kidsAmount: _this.state.kidsAmount,
+          //only passed further
+          rowLength: _this.props.location.state.rowLength,
+          newSeats: _this.state.newSeats
+        }
       });
     });
 
@@ -62270,27 +62288,30 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("welcome to booking details");
+      console.log("DEBUG 5");
+      console.log(this.props.location.state);
+      console.log(this.props.location.state.normalAmount);
+      console.log(this.props.location.state.reducedAmount);
+      console.log(this.props.location.state.kidsAmount);
+      console.log("DEBUG 5.5");
+      console.log(this.state);
+      this.state.normalAmount = this.props.location.state.normalAmount;
+      this.state.reducedAmount = this.props.location.state.reducedAmount;
+      this.state.kidsAmount = this.props.location.state.kidsAmount;
+      this.state.ticketsAmount = this.props.location.state.ticketsAmount;
     }
   }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
-      //pre-processing
       var inputState = this.props.location.state;
 
       for (var i = 0; i < inputState.newSeats.length; i++) {
         if (inputState.newSeats[i]) {
           inputState.newSeats[i] = false;
-          console.log("this element of array is true: ");
-          console.log(i);
-          console.log("row: ");
           var tempRow = Math.floor(i / this.props.location.state.rowLength);
-          console.log(Math.floor(i / this.props.location.state.rowLength));
-          console.log("seat: ");
           var tempSeat = i % this.props.location.state.rowLength;
-          console.log(i % this.props.location.state.rowLength);
-          console.log("create a new seat here and push it to this.state.seats");
           var newSeat = {
             row: tempRow,
             seat: tempSeat,
@@ -62455,6 +62476,10 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(BookingReceipt)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_this), "state", {
+      //        screening: null,
+      //        movie: null,
+      //        theater: null,
+      //        hall: null,
       error: null
     });
 
@@ -62465,6 +62490,16 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("welcome to booking receipt");
+      console.log(this.props.location.state); //get all information about this screening
+      //        axios.get(`/screening/find/${this.props.location.state.screeningId}`).then(
+      //            response => {
+      //                console.log(response);
+      //                this.setState({screening: response.data});
+      //            },
+      //            error => {
+      //                console.log(error);
+      //                this.setState({error: 'Wystąpił błąd'});
+      //            })
     }
   }, {
     key: "render",
@@ -62475,12 +62510,69 @@ function (_React$Component) {
         }, this.state.error);
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        component: "main",
+        maxWidth: "xs"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/",
         style: styles.link
-      }, "Exit to main page"), "Site is under construction");
+      }, "Exit to main page"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h1",
+        variant: "h5"
+      }, "Site is under construction"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h1",
+        variant: "h5"
+      }, "Potwierdzenie rezerwacji"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Imie"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, this.props.location.state.firstName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Nazwisko"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, this.props.location.state.lastName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Tytul filmu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, "placeholder"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Kino"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, "placeholder"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Sala"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, "placeholder"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Bilety dla doroslych"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, this.props.location.state.normalAmount), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Bilety ulgowe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, this.props.location.state.reducedAmount), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h2",
+        variant: "h5"
+      }, "Bilety dla dzieci"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "h3",
+        variant: "h5"
+      }, this.props.location.state.kidsAmount)));
     }
   }]);
 
@@ -62590,19 +62682,12 @@ function (_React$Component) {
           pathname: '/screenings/selectSeats',
           state: {
             screeningId: _this.props.location.state.screeningId,
-            //only passed further
             rowLength: _this.props.location.state.rowLength,
-            //only passed further
             rowNumber: _this.props.location.state.rowNumber,
-            //only passed further
             seatsStatus: _this.props.location.state.seatsStatus,
-            //only passed further //boolean array
             normalAmount: _this.state.normalAmount,
-            //information only needed later to create proper booking
             reducedAmount: _this.state.reducedAmount,
-            //information only needed later to create proper booking
             kidsAmount: _this.state.kidsAmount,
-            //information only needed later to create proper booking
             ticketsAmount: _this.state.ticketsAmount
           }
         });
@@ -62806,20 +62891,19 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "next", function () {
-      var history = _this.props.history; //        console.log(this.state.newSeats);
+      var history = _this.props.history;
 
       if (_this.props.location.state.ticketsAmount == _this.state.seatsSelected) {
+        console.log("DEBUG 4.5");
+        console.log(_this.props.location.state);
         history.push({
           pathname: '/screenings/bookingDetails',
           state: {
             screeningId: _this.props.location.state.screeningId,
-            //only passed further
             normalAmount: _this.props.location.state.normalAmount,
-            //only passed further
             reducedAmount: _this.props.location.state.reducedAmount,
-            //only passed further
             kidsAmount: _this.props.location.state.kidsAmount,
-            //only passed further
+            ticketsAmount: _this.props.location.state.ticketsAmount,
             rowLength: _this.props.location.state.rowLength,
             newSeats: _this.state.newSeats
           }
@@ -62830,7 +62914,6 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "addSeatCallback", function (row, number, id, cb) {
-      console.log("add seat");
       _this.state.seatsSelected++;
       _this.state.newSeats[id] = true;
 
@@ -62870,7 +62953,6 @@ function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "removeSeatCallback", function (row, number, id, cb) {
       _this.state.seatsSelected--;
       _this.state.newSeats[id] = false;
-      console.log("remove seat");
 
       _this.setState({
         loading: true
