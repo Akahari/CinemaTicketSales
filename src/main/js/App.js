@@ -11,6 +11,8 @@ import MovieDetails from './src/components/MovieDetails';
 
 import DeclareTickets from './src/components/user/DeclareTickets';
 import SelectSeats from './src/components/user/SelectSeats';
+import BookingDetails from './src/components/user/BookingDetails';
+import BookingReceipt from './src/components/user/BookingReceipt';
 
 import LoginPage from './src/components/LoginPage';
 import AdminHomePage from './src/components/admin/AdminHomePage';
@@ -62,6 +64,8 @@ class App extends React.Component {
 
                         <Route exact path="/screenings/declareTickets" component={DeclareTickets}/>
                         <Route exact path="/screenings/selectSeats" component={SelectSeats}/>
+                        <Route exact path="/screenings/bookingDetails" component={BookingDetails}/>
+                        <Route exact path="/screenings/bookingReceipt" component={BookingReceipt}/>
 
                         <Route exact path="/movies" component={Movies}/>
                         <Route path="/movies/:movieId" component={MovieDetails}/>

@@ -92,7 +92,6 @@ class AdminTheatersEdit extends React.Component {
                             fullWidth
                             id="name"
                             label="name"
-                            //defaultValue={this.state.name}
                             name="name"
                             autoFocus
                             onChange={(event) => this.setState({name: event.target.value})}
@@ -104,7 +103,6 @@ class AdminTheatersEdit extends React.Component {
                             fullWidth
                             id="city"
                             label="city"
-                            //defaultValue={this.state.city}
                             name="city"
                             onChange={(event) => this.setState({city: event.target.value})}
                         />
@@ -115,7 +113,6 @@ class AdminTheatersEdit extends React.Component {
                             fullWidth
                             id="address"
                             label="address"
-                            //defaultValue={this.state.address}
                             name="address"
                             onChange={(event) => this.setState({address: event.target.value})}
                         />

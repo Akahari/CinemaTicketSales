@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import {withRouter} from "react-router-dom";
 import SeatPicker from 'react-seat-picker'
+import regeneratorRuntime from "regenerator-runtime";
 
 const styles = {
     paper: {
@@ -29,77 +30,82 @@ const styles = {
 
 class SelectSeats extends React.Component {
     state = {
+        newSeats: [],   //clean array of booleans to only hold new seats
         seatsSelected: 0,
-        screeningId: 0,
-        rowNumber: 0,
-        rowLength: 0,
-        normalAmount: 0,
-        reducedAmount: 0,
-        kidsAmount: 0,
-        ticketsAmount: 0,
-        rows: [],
+        loading: false,
         error: null
     };
+
+    componentDidMount() {
+        console.log("welcome to seats selection");
+        for(let i = 0; i < this.props.location.state.seatsStatus.length; i++) {
+            this.state.newSeats.push(false);
+        }
+    }
+
     next = () => {
         const {history} = this.props;
-        console.log("'Pay' placeholder'");
-        this.state.ticketsAmount = this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount;
-        console.log(this.state);
-    };
-    createTable = () => {
-        let table = []
-
-        // Outer loop to create parent
-        for (let i = 0; i < this.props.location.state.rowNumber; i++) {
-          let children = []
-          //Inner loop to create children
-          for (let j = 0; j < this.props.location.state.rowLength; j++) {
-            children.push(<td>{`Column ${j + 1}`}</td>)
-          }
-          //Create the parent and add the children
-          table.push(<tr>{children}</tr>)
+//        console.log(this.state.newSeats);
+        if(this.props.location.state.ticketsAmount == this.state.seatsSelected){
+            history.push(
+            {
+                pathname: '/screenings/bookingDetails',
+                state: {
+                    screeningId: this.props.location.state.screeningId, //only passed further
+                    normalAmount: this.props.location.state.normalAmount, //only passed further
+                    reducedAmount: this.props.location.state.reducedAmount, //only passed further
+                    kidsAmount: this.props.location.state.kidsAmount, //only passed further
+                    rowLength: this.props.location.state.rowLength,
+                    newSeats: this.state.newSeats
+                }
+            })
+        } else {
+            console.log("not all seats are selected");
         }
-        return table
     };
+
     addSeatCallback=(row, number, id, cb)=>{
+        console.log("add seat");
+        this.state.seatsSelected++;
+        this.state.newSeats[id] = true;
         this.setState({
           loading:true
         },async()=>{
-          await new Promise(resolve => setTimeout(resolve, 5000));
+          await new Promise(resolve => setTimeout(resolve, 100));
           console.log(`Added seat ${number}, row ${row}, id ${id}`)
           cb(row,number)
           this.setState({ loading: false })
         })
-    }
+    };
 
-    componentDidMount() {
-        console.log("welcome to seats selection");
-        console.log(this.props.location.state);
-        this.state.screeningId = this.props.location.state.screeningId;
-        this.state.rowNumber = this.props.location.state.rowNumber;
-        this.state.rowLength = this.props.location.state.rowLength;
-        this.state.normalAmount = this.props.location.state.normalAmount;
-        this.state.reducedAmount = this.props.location.state.reducedAmount;
-        this.state.kidsAmount = this.props.location.state.kidsAmount;
-        this.state.ticketsAmount = this.props.location.state.ticketsAmount;
-    }
+    removeSeatCallback=(row, number, id, cb)=>{
+        this.state.seatsSelected--;
+        this.state.newSeats[id] = false;
+        console.log("remove seat");
+        this.setState({
+          loading:true
+        },async()=>{
+          await new Promise(resolve => setTimeout(resolve, 100));
+          console.log(`REmoved seat ${number}, row ${row}, id ${id}`)
+          cb(row,number)
+          this.setState({ loading: false })
+        })
+    };
 
     render(){
-
-        let tempRowMatrix = [];
+//        this.state.seatMatrix = [];
+        let seatMatrix = [];
         let tempRow = [];
         for (let i = 0; i < this.props.location.state.rowNumber; i++) {
             tempRow = [];
             for (let j = 0; j < this.props.location.state.rowLength; j++) {
-                let seat = {id:((i)*this.props.location.state.rowLength) + j, number: j+1};
+                let tempId = (i)*this.props.location.state.rowLength + j;
+                let seat = {id: tempId, number: j+1, isReserved: this.props.location.state.seatsStatus[tempId], isSelected: this.state.newSeats[tempId] };
                 tempRow.push(seat);
-                console.log(seat.id);
             }
-            tempRowMatrix.push(tempRow);
+            seatMatrix.push(tempRow);
         }
-        const {loading}=this.state;
-        console.log(tempRow);
-        console.log(tempRowMatrix);
+        const {loading}=this.state.loading;
 
         if(this.state.error) {
             return (
@@ -117,19 +123,27 @@ class SelectSeats extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Select seats
                         Select {this.props.location.state.ticketsAmount} seats
                     </Typography>
                     <SeatPicker
                       addSeatCallback={this.addSeatCallback}
-                      rows={tempRowMatrix}
+                      removeSeatCallback={this.removeSeatCallback}
+                      rows={seatMatrix}
                       maxReservableSeats={this.props.location.state.ticketsAmount}
                       alpha
                       visible
                       selectedByDefault
                       loading={loading}
                      />
-                    //create theater hall layout grid to choose seat
+                     <br/><br/><br/>
+                    <Button
+                        fullWidth
+                        variant="contained"
+                        color="primary"
+                        onClick={this.next}
+                    >
+                        Next
+                    </Button>
                 </div>
             </Container>
         );

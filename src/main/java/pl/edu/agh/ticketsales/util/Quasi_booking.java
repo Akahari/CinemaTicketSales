@@ -10,7 +10,7 @@ public class Quasi_booking implements Serializable {
     String firstName;
     String lastName;
     Integer screeningId;
-    Set<Seat> seats;
+    Set<Quasi_seat> seats;
 
     public String getFirstName() {
         return firstName;
@@ -23,7 +23,7 @@ public class Quasi_booking implements Serializable {
     public Integer getScreeningId() {
         return screeningId;
     }
-    public Set<Seat> getSeats() {
+    public Set<Quasi_seat> getSeats() {
         return seats;
     }
 }

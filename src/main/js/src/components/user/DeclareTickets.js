@@ -26,15 +26,17 @@ const styles = {
 
 class DeclareTickets extends React.Component {
     state = {
-        screeningId: 0,
-        rowNumber: 0,
-        rowLength: 0,
         normalAmount: 0,
         reducedAmount: 0,
         kidsAmount: 0,
         ticketsAmount: 0,
         error: null
     };
+
+    componentDidMount() {
+            console.log("welcome to tickets declaration");
+    }
+
     next = () => {
         const {history} = this.props;
         this.state.ticketsAmount = this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount;
@@ -43,12 +45,13 @@ class DeclareTickets extends React.Component {
             {
                 pathname: '/screenings/selectSeats',
                 state: {
-                    screeningId: this.state.screeningId,
-                    rowNumber: this.state.rowNumber,
-                    rowLength: this.state.rowLength,
-                    normalAmount: this.state.normalAmount,
-                    reducedAmount: this.state.reducedAmount,
-                    kidsAmount: this.state.kidsAmount,
+                    screeningId: this.props.location.state.screeningId, //only passed further
+                    rowLength: this.props.location.state.rowLength, //only passed further
+                    rowNumber: this.props.location.state.rowNumber, //only passed further
+                    seatsStatus: this.props.location.state.seatsStatus, //only passed further //boolean array
+                    normalAmount: this.state.normalAmount,  //information only needed later to create proper booking
+                    reducedAmount: this.state.reducedAmount,  //information only needed later to create proper booking
+                    kidsAmount: this.state.kidsAmount,  //information only needed later to create proper booking
                     ticketsAmount: this.state.ticketsAmount
                 }
             })
@@ -56,13 +59,6 @@ class DeclareTickets extends React.Component {
             console.log("no tickets selected");
         }
     };
-
-    componentDidMount() {
-            console.log("welcome to tickets declaration");
-            this.state.screeningId = this.props.location.state.screeningId;
-            this.state.rowLength = this.props.location.state.rowLength;
-            this.state.rowNumber = this.props.location.state.rowNumber;
-    }
 
     render(){
         if(this.state.error) {

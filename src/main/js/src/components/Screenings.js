@@ -23,18 +23,6 @@ class Screenings extends React.Component {
         screenings: [],
         error: null
     };
-    buy = (screeningId, rowNumber , rowLength) => {
-        const {history} = this.props;
-        history.push(
-        {
-            pathname: '/screenings/declareTickets',
-            state: {
-              screeningId: screeningId,
-              rowLength: rowLength,
-              rowNumber: rowNumber
-            }
-      })
-    };
 
     componentDidMount() {
         axios.get('/screening/all').then(
@@ -47,6 +35,22 @@ class Screenings extends React.Component {
                 this.setState({error: 'Wystąpił błąd'});
             });
     }
+
+    buy = (screeningId, rowNumber , rowLength, seatsStatus) => {
+        const {history} = this.props;
+        //console.log(seatsStatus);   //boolean array
+        history.push(
+        {
+            pathname: '/screenings/declareTickets',
+            state: {
+              screeningId: screeningId,
+              rowLength: rowLength,
+              rowNumber: rowNumber,
+              seatsStatus: seatsStatus //boolean array
+            }
+      })
+    };
+
 
     render() {
         if(this.state.error) {
@@ -85,7 +89,7 @@ class Screenings extends React.Component {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        onClick={() => this.buy(screening.id, screening.rows , screening.rowLength)}
+                                        onClick={() => this.buy(screening.id, screening.rows, screening.rowLength, screening.seatsStatus)}
                                     >
                                         Buy
                                     </Button>

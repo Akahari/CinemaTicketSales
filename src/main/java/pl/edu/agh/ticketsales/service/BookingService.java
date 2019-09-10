@@ -5,9 +5,11 @@ import org.springframework.stereotype.Service;
 import pl.edu.agh.ticketsales.domain.Booking;
 import pl.edu.agh.ticketsales.domain.Screening;
 import pl.edu.agh.ticketsales.domain.Seat;
+import pl.edu.agh.ticketsales.domain.TicketType;
 import pl.edu.agh.ticketsales.repository.BookingRepository;
 import pl.edu.agh.ticketsales.repository.ScreeningRepository;
 import pl.edu.agh.ticketsales.util.Quasi_booking;
+import pl.edu.agh.ticketsales.util.Quasi_seat;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -84,7 +86,8 @@ public class BookingService {
 
     public boolean addBooking2(Quasi_booking quasi_booking) {
         boolean success = true;
-        Set<Seat> seats = quasi_booking.getSeats();
+        Set<Quasi_seat> quasi_seats = quasi_booking.getSeats();
+        Set<Seat> seats = new HashSet<>();
         Screening screening = screeningRepository.findById(quasi_booking.getScreeningId());
         Booking booking = new Booking();
         bookingRepository.save(booking);
@@ -92,11 +95,24 @@ public class BookingService {
         booking.setLastName(quasi_booking.getLastName());
         booking.setScreeningId(screening);
 
-        if(seats != null){
-            for(Seat seat : seats){
-                if(screening.getSeatStatus(seat.getRow(), seat.getSeat())){
+        if(quasi_seats != null){
+            for(Quasi_seat quasi_seat : quasi_seats){
+                if(screening.getSeatStatus(quasi_seat.getRow(), quasi_seat.getSeat())){
                     success = false;
                 }
+                Seat seat = new Seat();
+                seat.setRow(quasi_seat.getRow());
+                seat.setSeat(quasi_seat.getSeat());
+                if(quasi_seat.getTicketType().equals("normal")){
+                    seat.setTicketType(TicketType.normal);
+                }
+                if(quasi_seat.getTicketType().equals("reduced")){
+                    seat.setTicketType(TicketType.reduced);
+                }
+                if(quasi_seat.getTicketType().equals("kids")){
+                    seat.setTicketType(TicketType.kids);
+                }
+                seats.add(seat);
             }
         } else {
             System.out.println("no seats were selected");

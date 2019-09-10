@@ -1,5 +1,6 @@
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\repository\ScreeningRepository.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\repository\BookingRepository.java
+C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\util\Quasi_seat.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\controller\HomeController.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\controller\ScreeningController.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\repository\TheaterRepository.java
@@ -16,7 +17,6 @@ C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\service\TheaterService.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\domain\Movie.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\service\MovieService.java
-C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\util\BookingString.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\util\Quasi_screening.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\controller\BookingController.java
 C:\Users\Akahari\Documents\AGH\II_stopien\Informatyka w mechatronice\TicketSales\src\main\java\pl\edu\agh\ticketsales\util\CustomErrorType.java
