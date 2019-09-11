@@ -57920,9 +57920,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _src_components_Screenings__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/components/Screenings */ "./src/main/js/src/components/Screenings.js");
 /* harmony import */ var _src_components_Halls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/components/Halls */ "./src/main/js/src/components/Halls.js");
-/* harmony import */ var _src_components_Theaters__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/components/Theaters */ "./src/main/js/src/components/Theaters.js");
+/* harmony import */ var _src_components_TheatersRaw__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/components/TheatersRaw */ "./src/main/js/src/components/TheatersRaw.js");
 /* harmony import */ var _src_components_HomePage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/components/HomePage */ "./src/main/js/src/components/HomePage.js");
-/* harmony import */ var _src_components_Movies__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/components/Movies */ "./src/main/js/src/components/Movies.js");
+/* harmony import */ var _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/components/MoviesRaw */ "./src/main/js/src/components/MoviesRaw.js");
 /* harmony import */ var _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/components/MovieDetails */ "./src/main/js/src/components/MovieDetails.js");
 /* harmony import */ var _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/components/user/DeclareTickets */ "./src/main/js/src/components/user/DeclareTickets.js");
 /* harmony import */ var _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/components/user/SelectSeats */ "./src/main/js/src/components/user/SelectSeats.js");
@@ -58060,7 +58060,7 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/movies",
-        component: _src_components_Movies__WEBPACK_IMPORTED_MODULE_8__["default"]
+        component: _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_8__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         path: "/movies/:movieId",
         component: _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_9__["default"]
@@ -58075,7 +58075,7 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/theaters",
-        component: _src_components_Theaters__WEBPACK_IMPORTED_MODULE_6__["default"]
+        component: _src_components_TheatersRaw__WEBPACK_IMPORTED_MODULE_6__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         component: function component() {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
@@ -58657,10 +58657,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/Movies.js":
-/*!**********************************************!*\
-  !*** ./src/main/js/src/components/Movies.js ***!
-  \**********************************************/
+/***/ "./src/main/js/src/components/MoviesRaw.js":
+/*!*************************************************!*\
+  !*** ./src/main/js/src/components/MoviesRaw.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58931,10 +58931,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/Theaters.js":
-/*!************************************************!*\
-  !*** ./src/main/js/src/components/Theaters.js ***!
-  \************************************************/
+/***/ "./src/main/js/src/components/TheatersRaw.js":
+/*!***************************************************!*\
+  !*** ./src/main/js/src/components/TheatersRaw.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -62242,25 +62242,12 @@ function (_React$Component) {
       lastName: '',
       seats: [],
       //array of seats
+      firstRender: true,
+      creditCard: 0,
       error: null
     });
 
     _defineProperty(_assertThisInitialized(_this), "send", function () {
-      console.log("zarejestruj booking"); // send a POST request
-
-      axios__WEBPACK_IMPORTED_MODULE_1__["post"]('/booking/add', {
-        firstName: _this.state.firstName,
-        lastName: _this.state.lastName,
-        screeningId: _this.props.location.state.screeningId,
-        seats: _this.state.seats
-      }).then(function (response) {
-        console.log(response);
-      }, function (error) {
-        console.log(error);
-      });
-      console.log("goodbyeBookingDetails");
-      console.log(_this.props.location.state);
-      console.log(_this.state);
       var history = _this.props.history;
       history.push({
         pathname: '/screenings/bookingReceipt',
@@ -62329,34 +62316,6 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var inputState = this.props.location.state;
-
-      for (var i = 0; i < inputState.newSeats.length; i++) {
-        if (inputState.newSeats[i]) {
-          inputState.newSeats[i] = false;
-          var tempRow = Math.floor(i / this.props.location.state.rowLength);
-          var tempSeat = i % this.props.location.state.rowLength;
-          var newSeat = {
-            row: tempRow,
-            seat: tempSeat,
-            ticketType: null
-          };
-
-          if (this.props.location.state.normalAmount > 0) {
-            this.props.location.state.normalAmount--;
-            newSeat.ticketType = 'normal';
-          } else if (this.props.location.state.reducedAmount > 0) {
-            this.props.location.state.reducedAmount--;
-            newSeat.ticketType = 'reduced';
-          } else if (this.props.location.state.kidsAmount > 0) {
-            this.props.location.state.kidsAmount--;
-            newSeat.ticketType = 'kids';
-          }
-
-          this.state.seats.push(newSeat);
-        }
-      }
-
       if (this.state.error) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           style: styles.container
@@ -62399,6 +62358,19 @@ function (_React$Component) {
         onChange: function onChange(event) {
           return _this2.setState({
             lastName: event.target.value
+          });
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        variant: "outlined",
+        margin: "normal",
+        required: true,
+        fullWidth: true,
+        id: "creditCard",
+        label: "Nr kart platniczej (to tylko atrapa)",
+        name: "creditCard",
+        onChange: function onChange(event) {
+          return _this2.setState({
+            creditCard: event.target.value
           });
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -62500,6 +62472,12 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(BookingReceipt)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_this), "state", {
+      bookingId: 0,
+      firstRender: true,
+      movie: null,
+      screening: null,
+      theater: null,
+      hall: null,
       error: null
     });
 
@@ -62509,81 +62487,155 @@ function (_React$Component) {
   _createClass(BookingReceipt, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      var _this2 = this;
+
       console.log("welcome to booking receipt");
-      console.log(this.props.location);
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]("/screening/find/".concat(this.props.location.state.screeningId)).then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          screening: response.data
+        });
+      }, function (error) {
+        console.log(error);
+      });
+      this.setState({
+        firstRender: false
+      });
     }
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
+      if (this.state.firstRender) {
+        axios__WEBPACK_IMPORTED_MODULE_1__["post"]('/booking/add', {
+          firstName: this.props.location.state.firstName,
+          lastName: this.props.location.state.lastName,
+          screeningId: this.props.location.state.screeningId,
+          seats: this.props.location.state.newSeats
+        }).then(function (response) {
+          console.log(response);
+
+          _this3.setState({
+            bookingId: response.data
+          });
+        }, function (error) {
+          console.log(error);
+        });
+      }
+
+      if (this.state.screening != null && this.state.movie == null && this.state.theater == null && this.state.hall == null) {
+        axios__WEBPACK_IMPORTED_MODULE_1__["get"]("/movie/find/".concat(this.state.screening.movieId)).then(function (response) {
+          console.log(response);
+
+          _this3.setState({
+            movie: response.data
+          });
+        }, function (error) {
+          console.log(error);
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1__["get"]("/theater/find/".concat(this.state.screening.theaterId)).then(function (response) {
+          console.log(response);
+
+          _this3.setState({
+            theater: response.data
+          });
+        }, function (error) {
+          console.log(error);
+        });
+        axios__WEBPACK_IMPORTED_MODULE_1__["get"]("/hall/find/".concat(this.state.screening.hallId)).then(function (response) {
+          console.log(response);
+
+          _this3.setState({
+            hall: response.data
+          });
+        }, function (error) {
+          console.log(error);
+        });
+      }
+
       if (this.state.error) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           style: styles.container
         }, this.state.error);
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        component: "main",
-        maxWidth: "xs"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.paper
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/",
-        style: styles.link
-      }, "Exit to main page"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h1",
-        variant: "h5"
-      }, "Site is under construction"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h1",
-        variant: "h5"
-      }, "Potwierdzenie rezerwacji"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Imie"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, this.props.location.state.firstName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Nazwisko"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, this.props.location.state.lastName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Tytul filmu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, "placeholder"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Kino"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, "placeholder"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Sala"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, "placeholder"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Bilety dla doroslych"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, this.props.location.state.normalAmount), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Bilety ulgowe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, this.props.location.state.reducedAmount), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h2",
-        variant: "h5"
-      }, "Bilety dla dzieci"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        component: "h3",
-        variant: "h5"
-      }, this.props.location.state.kidsAmount)));
+      if (this.state.screening != null && this.state.movie != null && this.state.theater != null && this.state.hall != null) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          component: "main",
+          maxWidth: "xs"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.paper
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h3"
+        }, "Potwierdzenie rezerwacji"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Imie"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.props.location.state.firstName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Nazwisko"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.props.location.state.lastName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Tytul filmu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.state.movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Kino"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.state.theater.name, " / ", this.state.theater.city, " / ", this.state.theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Sala"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.state.hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Bilety dla doroslych"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.props.location.state.normalAmount), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Bilety ulgowe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.props.location.state.reducedAmount), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "Bilety dla dzieci"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.props.location.state.kidsAmount), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h4"
+        }, "ID rezerwacji"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, this.state.bookingId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h5"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+          to: "/",
+          style: styles.link
+        }, "Exit to main page"))));
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, "Loading");
     }
   }]);
 
@@ -62686,15 +62738,9 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "next", function () {
       var history = _this.props.history;
-      var ticketsAmount = _this.state.normalAmount + _this.state.reducedAmount + _this.state.kidsAmount; //this.setState({ticketsAmount: this.state.normalAmount + this.state.reducedAmount + this.state.kidsAmount});
-
-      console.log(_this.state);
-      console.log(ticketsAmount);
+      var ticketsAmount = _this.state.normalAmount + _this.state.reducedAmount + _this.state.kidsAmount;
 
       if (ticketsAmount > 0) {
-        console.log("Debug x"); //            console.log(this.state);
-        //            console.log(this.props.location.state);
-
         history.push({
           pathname: '/screenings/selectSeats',
           state: {
@@ -62720,7 +62766,6 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("welcome to tickets declaration");
-      console.log(this.props.location);
     }
   }, {
     key: "render",
@@ -62912,8 +62957,6 @@ function (_React$Component) {
       var history = _this.props.history;
 
       if (_this.props.location.state.ticketsAmount == _this.state.seatsSelected) {
-        console.log("DEBUG 4.5");
-        console.log(_this.props.location.state);
         history.push({
           pathname: '/screenings/bookingDetails',
           state: {
@@ -63012,7 +63055,6 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       console.log("welcome to seats selection");
-      console.log(this.props.location);
 
       for (var i = 0; i < this.props.location.state.seatsStatus.length; i++) {
         this.state.newSeats.push(false);

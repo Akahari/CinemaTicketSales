@@ -29,6 +29,8 @@ class BookingDetails extends React.Component {
         firstName: '',
         lastName: '',
         seats: [] ,  //array of seats
+        firstRender: true,
+        creditCard: 0,
         error: null
     };
 
@@ -63,23 +65,6 @@ class BookingDetails extends React.Component {
 
 
     send = () => {
-        console.log("zarejestruj booking");
-        // send a POST request
-        axios.post('/booking/add', {
-            firstName: this.state.firstName,
-            lastName: this.state.lastName,
-            screeningId: this.props.location.state.screeningId,
-            seats: this.state.seats
-        })
-        .then((response) =>{
-            console.log(response);
-        }, (error) => {
-            console.log(error);
-        });
-
-        console.log("goodbyeBookingDetails");
-        console.log(this.props.location.state);
-        console.log(this.state);
         const {history} = this.props;
         history.push(
         {
@@ -92,38 +77,12 @@ class BookingDetails extends React.Component {
                 reducedAmount: this.props.location.state.reducedAmount, //only passed further
                 kidsAmount: this.props.location.state.kidsAmount, //only passed further
                 rowLength: this.props.location.state.rowLength,
-                newSeats: this.state.seats
+                newSeats: this.state.seats,
             }
         })
     };
 
     render(){
-        let inputState = this.props.location.state;
-        for(let i = 0; i < inputState.newSeats.length; i++) {
-            if(inputState.newSeats[i]){
-                inputState.newSeats[i] = false;
-                let tempRow = Math.floor(i / this.props.location.state.rowLength);
-                let tempSeat = i % this.props.location.state.rowLength;
-                let newSeat = {
-                    row: tempRow,
-                    seat: tempSeat,
-                    ticketType: null
-                };
-
-                if(this.props.location.state.normalAmount > 0){
-                    this.props.location.state.normalAmount--;
-                    newSeat.ticketType = 'normal';
-                } else if(this.props.location.state.reducedAmount > 0){
-                    this.props.location.state.reducedAmount--;
-                    newSeat.ticketType = 'reduced';
-                } else if(this.props.location.state.kidsAmount > 0){
-                    this.props.location.state.kidsAmount--;
-                    newSeat.ticketType = 'kids';
-                }
-                this.state.seats.push(newSeat);
-            }
-        }
-
         if(this.state.error) {
             return (
                 <div style={styles.container}>
@@ -159,6 +118,16 @@ class BookingDetails extends React.Component {
                             label="Nazwisko"
                             name="lastName"
                             onChange={(event) => this.setState({lastName: event.target.value})}
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="creditCard"
+                            label="Nr kart platniczej (to tylko atrapa)"
+                            name="creditCard"
+                            onChange={(event) => this.setState({creditCard: event.target.value})}
                         />
                         <Button
                             fullWidth

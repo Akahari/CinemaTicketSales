@@ -22,14 +22,17 @@ public class BookingController {
 
     //add
     @PostMapping(path="/add")
-    public @ResponseBody String addBooking(@RequestBody Quasi_booking quasi_booking) {
+    public @ResponseBody Integer addBooking(@RequestBody Quasi_booking quasi_booking) {
         boolean success;
-        success = bookingService.addBooking2(quasi_booking);
-        if(success){
-            return "Saved booking";
-        } else {
-            return "Couldn't save booking";
-        }
+        Integer bookingId;
+        //success = bookingService.addBooking2(quasi_booking);
+        bookingId = bookingService.addBooking2(quasi_booking);
+//        if(success){
+//            return "Saved booking";
+//        } else {
+//            return "Couldn't save booking";
+//        }
+        return bookingId;
     }
 
     //remove

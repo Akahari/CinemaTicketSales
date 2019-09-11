@@ -4,9 +4,9 @@ import * as axios from 'axios';
 import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom';
 import Screenings from './src/components/Screenings';
 import Halls from './src/components/Halls';
-import Theaters from './src/components/Theaters';
+import Theaters from './src/components/TheatersRaw';
 import HomePage from './src/components/HomePage';
-import Movies from './src/components/Movies';
+import Movies from './src/components/MoviesRaw';
 import MovieDetails from './src/components/MovieDetails';
 
 import DeclareTickets from './src/components/user/DeclareTickets';

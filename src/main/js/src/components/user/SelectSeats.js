@@ -38,7 +38,6 @@ class SelectSeats extends React.Component {
 
     componentDidMount() {
         console.log("welcome to seats selection");
-            console.log(this.props.location);
         for(let i = 0; i < this.props.location.state.seatsStatus.length; i++) {
             this.state.newSeats.push(false);
         }
@@ -47,9 +46,6 @@ class SelectSeats extends React.Component {
     next = () => {
         const {history} = this.props;
         if(this.props.location.state.ticketsAmount == this.state.seatsSelected){
-            console.log("DEBUG 4.5");
-            console.log(this.props.location.state);
-
             history.push(
             {
                 pathname: '/screenings/bookingDetails',

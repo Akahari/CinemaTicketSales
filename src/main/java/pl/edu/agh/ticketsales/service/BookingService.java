@@ -84,7 +84,7 @@ public class BookingService {
         return success;
     }*/
 
-    public boolean addBooking2(Quasi_booking quasi_booking) {
+    public Integer addBooking2(Quasi_booking quasi_booking) {
         boolean success = true;
         Set<Quasi_seat> quasi_seats = quasi_booking.getSeats();
         Set<Seat> seats = new HashSet<>();
@@ -127,10 +127,12 @@ public class BookingService {
             screening.addBookingId(booking.getId());
             screeningRepository.save(screening);
             bookingRepository.save(booking);
+            return(booking.getId());
         } else {
             bookingRepository.delete(booking);
+            return 0;
         }
-        return success;
+//        return success;
     }
 
 //remove booking
