@@ -36,17 +36,18 @@ class HomePage extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <AppBar title="Strona glowna kina" linkTo={"/"}/>
+                <AppBar title="Strona glowna sieci kin" linkTo={"/"}/>
                 <Grid container spacing={3} style={styles.grid}>
-                    <Grid item xs={6}>
+                    <Grid item xs={12}>
                         <Paper style={styles.paper}>
-                            <p>Theaters</p>
+                            <p>Kina</p>
+                            <Link to={"/theaters"} style={styles.link}>Wybierz</Link>
                         </Paper>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12}>
                         <Paper style={styles.paper}>
-                            <p>Movies</p>
-
+                            <p>Filmy</p>
+                            <Link to={"/movies"} style={styles.link}>Wybierz</Link>
                         </Paper>
                     </Grid>
                 </Grid>

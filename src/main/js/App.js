@@ -10,6 +10,7 @@ import HomePageRaw from './src/components/HomePageRaw';
 import Screenings from './src/components/Screenings';
 import Halls from './src/components/Halls';
 import Theaters from './src/components/Theaters';
+import TheaterMovies from './src/components/TheaterMovies';
 import TheatersRaw from './src/components/TheatersRaw';
 import Movies from './src/components/Movies';
 import MoviesRaw from './src/components/MoviesRaw';
@@ -81,6 +82,7 @@ class App extends React.Component {
                         <Route exact path="/halls" component={Halls}/>
                         <Route exact path="/screenings" component={Screenings}/>
                         <Route exact path="/theaters" component={Theaters}/>
+                        <Route exact path="/theaters/:theaterId" component={TheaterMovies}/>
                         <Route exact path="/theatersRaw" component={TheatersRaw}/>
 
                         <Route component={() => <Redirect to="/"/>}/>

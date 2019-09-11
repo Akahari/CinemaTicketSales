@@ -40,6 +40,8 @@ class HomeRouter extends React.Component {
                         <Route exact path="/" component={HomePage}/>
                         <Route path="/theaters" component={Theaters}/>
                         <Route path="/movies" component={Movies}/>
+                        <Route path="/theaters/:theaterId" component={Theaters}/>
+
                     </div>
             </div>
         );
