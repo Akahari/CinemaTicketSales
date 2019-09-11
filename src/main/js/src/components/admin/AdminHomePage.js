@@ -40,31 +40,31 @@ class AdminHomePage extends React.Component {
                 <Grid container spacing={3} style={styles.grid}>
                     <Grid item xs={6}>
                         <Paper style={styles.paper}>
-                            <p>Theaters</p>
-                            <Link to={"/admin/theaters/add"} style={styles.link}>Add</Link>
-                            <Link to={"/admin/theaters/overview"} style={styles.link}>Edit/Remove</Link>
+                            <p>Kina</p>
+                            <Link to={"/admin/theaters/add"} style={styles.link}>Dodaj</Link>
+                            <Link to={"/admin/theaters/overview"} style={styles.link}>Edytuj/Usun</Link>
                         </Paper>
                     </Grid>
                     <Grid item xs={6}>
                         <Paper style={styles.paper}>
-                            <p>Movies</p>
-                            <Link to={"/admin/movies/add"} style={styles.link}>Add</Link>
-                            <Link to={"/admin/movies/overview"} style={styles.link}>Edit/Remove</Link>
+                            <p>Filmy</p>
+                            <Link to={"/admin/movies/add"} style={styles.link}>Dodaj</Link>
+                            <Link to={"/admin/movies/overview"} style={styles.link}>Edytuj/Usun</Link>
 
                         </Paper>
                     </Grid>
                     <Grid item xs={6}>
                         <Paper style={styles.paper}>
-                            <p>Halls</p>
-                            <Link to={"/admin/halls/add"} style={styles.link}>Add</Link>
-                            <Link to={"/admin/halls/overview"} style={styles.link}>Edit/Remove</Link>
+                            <p>Sale</p>
+                            <Link to={"/admin/halls/add"} style={styles.link}>Dodaj</Link>
+                            <Link to={"/admin/halls/overview"} style={styles.link}>Edytuj/Usun</Link>
                         </Paper>
                     </Grid>
                     <Grid item xs={6}>
                         <Paper style={styles.paper}>
-                            <p>Screenings</p>
-                            <Link to={"/admin/screenings/add"} style={styles.link}>Add</Link>
-                            <Link to={"/admin/screenings/overview"} style={styles.link}>Edit/Remove</Link>
+                            <p>Seanse</p>
+                            <Link to={"/admin/screenings/add"} style={styles.link}>Dodaj</Link>
+                            <Link to={"/admin/screenings/overview"} style={styles.link}>Edytuj/Usun</Link>
                         </Paper>
                     </Grid>
                 </Grid>

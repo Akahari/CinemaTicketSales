@@ -62,18 +62,18 @@ class Screenings extends React.Component {
         }
         return (
             <div style={styles.container}>
-                <Link to={"/"} style={styles.link}>Exit</Link>
+                <Link to={"/"} style={styles.link}>Wstecz</Link>
                 <table>
                     <tbody>
                     <tr>
-                        <th>Movie id</th>
-                        <th>Theater id</th>
-                        <th>Hall id</th>
-                        <th>Start date</th>
-                        <th>End date</th>
-                        <th>Duration</th>
-                        <th>Free seats left</th>
-                        <th>Buy tickets</th>
+                        <th>Id filmu</th>
+                        <th>Id kina</th>
+                        <th>Id sali</th>
+                        <th>Data rozpoczecia</th>
+                        <th>Data zakonczenia</th>
+                        <th>Czas trwania</th>
+                        <th>Pozostalo siedzen:</th>
+                        <th>Kup bilety</th>
                     </tr>
                     {
                         this.state.screenings.map(screening => (
@@ -91,7 +91,7 @@ class Screenings extends React.Component {
                                         color="primary"
                                         onClick={() => this.buy(screening.id, screening.rows, screening.rowLength, screening.seatsStatus)}
                                     >
-                                        Buy
+                                        Kup
                                     </Button>
                                 </td>
                             </tr>

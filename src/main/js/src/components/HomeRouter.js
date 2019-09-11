@@ -41,6 +41,7 @@ class HomeRouter extends React.Component {
                         <Route path="/theaters" component={Theaters}/>
                         <Route path="/movies" component={Movies}/>
                         <Route path="/theaters/:theaterId" component={Theaters}/>
+                        <Route path="/movies/:movieId" component={Movies}/>
 
                     </div>
             </div>

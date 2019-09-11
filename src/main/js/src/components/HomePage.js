@@ -50,6 +50,12 @@ class HomePage extends React.Component {
                             <Link to={"/movies"} style={styles.link}>Wybierz</Link>
                         </Paper>
                     </Grid>
+                    <Grid item xs={12}>
+                        <Paper style={styles.paper}>
+                            <p>Seanse</p>
+                            <Link to={"/screenings"} style={styles.link}>Wybierz</Link>
+                        </Paper>
+                    </Grid>
                 </Grid>
             </React.Fragment>
         );

@@ -43,7 +43,7 @@ class AdminTheaters extends React.Component {
         .then((response) =>{
             console.log(response);
             const {history} = this.props;
-            history.push('/admin/theaters');
+            history.push('/admin');
         }, (error) => {
             console.log(error);
         });
@@ -63,7 +63,7 @@ class AdminTheaters extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new theater
+                        Dodaj nowe kino
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -72,7 +72,7 @@ class AdminTheaters extends React.Component {
                             required
                             fullWidth
                             id="name"
-                            label="Theater name"
+                            label="Nazwa kina"
                             name="name"
                             autoFocus
                             onChange={(event) => this.setState({name: event.target.value})}
@@ -83,7 +83,7 @@ class AdminTheaters extends React.Component {
                             required
                             fullWidth
                             id="city"
-                            label="Theater City"
+                            label="Miasto"
                             name="city"
                             onChange={(event) => this.setState({city: event.target.value})}
                         />
@@ -93,7 +93,7 @@ class AdminTheaters extends React.Component {
                             required
                             fullWidth
                             id="address"
-                            label="Theater address"
+                            label="Adres"
                             name="address"
                             onChange={(event) => this.setState({address: event.target.value})}
                         />
@@ -103,7 +103,7 @@ class AdminTheaters extends React.Component {
                             color="primary"
                             onClick={this.send}
                         >
-                            Add
+                            Dodaj
                         </Button>
                     </form>
                 </div>

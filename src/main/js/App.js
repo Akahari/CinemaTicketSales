@@ -13,6 +13,7 @@ import Theaters from './src/components/Theaters';
 import TheaterMovies from './src/components/TheaterMovies';
 import TheatersRaw from './src/components/TheatersRaw';
 import Movies from './src/components/Movies';
+import MovieTheaters from './src/components/MovieTheaters';
 import MoviesRaw from './src/components/MoviesRaw';
 import MovieDetails from './src/components/MovieDetails';
 
@@ -76,13 +77,13 @@ class App extends React.Component {
                         <Route exact path="/screenings/bookingDetails" component={BookingDetails}/>
                         <Route exact path="/screenings/bookingReceipt" component={BookingReceipt}/>
 
-                        <Route exact path="/moviesNew" component={Movies}/>
-                        <Route exact path="/movies" component={MoviesRaw}/>
-                        <Route path="/movies/:movieId" component={MovieDetails}/>
+                        <Route exact path="/movies" component={Movies}/>
+                        <Route exact path="/moviesRaw" component={MoviesRaw}/>
+                        <Route path="/movies/:movieId" component={MovieTheaters}/>
                         <Route exact path="/halls" component={Halls}/>
                         <Route exact path="/screenings" component={Screenings}/>
                         <Route exact path="/theaters" component={Theaters}/>
-                        <Route exact path="/theaters/:theaterId" component={TheaterMovies}/>
+                        <Route path="/theaters/:theaterId" component={TheaterMovies}/>
                         <Route exact path="/theatersRaw" component={TheatersRaw}/>
 
                         <Route component={() => <Redirect to="/"/>}/>

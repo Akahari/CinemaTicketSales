@@ -42,7 +42,6 @@ class Theaters extends React.Component {
                 </div>
             )
         }
-        console.log(this.state);
         return (
             <React.Fragment>
                 <AppBar title="Nasze kina" linkTo={"/"}/>

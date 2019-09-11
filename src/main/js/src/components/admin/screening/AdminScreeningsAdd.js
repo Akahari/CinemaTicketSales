@@ -38,14 +38,13 @@ class AdminScreeningsAdd extends React.Component {
         // send a POST request
         axios.post('/screening/add', {
             startDateString: this.state.startDateString,
-            theaterId: (this.state.theaterId),
             hallId: (this.state.hallId),
             movieId: (this.state.movieId)
         })
         .then((response) =>{
             console.log(response);
             const {history} = this.props;
-            history.push('/admin/screenings');
+            history.push('/admin/');
         }, (error) => {
             console.log(error);
         });
@@ -65,7 +64,7 @@ class AdminScreeningsAdd extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new screening
+                        Dodaj nowy seans
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -74,7 +73,7 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="startDateString"
-                            label="Screening start date"
+                            label="Data seansu (rrrr-MM-dd GG:mm)"
                             name="startDateString"
                             autoFocus
                             onChange={(event) => this.setState({startDateString: event.target.value})}
@@ -84,18 +83,8 @@ class AdminScreeningsAdd extends React.Component {
                             margin="normal"
                             required
                             fullWidth
-                            id="theaterId"
-                            label="Screening theater Id"
-                            name="theaterId"
-                            onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
                             id="hallId"
-                            label="Screening hall Id"
+                            label="Id sali"
                             name="hallId"
                             onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
                         />
@@ -105,7 +94,7 @@ class AdminScreeningsAdd extends React.Component {
                             required
                             fullWidth
                             id="movieId"
-                            label="Screening movie Id"
+                            label="Id filmu"
                             name="movieId"
                             onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
                         />
@@ -115,7 +104,7 @@ class AdminScreeningsAdd extends React.Component {
                             color="primary"
                             onClick={this.send}
                         >
-                            Add
+                            Dodaj
                         </Button>
                     </form>
                 </div>

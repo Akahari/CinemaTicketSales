@@ -91,7 +91,6 @@ class SelectSeats extends React.Component {
     };
 
     render(){
-//        this.state.seatMatrix = [];
         let seatMatrix = [];
         let tempRow = [];
         for (let i = 0; i < this.props.location.state.rowNumber; i++) {
@@ -121,7 +120,7 @@ class SelectSeats extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Select {this.props.location.state.ticketsAmount} seats
+                        Wybierz {this.props.location.state.ticketsAmount} miejsc
                     </Typography>
                     <SeatPicker
                       addSeatCallback={this.addSeatCallback}
@@ -140,7 +139,7 @@ class SelectSeats extends React.Component {
                         color="primary"
                         onClick={this.next}
                     >
-                        Next
+                        Dalej
                     </Button>
                 </div>
             </Container>

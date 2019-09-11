@@ -49,7 +49,7 @@ class AdminMoviesAdd extends React.Component {
         .then((response) =>{
             console.log(response);
             const {history} = this.props;
-            history.push('/admin/movies');
+            history.push('/admin/');
         }, (error) => {
             console.log(error);
         });
@@ -69,7 +69,7 @@ class AdminMoviesAdd extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new movie
+                        Dodaj film
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -78,7 +78,7 @@ class AdminMoviesAdd extends React.Component {
                             required
                             fullWidth
                             id="title"
-                            label="Movie title"
+                            label="Tytul"
                             name="title"
                             autoFocus
                             onChange={(event) => this.setState({title: event.target.value})}
@@ -89,7 +89,7 @@ class AdminMoviesAdd extends React.Component {
                             required
                             fullWidth
                             id="description"
-                            label="Movie description"
+                            label="Opis"
                             name="description"
                             onChange={(event) => this.setState({description: event.target.value})}
                         />
@@ -99,7 +99,7 @@ class AdminMoviesAdd extends React.Component {
                             required
                             fullWidth
                             id="duration"
-                            label="Movie duration"
+                            label="Czas trwania"
                             name="duration"
                             onChange={(event) => this.setState({duration: parseInt(event.target.value, 10)})}
                         />
@@ -109,7 +109,7 @@ class AdminMoviesAdd extends React.Component {
                             required
                             fullWidth
                             id="tags"
-                            label="Movie tags"
+                            label="Tagi"
                             name="tags"
                             onChange={(event) => this.setState({tags: event.target.value.split(";")})}
                         />
@@ -119,7 +119,7 @@ class AdminMoviesAdd extends React.Component {
                             required
                             fullWidth
                             id="cast"
-                            label="Movie cast"
+                            label="Obsada"
                             name="cast"
                             onChange={(event) => this.setState({cast: event.target.value.split(";")})}
                         />
@@ -129,7 +129,7 @@ class AdminMoviesAdd extends React.Component {
                             required
                             fullWidth
                             id="directors"
-                            label="Movie directors"
+                            label="Rezyseria"
                             name="directors"
                             onChange={(event) => this.setState({directors: event.target.value.split(";")})}
                         />
@@ -139,7 +139,7 @@ class AdminMoviesAdd extends React.Component {
                             color="primary"
                             onClick={this.send}
                         >
-                            Add
+                            Dodaj
                         </Button>
                     </form>
                 </div>

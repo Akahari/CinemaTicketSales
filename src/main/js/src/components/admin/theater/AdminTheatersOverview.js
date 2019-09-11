@@ -40,7 +40,7 @@ class AdminTheatersEdit extends React.Component {
                 this.setState({error: 'Wystąpił błąd'});
             }
         );
-        history.push('/admin/theaters');
+        history.push('/admin');
     };
 
     componentDidMount() {
@@ -69,13 +69,13 @@ class AdminTheatersEdit extends React.Component {
                 <table>
                     <tbody>
                     <tr>
-                        <th>Theater id</th>
-                        <th>Name</th>
-                        <th>City</th>
-                        <th>Address</th>
-                        <th>Hall ids</th>
-                        <th>Edit</th>
-                        <th>Remove</th>
+                        <th>Id</th>
+                        <th>Nazwa kina</th>
+                        <th>Miasto</th>
+                        <th>Adres</th>
+                        <th>Id sal</th>
+                        <th>Edytuj</th>
+                        <th>Usun</th>
                     </tr>
                     {
                         this.state.theaters.map(theater => (
@@ -84,14 +84,14 @@ class AdminTheatersEdit extends React.Component {
                                 <td>{theater.name}</td>
                                 <td>{theater.city}</td>
                                 <td>{theater.address}</td>
-                                <td>{theater.hallIds}</td>
+                                <td>{theater.hallIds.join(", ")}</td>
                                 <td>
                                     <Button
                                         variant="contained"
                                         color="primary"
                                         onClick={() => this.edit(theater.id)}
                                     >
-                                        Edit
+                                        Edytuj
                                     </Button>
                                 </td>
                                 <td>
@@ -100,7 +100,7 @@ class AdminTheatersEdit extends React.Component {
                                         color="primary"
                                         onClick={() => this.remove(theater.id)}
                                     >
-                                        Remove
+                                        Usun
                                     </Button>
                                 </td>
                             </tr>

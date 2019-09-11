@@ -57956,31 +57956,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_TheaterMovies__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/components/TheaterMovies */ "./src/main/js/src/components/TheaterMovies.js");
 /* harmony import */ var _src_components_TheatersRaw__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/components/TheatersRaw */ "./src/main/js/src/components/TheatersRaw.js");
 /* harmony import */ var _src_components_Movies__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/components/Movies */ "./src/main/js/src/components/Movies.js");
-/* harmony import */ var _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/components/MoviesRaw */ "./src/main/js/src/components/MoviesRaw.js");
-/* harmony import */ var _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/MovieDetails */ "./src/main/js/src/components/MovieDetails.js");
-/* harmony import */ var _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/components/user/DeclareTickets */ "./src/main/js/src/components/user/DeclareTickets.js");
-/* harmony import */ var _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/components/user/SelectSeats */ "./src/main/js/src/components/user/SelectSeats.js");
-/* harmony import */ var _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/user/BookingDetails */ "./src/main/js/src/components/user/BookingDetails.js");
-/* harmony import */ var _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/components/user/BookingReceipt */ "./src/main/js/src/components/user/BookingReceipt.js");
-/* harmony import */ var _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/components/LoginPage */ "./src/main/js/src/components/LoginPage.js");
-/* harmony import */ var _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/components/admin/AdminRouter */ "./src/main/js/src/components/admin/AdminRouter.js");
-/* harmony import */ var _src_components_admin_AdminHomePage__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/components/admin/AdminHomePage */ "./src/main/js/src/components/admin/AdminHomePage.js");
-/* harmony import */ var _src_components_admin_hall_AdminHalls__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHalls */ "./src/main/js/src/components/admin/hall/AdminHalls.js");
-/* harmony import */ var _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsAdd */ "./src/main/js/src/components/admin/hall/AdminHallsAdd.js");
-/* harmony import */ var _src_components_admin_hall_AdminHallsOverview__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsOverview */ "./src/main/js/src/components/admin/hall/AdminHallsOverview.js");
-/* harmony import */ var _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsEdit */ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js");
-/* harmony import */ var _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesOverview */ "./src/main/js/src/components/admin/movie/AdminMoviesOverview.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesEdit */ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsOverview */ "./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsEdit */ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersOverview */ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
+/* harmony import */ var _src_components_MovieTheaters__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/components/MovieTheaters */ "./src/main/js/src/components/MovieTheaters.js");
+/* harmony import */ var _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/MoviesRaw */ "./src/main/js/src/components/MoviesRaw.js");
+/* harmony import */ var _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/components/MovieDetails */ "./src/main/js/src/components/MovieDetails.js");
+/* harmony import */ var _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/components/user/DeclareTickets */ "./src/main/js/src/components/user/DeclareTickets.js");
+/* harmony import */ var _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/user/SelectSeats */ "./src/main/js/src/components/user/SelectSeats.js");
+/* harmony import */ var _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/components/user/BookingDetails */ "./src/main/js/src/components/user/BookingDetails.js");
+/* harmony import */ var _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/components/user/BookingReceipt */ "./src/main/js/src/components/user/BookingReceipt.js");
+/* harmony import */ var _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/components/LoginPage */ "./src/main/js/src/components/LoginPage.js");
+/* harmony import */ var _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/components/admin/AdminRouter */ "./src/main/js/src/components/admin/AdminRouter.js");
+/* harmony import */ var _src_components_admin_AdminHomePage__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/components/admin/AdminHomePage */ "./src/main/js/src/components/admin/AdminHomePage.js");
+/* harmony import */ var _src_components_admin_hall_AdminHalls__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHalls */ "./src/main/js/src/components/admin/hall/AdminHalls.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsAdd */ "./src/main/js/src/components/admin/hall/AdminHallsAdd.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsOverview__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsOverview */ "./src/main/js/src/components/admin/hall/AdminHallsOverview.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsEdit */ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js");
+/* harmony import */ var _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesOverview */ "./src/main/js/src/components/admin/movie/AdminMoviesOverview.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesEdit */ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsOverview */ "./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsEdit */ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersOverview */ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -57998,6 +57999,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -58076,37 +58078,37 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/login",
-        component: _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_19__["default"]
+        component: _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_20__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         path: "/admin",
-        component: _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_20__["default"]
+        component: _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_21__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/declareTickets",
-        component: _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_15__["default"]
+        component: _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_16__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/selectSeats",
-        component: _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_16__["default"]
+        component: _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_17__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/bookingDetails",
-        component: _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_17__["default"]
+        component: _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_18__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/bookingReceipt",
-        component: _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_18__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
-        path: "/moviesNew",
-        component: _src_components_Movies__WEBPACK_IMPORTED_MODULE_12__["default"]
+        component: _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_19__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/movies",
-        component: _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_13__["default"]
+        component: _src_components_Movies__WEBPACK_IMPORTED_MODULE_12__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+        exact: true,
+        path: "/moviesRaw",
+        component: _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_14__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         path: "/movies/:movieId",
-        component: _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_14__["default"]
+        component: _src_components_MovieTheaters__WEBPACK_IMPORTED_MODULE_13__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/halls",
@@ -58120,7 +58122,6 @@ function (_React$Component) {
         path: "/theaters",
         component: _src_components_Theaters__WEBPACK_IMPORTED_MODULE_9__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-        exact: true,
         path: "/theaters/:theaterId",
         component: _src_components_TheaterMovies__WEBPACK_IMPORTED_MODULE_10__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
@@ -58465,7 +58466,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        title: "Strona glowna kina",
+        title: "Strona glowna sieci kin",
         linkTo: "/"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
         container: true,
@@ -58486,6 +58487,14 @@ function (_React$Component) {
         style: styles.paper
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Filmy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/movies",
+        style: styles.link
+      }, "Wybierz"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        item: true,
+        xs: 12
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        style: styles.paper
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Seanse"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/screenings",
         style: styles.link
       }, "Wybierz")))));
     }
@@ -58684,6 +58693,9 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/theaters/:theaterId",
         component: _Theaters__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/movies/:movieId",
+        component: _Movies__WEBPACK_IMPORTED_MODULE_3__["default"]
       })));
     }
   }]);
@@ -58939,10 +58951,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/src/components/Movies.js":
-/*!**********************************************!*\
-  !*** ./src/main/js/src/components/Movies.js ***!
-  \**********************************************/
+/***/ "./src/main/js/src/components/MovieTheaters.js":
+/*!*****************************************************!*\
+  !*** ./src/main/js/src/components/MovieTheaters.js ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58953,6 +58965,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AppBar */ "./src/main/js/src/components/AppBar.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -58972,6 +58988,140 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+var styles = {
+  container: {
+    height: '100%'
+  }
+};
+
+var MovieTheaters =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(MovieTheaters, _React$Component);
+
+  function MovieTheaters() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, MovieTheaters);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(MovieTheaters)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      theater: null,
+      halls: [],
+      movies: [],
+      error: null
+    });
+
+    return _this;
+  }
+
+  _createClass(MovieTheaters, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      console.log("MovieTheaters page");
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var movieId = this.props.match.params.movieId;
+
+      if (this.state.halls == [] && this.state.theater == null && movies == []) {
+        console.log("axios get hall/all, theater/find/${theaterId}");
+      }
+
+      if (this.state.error) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, this.state.error);
+      }
+
+      if (true) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          title: "Kina:",
+          linkTo: "/movies"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          container: true,
+          spacing: 3,
+          style: styles.grid
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          item: true,
+          xs: 12
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          style: styles.paper
+        }, "Kina: ", movieId)))));
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, "Loading");
+    }
+  }]);
+
+  return MovieTheaters;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (MovieTheaters);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/Movies.js":
+/*!**********************************************!*\
+  !*** ./src/main/js/src/components/Movies.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AppBar */ "./src/main/js/src/components/AppBar.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
 
 
 
@@ -59017,7 +59167,8 @@ function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/movies/all').then(function (response) {
+      console.log("Movies page");
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/movie/all').then(function (response) {
         console.log(response);
 
         _this2.setState({
@@ -59041,12 +59192,27 @@ function (_React$Component) {
       }
 
       console.log(this.state);
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/",
-        style: styles.link
-      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Movies page under construction");
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        title: "Nasze filmy",
+        linkTo: "/"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        container: true,
+        spacing: 3,
+        style: styles.grid
+      }, this.state.movies.map(function (movie) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          item: true,
+          xs: 12
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          style: styles.paper
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          component: "h1",
+          variant: "h3"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+          to: "/movies/".concat(movie.id),
+          style: styles.link
+        }, movie.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "ID: ", movie.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Opis: ", movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Czas trwania [min]: ", movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Obsada: ", movie.cast.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Rezyseria: ", movie.directors.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Tagi: ", movie.tags.join(", "))));
+      })));
     }
   }]);
 
@@ -59164,7 +59330,7 @@ function (_React$Component) {
         to: "/",
         style: styles.link
       }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link")), this.state.movies.map(function (movie) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
           to: "/movies/".concat(movie.id)
         }, "Open")));
       }))));
@@ -59349,6 +59515,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
 /* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AppBar */ "./src/main/js/src/components/AppBar.js");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -59368,6 +59535,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -59402,9 +59570,20 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       theater: null,
-      halls: [],
-      movies: [],
+      halls: null,
+      screenings: [],
+      movies: null,
+      movieIds: [],
+      renderIsReady: false,
+      allHallsChecked: false,
       error: null
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "test", function () {
+      var history = _this.props.history;
+      console.log("This is an emergency broadcast");
+      console.log(_this.state);
+      console.log("Thank you for your attention");
     });
 
     return _this;
@@ -59412,15 +59591,107 @@ function (_React$Component) {
 
   _createClass(TheaterMovies, [{
     key: "componentDidMount",
-    value: function componentDidMount() {}
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var theaterId = this.props.match.params.theaterId;
+      var tempScreenings = [];
+      var tempScreening = null;
+      var tempMovieIds = [];
+      var tempHallCounter = 0;
+      console.log("welcome to theater movies");
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]("/movie/all").then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          movies: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]("/hall/find/theaterId/".concat(theaterId)).then(function (response) {
+        console.log(response);
+        console.log("1st then/ resolve");
+        console.log(_this2.state);
+
+        _this2.setState({
+          halls: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      }).then(function (resolve) {
+        console.log("2nd then/ resolve");
+        console.log(_this2.state);
+        tempHallCounter = _this2.state.halls.length;
+
+        var promises = _this2.state.halls.map(function (hall) {
+          console.log("mapping over hall");
+          axios__WEBPACK_IMPORTED_MODULE_1__["get"]("/screening/find/hall/".concat(hall.id)).then(function (response) {
+            tempHallCounter--;
+            console.log("3rd then/ response");
+
+            if (response.data.length > 0) {
+              for (var i = 0; i < response.data.length; i++) {
+                tempScreening = response.data[i];
+
+                if (!tempMovieIds.includes(tempScreening.movieId)) {
+                  tempMovieIds.push(tempScreening.movieId);
+                }
+
+                if (!tempMovieIds.includes(tempScreening.movieId)) {
+                  tempMovieIds.push(tempScreening.movieId);
+                }
+
+                tempScreenings.push(tempScreening);
+              }
+
+              console.log(response);
+            }
+          }, function (error) {
+            console.log(error);
+
+            _this2.setState({
+              error: 'Wystąpił błąd'
+            });
+          }).then(function (response) {
+            if (tempHallCounter == 0) {
+              console.log("mapped over all halls");
+
+              _this2.setState({
+                screenings: tempScreenings
+              });
+
+              _this2.setState({
+                movieIds: tempMovieIds
+              });
+
+              console.log(_this2.state);
+
+              _this2.setState({
+                renderIsReady: true
+              });
+            }
+          }, function (error) {
+            console.log("error");
+          });
+        });
+      }, function (reject) {
+        console.log("2nd then/ reject");
+      });
+    }
   }, {
     key: "render",
     value: function render() {
-      var theaterId = this.props.match.params.theaterId;
-
-      if (this.state.halls == [] && this.state.theater == null && movies == []) {
-        console.log("axios get hall/all, theater/find/${theaterId}");
-      }
+      console.log("render");
+      console.log(this.state);
 
       if (this.state.error) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -59428,22 +59699,30 @@ function (_React$Component) {
         }, this.state.error);
       }
 
-      if (true) {
+      if (this.state.renderIsReady) {
+        console.log("this state render is Ready is true");
+        console.log(this.state);
+        console.log(this.state.screenings);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           style: styles.container
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          title: "Filmy w kine:",
-          linkTo: "/"
+          title: "Seanse w kine:",
+          linkTo: "/theaters"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
           container: true,
           spacing: 3,
           style: styles.grid
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          item: true,
-          xs: 12
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          style: styles.paper
-        }, "Filmy w kinie: ", theaterId)))));
+        }, this.state.screenings.map(function (screening) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            item: true,
+            xs: 12
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            style: styles.paper
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            component: "h1",
+            variant: "h3"
+          }, screening.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Czas trwania: ", screening.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "placeholder")));
+        }))));
       }
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -59568,7 +59847,6 @@ function (_React$Component) {
         }, this.state.error);
       }
 
-      console.log(this.state);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_5__["default"], {
         title: "Nasze kina",
         linkTo: "/"
@@ -59811,46 +60089,46 @@ function (_React$Component) {
         xs: 6
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
         style: styles.paper
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Theaters"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Kina"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/theaters/add",
         style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Dodaj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/theaters/overview",
         style: styles.link
-      }, "Edit/Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, "Edytuj/Usun"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
         item: true,
         xs: 6
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
         style: styles.paper
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Movies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Filmy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/movies/add",
         style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Dodaj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/movies/overview",
         style: styles.link
-      }, "Edit/Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, "Edytuj/Usun"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
         item: true,
         xs: 6
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
         style: styles.paper
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Halls"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Sale"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/halls/add",
         style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Dodaj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/halls/overview",
         style: styles.link
-      }, "Edit/Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, "Edytuj/Usun"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
         item: true,
         xs: 6
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
         style: styles.paper
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Screenings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Seanse"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/screenings/add",
         style: styles.link
-      }, "Add"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      }, "Dodaj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/admin/screenings/overview",
         style: styles.link
-      }, "Edit/Remove")))));
+      }, "Edytuj/Usun")))));
     }
   }]);
 
@@ -60167,7 +60445,7 @@ function (_React$Component) {
       }).then(function (response) {
         console.log(response);
         var history = _this.props.history;
-        history.push('/admin/halls');
+        history.push('/admin/');
       }, function (error) {
         console.log(error);
       });
@@ -60197,7 +60475,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new hall"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Dodaj sale"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -60206,7 +60484,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "theaterId",
-        label: "Hall theater Id",
+        label: "Id kina",
         name: "theaterId",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -60220,7 +60498,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "name",
-        label: "Hall name",
+        label: "Nazwa sali",
         name: "name",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60233,7 +60511,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "rows",
-        label: "Hall rows",
+        label: "Rzedy",
         name: "rows",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60246,7 +60524,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "rowLength",
-        label: "Hall row length",
+        label: "Dlugosc rzedu",
         name: "rowLength",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60258,7 +60536,7 @@ function (_React$Component) {
         variant: "contained",
         color: "primary",
         onClick: this.send
-      }, "Add"))));
+      }, "Dodaj"))));
     }
   }]);
 
@@ -60439,7 +60717,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new hall"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Edytuj sale"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -60448,7 +60726,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "theaterId",
-        label: "Hall theater Id",
+        label: "Id kina",
         name: "theaterId",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -60462,7 +60740,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "name",
-        label: "Hall name",
+        label: "Nazwa sali",
         name: "name",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -60475,7 +60753,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "rows",
-        label: "Hall rows",
+        label: "Rzedy",
         name: "rows",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -60488,7 +60766,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "rowLength",
-        label: "Hall row length",
+        label: "Dlugosc rzedu",
         name: "rowLength",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -60502,7 +60780,7 @@ function (_React$Component) {
         onClick: function onClick() {
           return _this3.edit(_this3.state.hallId);
         }
-      }, "Add"))));
+      }, "Edytuj"))));
     }
   }]);
 
@@ -60612,7 +60890,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      history.push('/admin/halls');
+      history.push('/admin');
     });
 
     return _this;
@@ -60651,20 +60929,20 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Row length"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Screening Ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id sali"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tytul"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rzedy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Dlugosc rzedu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id seansow"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id kina"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edytuj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Usun"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.halls.map(function (hall) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowsNumber), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.rowLength), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.screeningId.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, hall.theaterId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.edit(hall.id);
           }
-        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }, "Edytuj")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.remove(hall.id);
           }
-        }, "Remove")));
+        }, "Usun")));
       }))));
     }
   }]);
@@ -60872,7 +61150,7 @@ function (_React$Component) {
       }).then(function (response) {
         console.log(response);
         var history = _this.props.history;
-        history.push('/admin/movies');
+        history.push('/admin/');
       }, function (error) {
         console.log(error);
       });
@@ -60902,7 +61180,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new movie"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Dodaj film"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -60911,7 +61189,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "title",
-        label: "Movie title",
+        label: "Tytul",
         name: "title",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -60925,7 +61203,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "description",
-        label: "Movie description",
+        label: "Opis",
         name: "description",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60938,7 +61216,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "duration",
-        label: "Movie duration",
+        label: "Czas trwania",
         name: "duration",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60951,7 +61229,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "tags",
-        label: "Movie tags",
+        label: "Tagi",
         name: "tags",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60964,7 +61242,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "cast",
-        label: "Movie cast",
+        label: "Obsada",
         name: "cast",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60977,7 +61255,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "directors",
-        label: "Movie directors",
+        label: "Rezyseria",
         name: "directors",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -60989,7 +61267,7 @@ function (_React$Component) {
         variant: "contained",
         color: "primary",
         onClick: this.send
-      }, "Add"))));
+      }, "Dodaj"))));
     }
   }]);
 
@@ -61182,7 +61460,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new movie"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Edytuj film"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -61191,7 +61469,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "title",
-        label: "Movie title",
+        label: "Tytul",
         name: "title",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -61205,7 +61483,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "description",
-        label: "Movie description",
+        label: "Opis",
         name: "description",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -61218,7 +61496,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "duration",
-        label: "Movie duration",
+        label: "Czas trwania",
         name: "duration",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -61231,7 +61509,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "tags",
-        label: "Movie tags",
+        label: "Tagi",
         name: "tags",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -61244,7 +61522,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "cast",
-        label: "Movie cast",
+        label: "Obsada",
         name: "cast",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -61257,7 +61535,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "directors",
-        label: "Movie directors",
+        label: "Rezyseria",
         name: "directors",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -61271,7 +61549,7 @@ function (_React$Component) {
         onClick: function onClick() {
           return _this3.edit(_this3.state.movieId);
         }
-      }, "Add"))));
+      }, "Dodaj"))));
     }
   }]);
 
@@ -61381,7 +61659,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      history.push('/admin/movies');
+      history.push('/admin');
     });
 
     return _this;
@@ -61420,22 +61698,20 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Duration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Cast"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Directors"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tags"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Link"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.movies.map(function (movie) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-          to: "/movies/".concat(movie.id)
-        }, "Open")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tytul"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Czas trwania"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Opis"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Obsada"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Rezyseria"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Tagi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edytuj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Usun")), this.state.movies.map(function (movie) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.duration), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.cast), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.directors), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, movie.tags), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.edit(movie.id);
           }
-        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }, "Edytuj")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.remove(movie.id);
           }
-        }, "Remove")));
+        }, "Usun")));
       }))));
     }
   }]);
@@ -61633,13 +61909,12 @@ function (_React$Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_7__["post"]('/screening/add', {
         startDateString: _this.state.startDateString,
-        theaterId: _this.state.theaterId,
         hallId: _this.state.hallId,
         movieId: _this.state.movieId
       }).then(function (response) {
         console.log(response);
         var history = _this.props.history;
-        history.push('/admin/screenings');
+        history.push('/admin/');
       }, function (error) {
         console.log(error);
       });
@@ -61669,7 +61944,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new screening"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Dodaj nowy seans"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -61678,7 +61953,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "startDateString",
-        label: "Screening start date",
+        label: "Data seansu (rrrr-MM-dd GG:mm)",
         name: "startDateString",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -61691,21 +61966,8 @@ function (_React$Component) {
         margin: "normal",
         required: true,
         fullWidth: true,
-        id: "theaterId",
-        label: "Screening theater Id",
-        name: "theaterId",
-        onChange: function onChange(event) {
-          return _this2.setState({
-            theaterId: parseInt(event.target.value, 10)
-          });
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        variant: "outlined",
-        margin: "normal",
-        required: true,
-        fullWidth: true,
         id: "hallId",
-        label: "Screening hall Id",
+        label: "Id sali",
         name: "hallId",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -61718,7 +61980,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "movieId",
-        label: "Screening movie Id",
+        label: "Id filmu",
         name: "movieId",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -61730,7 +61992,7 @@ function (_React$Component) {
         variant: "contained",
         color: "primary",
         onClick: this.send
-      }, "Add"))));
+      }, "Dodaj"))));
     }
   }]);
 
@@ -61839,7 +62101,6 @@ function (_React$Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_7__["post"]("/screening/update/".concat(screeningId), {
         startDateString: _this.state.startDateString,
-        theaterId: _this.state.theaterId,
         movieId: _this.state.movieId,
         hallId: _this.state.hallId
       }).then(function (response) {
@@ -61921,8 +62182,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "startDateString",
-        label: "startDateString" //defaultValue={Date(this.state.startDateString).toString()}
-        ,
+        label: "Data seansu (rrrr-MM-dd GG:mm)",
         name: "startDateString",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -61935,22 +62195,8 @@ function (_React$Component) {
         margin: "normal",
         required: true,
         fullWidth: true,
-        id: "theaterId",
-        label: "Theater Id " //defaultValue={this.state.theaterId}
-        ,
-        name: "theaterId",
-        onChange: function onChange(event) {
-          return _this3.setState({
-            theaterId: parseInt(event.target.value, 10)
-          });
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        variant: "outlined",
-        margin: "normal",
-        required: true,
-        fullWidth: true,
         id: "hallId",
-        label: "hallId" //defaultValue={this.state.hallId}
+        label: "Id sali" //defaultValue={this.state.hallId}
         ,
         name: "hallId",
         onChange: function onChange(event) {
@@ -61964,7 +62210,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "movieId",
-        label: "movieId" //defaultValue={this.state.movieId}
+        label: "Id filmu" //defaultValue={this.state.movieId}
         ,
         name: "movieId",
         onChange: function onChange(event) {
@@ -61979,7 +62225,7 @@ function (_React$Component) {
         onClick: function onClick() {
           return _this3.edit(_this3.state.screeningId);
         }
-      }, "Add"))));
+      }, "Edytuj"))));
     }
   }]);
 
@@ -62089,7 +62335,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      history.push('/admin/screenings');
+      history.push('/admin');
     });
 
     return _this;
@@ -62128,20 +62374,20 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Movie id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Start date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.screenings.map(function (screening) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.startDate), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id filmu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Data seansu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id sali"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edytuj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Usun")), this.state.screenings.map(function (screening) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.movieId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, new Date(screening.startDate).toGMTString()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, screening.hallId), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.edit(screening.id);
           }
-        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }, "Edytuj")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.remove(screening.id);
           }
-        }, "Remove")));
+        }, "Usun")));
       }))));
     }
   }]);
@@ -62343,7 +62589,7 @@ function (_React$Component) {
       }).then(function (response) {
         console.log(response);
         var history = _this.props.history;
-        history.push('/admin/theaters');
+        history.push('/admin');
       }, function (error) {
         console.log(error);
       });
@@ -62373,7 +62619,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new theater"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Dodaj nowe kino"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -62382,7 +62628,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "name",
-        label: "Theater name",
+        label: "Nazwa kina",
         name: "name",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -62396,7 +62642,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "city",
-        label: "Theater City",
+        label: "Miasto",
         name: "city",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -62409,7 +62655,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "address",
-        label: "Theater address",
+        label: "Adres",
         name: "address",
         onChange: function onChange(event) {
           return _this2.setState({
@@ -62421,7 +62667,7 @@ function (_React$Component) {
         variant: "contained",
         color: "primary",
         onClick: this.send
-      }, "Add"))));
+      }, "Dodaj"))));
     }
   }]);
 
@@ -62596,7 +62842,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         component: "h1",
         variant: "h5"
-      }, "Add new theater"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "Edytuj kino"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         style: styles.form,
         noValidate: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -62605,7 +62851,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "name",
-        label: "name",
+        label: "Nazwa kina",
         name: "name",
         autoFocus: true,
         onChange: function onChange(event) {
@@ -62619,7 +62865,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "city",
-        label: "city",
+        label: "Miasto",
         name: "city",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -62632,7 +62878,7 @@ function (_React$Component) {
         required: true,
         fullWidth: true,
         id: "address",
-        label: "address",
+        label: "Adres",
         name: "address",
         onChange: function onChange(event) {
           return _this3.setState({
@@ -62646,7 +62892,7 @@ function (_React$Component) {
         onClick: function onClick() {
           return _this3.edit(_this3.state.theaterId);
         }
-      }, "Edit"))));
+      }, "Edytuj"))));
     }
   }]);
 
@@ -62756,7 +63002,7 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      history.push('/admin/theaters');
+      history.push('/admin');
     });
 
     return _this;
@@ -62795,20 +63041,20 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Theater id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Hall ids"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Remove")), this.state.theaters.map(function (theater) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Nazwa kina"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Miasto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Adres"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Id sal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Edytuj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Usun")), this.state.theaters.map(function (theater) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.address), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, theater.hallIds.join(", ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.edit(theater.id);
           }
-        }, "Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }, "Edytuj")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           variant: "contained",
           color: "primary",
           onClick: function onClick() {
             return _this3.remove(theater.id);
           }
-        }, "Remove")));
+        }, "Usun")));
       }))));
     }
   }]);

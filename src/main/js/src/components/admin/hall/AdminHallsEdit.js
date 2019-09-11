@@ -85,7 +85,7 @@ class AdminHallsEdit extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new hall
+                        Edytuj sale
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -94,7 +94,7 @@ class AdminHallsEdit extends React.Component {
                             required
                             fullWidth
                             id="theaterId"
-                            label="Hall theater Id"
+                            label="Id kina"
                             name="theaterId"
                             autoFocus
                             onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
@@ -105,7 +105,7 @@ class AdminHallsEdit extends React.Component {
                             required
                             fullWidth
                             id="name"
-                            label="Hall name"
+                            label="Nazwa sali"
                             name="name"
                             onChange={(event) => this.setState({name: event.target.value})}
                         />
@@ -115,7 +115,7 @@ class AdminHallsEdit extends React.Component {
                             required
                             fullWidth
                             id="rows"
-                            label="Hall rows"
+                            label="Rzedy"
                             name="rows"
                             onChange={(event) => this.setState({rowsNumber: parseInt(event.target.value, 10)})}
                         />
@@ -125,7 +125,7 @@ class AdminHallsEdit extends React.Component {
                             required
                             fullWidth
                             id="rowLength"
-                            label="Hall row length"
+                            label="Dlugosc rzedu"
                             name="rowLength"
                             onChange={(event) => this.setState({rowLength: parseInt(event.target.value, 10)})}
                         />
@@ -135,7 +135,7 @@ class AdminHallsEdit extends React.Component {
                             color="primary"
                             onClick={() => this.edit(this.state.hallId)}
                         >
-                            Add
+                            Edytuj
                         </Button>
                     </form>
                 </div>

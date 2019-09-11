@@ -59,7 +59,6 @@ class AdminScreeningsEdit extends React.Component {
         // send a POST request
         axios.post(`/screening/update/${screeningId}`, {
             startDateString: this.state.startDateString,
-            theaterId: this.state.theaterId,
             movieId: this.state.movieId,
             hallId: this.state.hallId
         })
@@ -95,8 +94,7 @@ class AdminScreeningsEdit extends React.Component {
                             required
                             fullWidth
                             id="startDateString"
-                            label="startDateString"
-                            //defaultValue={Date(this.state.startDateString).toString()}
+                            label="Data seansu (rrrr-MM-dd GG:mm)"
                             name="startDateString"
                             autoFocus
                             onChange={(event) => this.setState({startDateString: event.target.value})}
@@ -106,19 +104,8 @@ class AdminScreeningsEdit extends React.Component {
                             margin="normal"
                             required
                             fullWidth
-                            id="theaterId"
-                            label="Theater Id "
-                            //defaultValue={this.state.theaterId}
-                            name="theaterId"
-                            onChange={(event) => this.setState({theaterId: parseInt(event.target.value, 10)})}
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
                             id="hallId"
-                            label="hallId"
+                            label="Id sali"
                             //defaultValue={this.state.hallId}
                             name="hallId"
                             onChange={(event) => this.setState({hallId: parseInt(event.target.value, 10)})}
@@ -129,7 +116,7 @@ class AdminScreeningsEdit extends React.Component {
                             required
                             fullWidth
                             id="movieId"
-                            label="movieId"
+                            label="Id filmu"
                             //defaultValue={this.state.movieId}
                             name="movieId"
                             onChange={(event) => this.setState({movieId: parseInt(event.target.value, 10)})}
@@ -140,7 +127,7 @@ class AdminScreeningsEdit extends React.Component {
                             color="primary"
                             onClick={() => this.edit(this.state.screeningId)}
                         >
-                            Add
+                            Edytuj
                         </Button>
                     </form>
                 </div>

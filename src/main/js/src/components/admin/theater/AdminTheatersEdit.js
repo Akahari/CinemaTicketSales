@@ -82,7 +82,7 @@ class AdminTheatersEdit extends React.Component {
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Add new theater
+                        Edytuj kino
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -91,7 +91,7 @@ class AdminTheatersEdit extends React.Component {
                             required
                             fullWidth
                             id="name"
-                            label="name"
+                            label="Nazwa kina"
                             name="name"
                             autoFocus
                             onChange={(event) => this.setState({name: event.target.value})}
@@ -102,7 +102,7 @@ class AdminTheatersEdit extends React.Component {
                             required
                             fullWidth
                             id="city"
-                            label="city"
+                            label="Miasto"
                             name="city"
                             onChange={(event) => this.setState({city: event.target.value})}
                         />
@@ -112,7 +112,7 @@ class AdminTheatersEdit extends React.Component {
                             required
                             fullWidth
                             id="address"
-                            label="address"
+                            label="Adres"
                             name="address"
                             onChange={(event) => this.setState({address: event.target.value})}
                         />
@@ -122,7 +122,7 @@ class AdminTheatersEdit extends React.Component {
                             color="primary"
                             onClick={() => this.edit(this.state.theaterId)}
                         >
-                            Edit
+                            Edytuj
                         </Button>
                     </form>
                 </div>

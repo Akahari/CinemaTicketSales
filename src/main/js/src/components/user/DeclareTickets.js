@@ -72,13 +72,13 @@ class DeclareTickets extends React.Component {
             <Container component="main" maxWidth="xs">
                 <CssBaseline/>
                 <div style={styles.container}>
-                    <Link to={"/screenings"} style={styles.link}>Exit</Link>
+                    <Link to={"/screenings"} style={styles.link}>Wstecz</Link>
                     Placeholder for ticket declaration
                 </div>
                 <CssBaseline/>
                 <div style={styles.paper}>
                     <Typography component="h1" variant="h5">
-                        Select tickets
+                        Wybierz bilety
                     </Typography>
                     <form style={styles.form} noValidate>
                         <TextField
@@ -87,7 +87,7 @@ class DeclareTickets extends React.Component {
                             required
                             fullWidth
                             id="normal"
-                            label="Normal (full price)"
+                            label="Normalny (pelna cena)"
                             name="normal"
                             autoFocus
                             onChange={(event) => this.setState({normalAmount: parseInt(event.target.value, 10)})}
@@ -98,7 +98,7 @@ class DeclareTickets extends React.Component {
                             required
                             fullWidth
                             id="reduced"
-                            label="Reduced (75% price)"
+                            label="Ulgowy (75% ceny)"
                             name="reduced"
                             onChange={(event) => this.setState({reducedAmount: parseInt(event.target.value, 10)})}
                         />
@@ -108,7 +108,7 @@ class DeclareTickets extends React.Component {
                             required
                             fullWidth
                             id="kids"
-                            label="Kids (50% price)"
+                            label="Dzieciecy (50% ceny)"
                             name="kids"
                             onChange={(event) => this.setState({kidsAmount: parseInt(event.target.value, 10)})}
                         />
@@ -118,7 +118,7 @@ class DeclareTickets extends React.Component {
                             color="primary"
                             onClick={this.next}
                         >
-                            Next
+                            Dalej
                         </Button>
                     </form>
                 </div>

@@ -40,7 +40,7 @@ class AdminMoviesEdit extends React.Component {
                 this.setState({error: 'Wystąpił błąd'});
             }
         );
-    history.push('/admin/movies');
+    history.push('/admin');
     };
 
     componentDidMount() {
@@ -69,15 +69,14 @@ class AdminMoviesEdit extends React.Component {
                 <table>
                     <tbody>
                     <tr>
-                        <th>Title</th>
-                        <th>Duration</th>
-                        <th>Description</th>
-                        <th>Cast</th>
-                        <th>Directors</th>
-                        <th>Tags</th>
-                        <th>Link</th>
-                        <th>Edit</th>
-                        <th>Remove</th>
+                        <th>Tytul</th>
+                        <th>Czas trwania</th>
+                        <th>Opis</th>
+                        <th>Obsada</th>
+                        <th>Rezyseria</th>
+                        <th>Tagi</th>
+                        <th>Edytuj</th>
+                        <th>Usun</th>
                     </tr>
                     {
                         this.state.movies.map(movie => (
@@ -88,14 +87,13 @@ class AdminMoviesEdit extends React.Component {
                                 <td>{movie.cast}</td>
                                 <td>{movie.directors}</td>
                                 <td>{movie.tags}</td>
-                                <td><Link to={`/movies/${movie.id}`}>Open</Link></td>
                                 <td>
                                     <Button
                                         variant="contained"
                                         color="primary"
                                         onClick={() => this.edit(movie.id)}
                                     >
-                                        Edit
+                                        Edytuj
                                     </Button>
                                 </td>
                                 <td>
@@ -104,7 +102,7 @@ class AdminMoviesEdit extends React.Component {
                                         color="primary"
                                         onClick={() => this.remove(movie.id)}
                                     >
-                                        Remove
+                                        Usun
                                     </Button>
                                 </td>
                             </tr>

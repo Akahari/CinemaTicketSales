@@ -40,7 +40,7 @@ class AdminHallsEdit extends React.Component {
                 this.setState({error: 'Wystąpił błąd'});
             }
         );
-        history.push('/admin/halls');
+        history.push('/admin');
     };
 
     componentDidMount() {
@@ -69,14 +69,14 @@ class AdminHallsEdit extends React.Component {
                 <table>
                     <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Title</th>
-                        <th>Rows</th>
-                        <th>Row length</th>
-                        <th>Screening Ids</th>
-                        <th>Theater Id</th>
-                        <th>Edit</th>
-                        <th>Remove</th>
+                        <th>Id sali</th>
+                        <th>Tytul</th>
+                        <th>Rzedy</th>
+                        <th>Dlugosc rzedu</th>
+                        <th>Id seansow</th>
+                        <th>Id kina</th>
+                        <th>Edytuj</th>
+                        <th>Usun</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -95,7 +95,7 @@ class AdminHallsEdit extends React.Component {
                                         color="primary"
                                         onClick={() => this.edit(hall.id)}
                                     >
-                                        Edit
+                                        Edytuj
                                     </Button>
                                 </td>
                                 <td>
@@ -104,7 +104,7 @@ class AdminHallsEdit extends React.Component {
                                         color="primary"
                                         onClick={() => this.remove(hall.id)}
                                     >
-                                        Remove
+                                        Usun
                                     </Button>
                                 </td>
                             </tr>

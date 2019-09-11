@@ -129,7 +129,7 @@ class BookingReceipt extends React.Component {
                         <Typography component="h1" variant="h4">ID rezerwacji</Typography>
                         <Typography component="h1" variant="h5">{this.state.bookingId}</Typography>
                         <br/><br/>
-                        <Typography component="h1" variant="h5"><Link to={"/"} style={styles.link}>Exit to main page</Link></Typography>
+                        <Typography component="h1" variant="h5"><Link to={"/"} style={styles.link}>Wroc do strony glownej</Link></Typography>
                     </div>
                 </Container>
             );

@@ -40,7 +40,7 @@ class AdminScreeningsEdit extends React.Component {
                 this.setState({error: 'Wystąpił błąd'});
             }
         );
-    history.push('/admin/screenings');
+    history.push('/admin');
     };
 
     componentDidMount() {
@@ -69,17 +69,17 @@ class AdminScreeningsEdit extends React.Component {
                 <table>
                     <tbody>
                     <tr>
-                        <th>Movie id</th>
-                        <th>Start date</th>
-                        <th>Hall id</th>
-                        <th>Edit</th>
-                        <th>Remove</th>
+                        <th>Id filmu</th>
+                        <th>Data seansu</th>
+                        <th>Id sali</th>
+                        <th>Edytuj</th>
+                        <th>Usun</th>
                     </tr>
                     {
                         this.state.screenings.map(screening => (
                             <tr>
                                 <td>{screening.movieId}</td>
-                                <td>{screening.startDate}</td>
+                                <td>{new Date(screening.startDate).toGMTString()}</td>
                                 <td>{screening.hallId}</td>
                                 <td>
                                     <Button
@@ -87,7 +87,7 @@ class AdminScreeningsEdit extends React.Component {
                                         color="primary"
                                         onClick={() => this.edit(screening.id)}
                                     >
-                                        Edit
+                                        Edytuj
                                     </Button>
                                 </td>
                                 <td>
@@ -96,7 +96,7 @@ class AdminScreeningsEdit extends React.Component {
                                         color="primary"
                                         onClick={() => this.remove(screening.id)}
                                     >
-                                        Remove
+                                        Usun
                                     </Button>
                                 </td>
                             </tr>
