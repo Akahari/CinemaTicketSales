@@ -68,8 +68,6 @@ class AdminHomePage extends React.Component {
                         </Paper>
                     </Grid>
                 </Grid>
-
-
             </React.Fragment>
         );
     }

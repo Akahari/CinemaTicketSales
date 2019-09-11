@@ -42,28 +42,8 @@ class Theaters extends React.Component {
         return (
             <div style={styles.container}>
                 <Link to={"/"} style={styles.link}>Exit</Link>
-                <table>
-                    <tbody>
-                    <tr>
-                        <th>Theater id</th>
-                        <th>Name</th>
-                        <th>City</th>
-                        <th>Address</th>
-                        <th>Hall ids</th>
-                    </tr>
-                    {
-                        this.state.theaters.map(theater => (
-                            <tr>
-                                <td>{theater.id}</td>
-                                <td>{theater.name}</td>
-                                <td>{theater.city}</td>
-                                <td>{theater.address}</td>
-                                <td>{theater.hallIds}</td>
-                            </tr>
-                        ))
-                    }
-                    </tbody>
-                </table>
+                <br/><br/>
+                Theaters page under construction
             </div>
         );
     }

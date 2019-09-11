@@ -38,14 +38,13 @@ class AdminRouter extends React.Component {
     render() {
         return (
             <div style={styles.container}>
-                    <div style={styles.container}>
-
-                        <Route exact path="/admin" component={AdminHomePage}/>
-                        <Route path="/admin/theaters" component={AdminTheaters}/>
-                        <Route path="/admin/movies" component={AdminMovies}/>
-                        <Route path="/admin/halls" component={AdminHalls}/>
-                        <Route path="/admin/screenings" component={AdminScreenings}/>
-                    </div>
+                <div style={styles.container}>
+                    <Route exact path="/admin" component={AdminHomePage}/>
+                    <Route path="/admin/theaters" component={AdminTheaters}/>
+                    <Route path="/admin/movies" component={AdminMovies}/>
+                    <Route path="/admin/halls" component={AdminHalls}/>
+                    <Route path="/admin/screenings" component={AdminScreenings}/>
+                </div>
             </div>
         );
     }

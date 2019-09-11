@@ -38,41 +38,41 @@ class LoginPage extends React.Component {
             <React.Fragment>
                 <CssBaseline/>
                 <Container maxWidth="xs" style={styles.paper}>
-                        <Typography component="h1" variant="h5">
-                            Logowanie
-                        </Typography>
-                        <form style={styles.form} noValidate>
-                            <TextField
-                                variant="outlined"
-                                margin="normal"
-                                required
-                                fullWidth
-                                id="email"
-                                label="Adres Email"
-                                name="email"
-                                autoFocus
-                                onChange={(event) => this.setState({login: event.target.value})}
-                            />
-                            <TextField
-                                variant="outlined"
-                                margin="normal"
-                                required
-                                fullWidth
-                                name="password"
-                                label="Hasło"
-                                type="password"
-                                id="password"
-                                onChange={(event) => this.setState({password: event.target.value})}
-                            />
-                            <Button
-                                fullWidth
-                                variant="contained"
-                                color="primary"
-                                onClick={this.login}
-                            >
-                                Zaloguj się
-                            </Button>
-                        </form>
+                    <Typography component="h1" variant="h5">
+                        Logowanie
+                    </Typography>
+                    <form style={styles.form} noValidate>
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="email"
+                            label="Adres Email"
+                            name="email"
+                            autoFocus
+                            onChange={(event) => this.setState({login: event.target.value})}
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            name="password"
+                            label="Hasło"
+                            type="password"
+                            id="password"
+                            onChange={(event) => this.setState({password: event.target.value})}
+                        />
+                        <Button
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            onClick={this.login}
+                        >
+                            Zaloguj się
+                        </Button>
+                    </form>
                 </Container>
             </React.Fragment>
         );

@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import Lock from '@material-ui/icons/Home';
 
 const styles = {
     container: {
@@ -36,6 +37,7 @@ const styles = {
 class AppBar extends React.Component {
 
     render() {
+        console.log(this.props);
         return (
             <MaterialUIAppBar position="static">
                 <Toolbar>
@@ -47,6 +49,11 @@ class AppBar extends React.Component {
                     <Typography variant="h6" style={styles.title}>
                         {this.props.title}
                     </Typography>
+                    <IconButton edge="end" color="inherit" aria-label="admin">
+                        <Link to="/login" style={styles.link}>
+                            <Lock/>
+                        </Link>
+                    </IconButton>
                 </Toolbar>
             </MaterialUIAppBar>
         );

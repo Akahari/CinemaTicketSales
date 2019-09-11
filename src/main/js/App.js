@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as axios from 'axios';
 import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom';
+
+import HomeRouter from './src/components/HomeRouter';
+import HomePage from './src/components/HomePage';
+import HomePageRaw from './src/components/HomePageRaw';
+
 import Screenings from './src/components/Screenings';
 import Halls from './src/components/Halls';
-import Theaters from './src/components/TheatersRaw';
-import HomePage from './src/components/HomePage';
-import Movies from './src/components/MoviesRaw';
+import Theaters from './src/components/Theaters';
+import TheatersRaw from './src/components/TheatersRaw';
+import Movies from './src/components/Movies';
+import MoviesRaw from './src/components/MoviesRaw';
 import MovieDetails from './src/components/MovieDetails';
 
 import DeclareTickets from './src/components/user/DeclareTickets';
@@ -15,7 +21,9 @@ import BookingDetails from './src/components/user/BookingDetails';
 import BookingReceipt from './src/components/user/BookingReceipt';
 
 import LoginPage from './src/components/LoginPage';
+import AdminRouter from './src/components/admin/AdminRouter';
 import AdminHomePage from './src/components/admin/AdminHomePage';
+
 
 import AdminHalls from './src/components/admin/hall/AdminHalls';
 import AdminHallsAdd from './src/components/admin/hall/AdminHallsAdd';
@@ -36,7 +44,7 @@ import AdminTheaters from './src/components/admin/theater/AdminTheaters';
 import AdminTheatersAdd from './src/components/admin/theater/AdminTheatersAdd';
 import AdminTheatersOverview from './src/components/admin/theater/AdminTheatersOverview';
 import AdminTheatersEdit from './src/components/admin/theater/AdminTheatersEdit';
-import AdminRouter from './src/components/admin/AdminRouter';
+
 
 const styles = {
     container: {
@@ -58,7 +66,7 @@ class App extends React.Component {
             <div style={styles.container}>
                 <Router>
                     <div style={styles.container}>
-                        <Route exact path="/" component={HomePage}/>
+                        <Route exact path="/" component={HomeRouter}/>
                         <Route exact path="/login" component={LoginPage}/>
                         <Route path="/admin" component={AdminRouter}/>
 
@@ -67,11 +75,13 @@ class App extends React.Component {
                         <Route exact path="/screenings/bookingDetails" component={BookingDetails}/>
                         <Route exact path="/screenings/bookingReceipt" component={BookingReceipt}/>
 
-                        <Route exact path="/movies" component={Movies}/>
+                        <Route exact path="/moviesNew" component={Movies}/>
+                        <Route exact path="/movies" component={MoviesRaw}/>
                         <Route path="/movies/:movieId" component={MovieDetails}/>
                         <Route exact path="/halls" component={Halls}/>
                         <Route exact path="/screenings" component={Screenings}/>
                         <Route exact path="/theaters" component={Theaters}/>
+                        <Route exact path="/theatersRaw" component={TheatersRaw}/>
 
                         <Route component={() => <Redirect to="/"/>}/>
                     </div>

@@ -13221,6 +13221,35 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/Home.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Home.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+}), 'Home');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
@@ -57918,35 +57947,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _src_components_Screenings__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/components/Screenings */ "./src/main/js/src/components/Screenings.js");
-/* harmony import */ var _src_components_Halls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/components/Halls */ "./src/main/js/src/components/Halls.js");
-/* harmony import */ var _src_components_TheatersRaw__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/components/TheatersRaw */ "./src/main/js/src/components/TheatersRaw.js");
-/* harmony import */ var _src_components_HomePage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/components/HomePage */ "./src/main/js/src/components/HomePage.js");
-/* harmony import */ var _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/components/MoviesRaw */ "./src/main/js/src/components/MoviesRaw.js");
-/* harmony import */ var _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/components/MovieDetails */ "./src/main/js/src/components/MovieDetails.js");
-/* harmony import */ var _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/components/user/DeclareTickets */ "./src/main/js/src/components/user/DeclareTickets.js");
-/* harmony import */ var _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/components/user/SelectSeats */ "./src/main/js/src/components/user/SelectSeats.js");
-/* harmony import */ var _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/components/user/BookingDetails */ "./src/main/js/src/components/user/BookingDetails.js");
-/* harmony import */ var _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/components/user/BookingReceipt */ "./src/main/js/src/components/user/BookingReceipt.js");
-/* harmony import */ var _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/LoginPage */ "./src/main/js/src/components/LoginPage.js");
-/* harmony import */ var _src_components_admin_AdminHomePage__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/components/admin/AdminHomePage */ "./src/main/js/src/components/admin/AdminHomePage.js");
-/* harmony import */ var _src_components_admin_hall_AdminHalls__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHalls */ "./src/main/js/src/components/admin/hall/AdminHalls.js");
-/* harmony import */ var _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsAdd */ "./src/main/js/src/components/admin/hall/AdminHallsAdd.js");
-/* harmony import */ var _src_components_admin_hall_AdminHallsOverview__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsOverview */ "./src/main/js/src/components/admin/hall/AdminHallsOverview.js");
-/* harmony import */ var _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsEdit */ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js");
-/* harmony import */ var _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesOverview */ "./src/main/js/src/components/admin/movie/AdminMoviesOverview.js");
-/* harmony import */ var _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesEdit */ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsOverview */ "./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js");
-/* harmony import */ var _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsEdit */ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersOverview */ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js");
-/* harmony import */ var _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
-/* harmony import */ var _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./src/components/admin/AdminRouter */ "./src/main/js/src/components/admin/AdminRouter.js");
+/* harmony import */ var _src_components_HomeRouter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/components/HomeRouter */ "./src/main/js/src/components/HomeRouter.js");
+/* harmony import */ var _src_components_HomePage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/components/HomePage */ "./src/main/js/src/components/HomePage.js");
+/* harmony import */ var _src_components_HomePageRaw__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./src/components/HomePageRaw */ "./src/main/js/src/components/HomePageRaw.js");
+/* harmony import */ var _src_components_Screenings__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./src/components/Screenings */ "./src/main/js/src/components/Screenings.js");
+/* harmony import */ var _src_components_Halls__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./src/components/Halls */ "./src/main/js/src/components/Halls.js");
+/* harmony import */ var _src_components_Theaters__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./src/components/Theaters */ "./src/main/js/src/components/Theaters.js");
+/* harmony import */ var _src_components_TheatersRaw__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./src/components/TheatersRaw */ "./src/main/js/src/components/TheatersRaw.js");
+/* harmony import */ var _src_components_Movies__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./src/components/Movies */ "./src/main/js/src/components/Movies.js");
+/* harmony import */ var _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./src/components/MoviesRaw */ "./src/main/js/src/components/MoviesRaw.js");
+/* harmony import */ var _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./src/components/MovieDetails */ "./src/main/js/src/components/MovieDetails.js");
+/* harmony import */ var _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./src/components/user/DeclareTickets */ "./src/main/js/src/components/user/DeclareTickets.js");
+/* harmony import */ var _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./src/components/user/SelectSeats */ "./src/main/js/src/components/user/SelectSeats.js");
+/* harmony import */ var _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/components/user/BookingDetails */ "./src/main/js/src/components/user/BookingDetails.js");
+/* harmony import */ var _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/components/user/BookingReceipt */ "./src/main/js/src/components/user/BookingReceipt.js");
+/* harmony import */ var _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/components/LoginPage */ "./src/main/js/src/components/LoginPage.js");
+/* harmony import */ var _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/components/admin/AdminRouter */ "./src/main/js/src/components/admin/AdminRouter.js");
+/* harmony import */ var _src_components_admin_AdminHomePage__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./src/components/admin/AdminHomePage */ "./src/main/js/src/components/admin/AdminHomePage.js");
+/* harmony import */ var _src_components_admin_hall_AdminHalls__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHalls */ "./src/main/js/src/components/admin/hall/AdminHalls.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsAdd__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsAdd */ "./src/main/js/src/components/admin/hall/AdminHallsAdd.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsOverview__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsOverview */ "./src/main/js/src/components/admin/hall/AdminHallsOverview.js");
+/* harmony import */ var _src_components_admin_hall_AdminHallsEdit__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./src/components/admin/hall/AdminHallsEdit */ "./src/main/js/src/components/admin/hall/AdminHallsEdit.js");
+/* harmony import */ var _src_components_admin_movie_AdminMovies__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMovies */ "./src/main/js/src/components/admin/movie/AdminMovies.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesAdd__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesAdd */ "./src/main/js/src/components/admin/movie/AdminMoviesAdd.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesOverview__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesOverview */ "./src/main/js/src/components/admin/movie/AdminMoviesOverview.js");
+/* harmony import */ var _src_components_admin_movie_AdminMoviesEdit__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./src/components/admin/movie/AdminMoviesEdit */ "./src/main/js/src/components/admin/movie/AdminMoviesEdit.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreenings__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreenings */ "./src/main/js/src/components/admin/screening/AdminScreenings.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsAdd__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsAdd */ "./src/main/js/src/components/admin/screening/AdminScreeningsAdd.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsOverview__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsOverview */ "./src/main/js/src/components/admin/screening/AdminScreeningsOverview.js");
+/* harmony import */ var _src_components_admin_screening_AdminScreeningsEdit__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./src/components/admin/screening/AdminScreeningsEdit */ "./src/main/js/src/components/admin/screening/AdminScreeningsEdit.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheaters__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheaters */ "./src/main/js/src/components/admin/theater/AdminTheaters.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersAdd__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersAdd */ "./src/main/js/src/components/admin/theater/AdminTheatersAdd.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersOverview__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersOverview */ "./src/main/js/src/components/admin/theater/AdminTheatersOverview.js");
+/* harmony import */ var _src_components_admin_theater_AdminTheatersEdit__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./src/components/admin/theater/AdminTheatersEdit */ "./src/main/js/src/components/admin/theater/AdminTheatersEdit.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -57964,6 +57997,10 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
 
 
 
@@ -58033,49 +58070,57 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/",
-        component: _src_components_HomePage__WEBPACK_IMPORTED_MODULE_7__["default"]
+        component: _src_components_HomeRouter__WEBPACK_IMPORTED_MODULE_4__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/login",
-        component: _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_14__["default"]
+        component: _src_components_LoginPage__WEBPACK_IMPORTED_MODULE_18__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         path: "/admin",
-        component: _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_32__["default"]
+        component: _src_components_admin_AdminRouter__WEBPACK_IMPORTED_MODULE_19__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/declareTickets",
-        component: _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_10__["default"]
+        component: _src_components_user_DeclareTickets__WEBPACK_IMPORTED_MODULE_14__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/selectSeats",
-        component: _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_11__["default"]
+        component: _src_components_user_SelectSeats__WEBPACK_IMPORTED_MODULE_15__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/bookingDetails",
-        component: _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_12__["default"]
+        component: _src_components_user_BookingDetails__WEBPACK_IMPORTED_MODULE_16__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings/bookingReceipt",
-        component: _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_13__["default"]
+        component: _src_components_user_BookingReceipt__WEBPACK_IMPORTED_MODULE_17__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+        exact: true,
+        path: "/moviesNew",
+        component: _src_components_Movies__WEBPACK_IMPORTED_MODULE_11__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/movies",
-        component: _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_8__["default"]
+        component: _src_components_MoviesRaw__WEBPACK_IMPORTED_MODULE_12__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         path: "/movies/:movieId",
-        component: _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_9__["default"]
+        component: _src_components_MovieDetails__WEBPACK_IMPORTED_MODULE_13__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/halls",
-        component: _src_components_Halls__WEBPACK_IMPORTED_MODULE_5__["default"]
+        component: _src_components_Halls__WEBPACK_IMPORTED_MODULE_8__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/screenings",
-        component: _src_components_Screenings__WEBPACK_IMPORTED_MODULE_4__["default"]
+        component: _src_components_Screenings__WEBPACK_IMPORTED_MODULE_7__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         exact: true,
         path: "/theaters",
-        component: _src_components_TheatersRaw__WEBPACK_IMPORTED_MODULE_6__["default"]
+        component: _src_components_Theaters__WEBPACK_IMPORTED_MODULE_9__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+        exact: true,
+        path: "/theatersRaw",
+        component: _src_components_TheatersRaw__WEBPACK_IMPORTED_MODULE_10__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
         component: function component() {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
@@ -58111,6 +58156,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
 /* harmony import */ var _material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/ArrowBack */ "./node_modules/@material-ui/icons/ArrowBack.js");
 /* harmony import */ var _material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Home */ "./node_modules/@material-ui/icons/Home.js");
+/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_7__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -58128,6 +58175,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -58177,6 +58225,7 @@ function (_React$Component) {
   _createClass(AppBar, [{
     key: "render",
     value: function render() {
+      console.log(this.props);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
         position: "static"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -58189,7 +58238,14 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowBack__WEBPACK_IMPORTED_MODULE_6___default.a, null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
         variant: "h6",
         style: styles.title
-      }, this.props.title)));
+      }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        edge: "end",
+        color: "inherit",
+        "aria-label": "admin"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/login",
+        style: styles.link
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_7___default.a, null)))));
     }
   }]);
 
@@ -58334,6 +58390,113 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
+/* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AppBar */ "./src/main/js/src/components/AppBar.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+var styles = {
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  },
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex',
+    padding: 10
+  },
+  title: {
+    flexGrow: 1
+  },
+  grid: {
+    padding: 10
+  }
+};
+
+var HomePage =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(HomePage, _React$Component);
+
+  function HomePage() {
+    _classCallCheck(this, HomePage);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(HomePage).apply(this, arguments));
+  }
+
+  _createClass(HomePage, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        title: "Strona glowna kina",
+        linkTo: "/"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        container: true,
+        spacing: 3,
+        style: styles.grid
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        style: styles.paper
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Theaters"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        item: true,
+        xs: 6
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        style: styles.paper
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Movies")))));
+    }
+  }]);
+
+  return HomePage;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/HomePageRaw.js":
+/*!***************************************************!*\
+  !*** ./src/main/js/src/components/HomePageRaw.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
@@ -58396,7 +58559,7 @@ function (_React$Component) {
       }, "Movies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/theaters",
         style: styles.link
-      }, "Theaters"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      }, "Theaters"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "---------"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/halls",
         style: styles.link
       }, "Halls"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
@@ -58410,6 +58573,110 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/HomeRouter.js":
+/*!**************************************************!*\
+  !*** ./src/main/js/src/components/HomeRouter.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _HomePage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage */ "./src/main/js/src/components/HomePage.js");
+/* harmony import */ var _Movies__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Movies */ "./src/main/js/src/components/Movies.js");
+/* harmony import */ var _Theaters__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Theaters */ "./src/main/js/src/components/Theaters.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+var styles = {
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  },
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    flex: 1,
+    flexDirection: 'column',
+    display: 'flex',
+    padding: 10
+  },
+  title: {
+    flexGrow: 1
+  },
+  grid: {
+    padding: 10
+  }
+};
+
+var HomeRouter =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(HomeRouter, _React$Component);
+
+  function HomeRouter() {
+    _classCallCheck(this, HomeRouter);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(HomeRouter).apply(this, arguments));
+  }
+
+  _createClass(HomeRouter, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/",
+        component: _HomePage__WEBPACK_IMPORTED_MODULE_2__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/theaters",
+        component: _Theaters__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/movies",
+        component: _Movies__WEBPACK_IMPORTED_MODULE_3__["default"]
+      })));
+    }
+  }]);
+
+  return HomeRouter;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (HomeRouter);
 
 /***/ }),
 
@@ -58654,6 +58921,124 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (MovieDetails);
+
+/***/ }),
+
+/***/ "./src/main/js/src/components/Movies.js":
+/*!**********************************************!*\
+  !*** ./src/main/js/src/components/Movies.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var styles = {
+  container: {
+    height: '100%'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  }
+};
+
+var Movies =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Movies, _React$Component);
+
+  function Movies() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Movies);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Movies)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      movies: [],
+      error: null
+    });
+
+    return _this;
+  }
+
+  _createClass(Movies, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/movies/all').then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          movies: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.error) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, this.state.error);
+      }
+
+      console.log(this.state);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        style: styles.link
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Movies page under construction");
+    }
+  }]);
+
+  return Movies;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Movies);
 
 /***/ }),
 
@@ -58931,6 +59316,124 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./src/main/js/src/components/Theaters.js":
+/*!************************************************!*\
+  !*** ./src/main/js/src/components/Theaters.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var styles = {
+  container: {
+    height: '100%'
+  },
+  link: {
+    flex: 1,
+    margin: 10
+  }
+};
+
+var Theaters =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Theaters, _React$Component);
+
+  function Theaters() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Theaters);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Theaters)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      theaters: [],
+      error: null
+    });
+
+    return _this;
+  }
+
+  _createClass(Theaters, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1__["get"]('/theater/all').then(function (response) {
+        console.log(response);
+
+        _this2.setState({
+          theaters: response.data
+        });
+      }, function (error) {
+        console.log(error);
+
+        _this2.setState({
+          error: 'Wystąpił błąd'
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.error) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: styles.container
+        }, this.state.error);
+      }
+
+      console.log(this.state);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: styles.container
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        style: styles.link
+      }, "Exit"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Theaters page under construction");
+    }
+  }]);
+
+  return Theaters;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Theaters);
+
+/***/ }),
+
 /***/ "./src/main/js/src/components/TheatersRaw.js":
 /*!***************************************************!*\
   !*** ./src/main/js/src/components/TheatersRaw.js ***!
@@ -59022,9 +59525,6 @@ function (_React$Component) {
           error: 'Wystąpił błąd'
         });
       });
-      console.log('Hello World :)');
-      console.log(this.state);
-      console.log('Hello World2 :)');
     }
   }, {
     key: "render",
@@ -59036,7 +59536,6 @@ function (_React$Component) {
       }
 
       console.log(this.state);
-      console.log('Hello World3 :)');
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         style: styles.container
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
